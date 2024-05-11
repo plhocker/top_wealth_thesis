@@ -1,0 +1,9 @@
+year,month,rank,net_worth,last_name,first_name,full_name,birth_date,age,gender,country_of_citizenship,country_of_residence,city_of_residence,business_category,business_industries,organization_name,position_in_organization,self_made,wealth_status
+1999,7,,1.0 B,Hinduja,"Srichand, Gopichand,",Srichand & Gopichand Hinduja,1935-11-28,,,India,United Kingdom,London,,,,,False,
+1999,7,,7.1 B,Schwarz,Dieter,Dieter Schwarz,1939-09-24,59,Male,Germany,Germany,Neckarsulm,Fashion & Retail,['Fashion & Retail'],,,True,
+1999,7,,1.3 B,Ardila Lulle,Carlos,Carlos Ardila Lülle,1930-06-04,68,Male,Colombia,Colombia,Bogota,Food and Beverage,['Food and Beverage'],,,True,
+1999,7,,2.9 B,Ebner,Martin,Martin Ebner,1945-08-01,53,Male,Switzerland,Switzerland,Wilen,Finance and Investments,['Finance and Investments'],,,False,
+1999,7,,1.0 B,Cutrale,Jose,Jose Luis Cutrale,1946-09-17,,Male,Brazil,Brazil,Sao Paulo,Food and Beverage,['Food and Beverage'],,,True,
+1999,7,,1.1 B,Lee,Peter,Lee family,,71,Male,Hong Kong,Hong Kong,Hong Kong,,,,,False,
+1999,7,,1.8 B,Kampf,Serge,Serge Kampf,1934-01-01,65,Male,France,,,,,,,False,
+1999,7,,2.5 B,Safra,Edmond,Edmond Safra,1932-08-06,66,Male,Lebanon,,,,,,,True,

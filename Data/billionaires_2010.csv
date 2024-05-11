@@ -1,0 +1,1012 @@
+year,month,rank,net_worth,last_name,first_name,full_name,birth_date,age,gender,country_of_citizenship,country_of_residence,city_of_residence,business_category,business_industries,organization_name,position_in_organization,self_made,wealth_status
+2010,3,1,53.5 B,Slim Helu,Carlos,Carlos Slim Helu & family,1940-01-28,70,Male,Mexico,Mexico,Mexico City,,['Telecom'],,,False,Increased
+2010,3,2,53.0 B,Gates,William,Bill Gates,1955-10-28,54,Male,United States,United States,Medina,Technology,['Technology                    '],Bill & Melinda Gates Foundation,Co-Chair,False,Increased
+2010,3,3,47.0 B,Buffett,Warren,Warren Buffett,1930-08-30,79,Male,United States,United States,Omaha,Investments,['Investments                   '],Berkshire Hathaway,Chairman,False,Increased
+2010,3,4,29.0 B,Ambani,Mukesh,Mukesh Ambani,1957-04-19,52,Male,India,India,Mumbai,,['Energy'],,,False,Increased
+2010,3,5,28.7 B,Mittal,Lakshmi,Lakshmi Mittal,1950-06-15,59,Male,India,United Kingdom,London,,['Metals & Mining'],,,False,Increased
+2010,3,6,28.0 B,Ellison,Lawrence,Larry Ellison,1944-08-17,65,Male,United States,United States,Woodside,Technology,['Technology                    '],Oracle,CEO,False,Increased
+2010,3,7,27.5 B,Arnault,Bernard,Bernard Arnault,1949-03-05,61,Male,France,France,Paris,,['Fashion and Retail'],,,False,Increased
+2010,3,8,27.0 B,Batista,Eike,Eike Batista,1956-11-03,53,Male,Brazil,Brazil,Rio de Janeiro,,['Energy'],,,False,Increased
+2010,3,9,25.0 B,Ortega,Amancio,Amancio Ortega,1936-03-28,73,Male,Spain,Spain,La Coruna,,['Fashion and Retail'],,,False,Increased
+2010,3,10,23.5 B,Albrecht,Karl,Karl Albrecht,1920-02-20,90,Male,Germany,Germany,Mulheim an der Ruhr,,['Fashion and Retail'],,,False,Increased
+2010,3,11,23.0 B,Kamprad,Ingvar,Ingvar Kamprad & family,1926-03-30,83,Male,Sweden,Switzerland,Lausanne,,['Fashion and Retail'],,,False,Increased
+2010,3,12,22.5 B,Walton,Christy,Christy Walton & family,1955-01-01,55,Female,United States,United States,Jackson,Fashion and Retail,['Fashion and Retail            '],Children's Scholarship Fund,Co-Chair,False,Increased
+2010,3,13,22.4 B,Persson,Stefan,Stefan Persson,1947-10-04,62,Male,Sweden,Sweden,Stockholm,,['Fashion and Retail'],,,False,Increased
+2010,3,14,21.0 B,Li,Ka-shing,Li Ka-shing,1928-06-13,81,Male,Hong Kong,Hong Kong,Hong Kong,Diversified,['Diversified'],Hutchison Whampoa,Chairman,False,Increased
+2010,3,15,20.7 B,Walton,Jim,Jim Walton,1948-01-01,62,Male,United States,United States,Bentonville,Fashion and Retail,['Fashion and Retail            '],"Arvest Bank Group, Inc.",Chairman and CEO,False,Increased
+2010,3,16,20.6 B,Walton,Alice,Alice Walton,1949-10-07,60,Female,United States,United States,Fort Worth,Billionaire,['Billionaire'],Crystal Bridges Museum of American Art,Philanthropist,False,Increased
+2010,3,17,20.0 B,Bettencourt,Liliane,Liliane Bettencourt,1922-10-21,87,Female,France,France,Paris,,['Fashion and Retail'],,,False,Increased
+2010,3,18,19.8 B,Walton,S. Robson,S. Robson Walton,1944-01-01,66,Male,United States,United States,Bentonville,Fashion and Retail,['Fashion and Retail            '],Wal-Mart Stores,Chairman,False,Increased
+2010,3,19,19.4 B,Alsaud,Prince Alwaleed Bin Talal,Prince Alwaleed Bin Talal Alsaud,1955-03-07,55,Male,Saudi Arabia,Saudi Arabia,Riyadh,,['Investments'],,,False,Increased
+2010,3,20,19.0 B,Thomson,David,David Thomson & family,1957-06-12,52,Male,Canada,Canada,Toronto,,['Media'],,,False,Increased
+2010,3,21,18.7 B,Otto,Michael,Michael Otto & family,1943-04-12,66,Male,Germany,Germany,Hamburg,,['Fashion and Retail'],,,False,Increased
+2010,3,22,18.5 B,Lee,Shau Kee,Lee Shau Kee,1928-01-29,82,Male,Hong Kong,Hong Kong,Hong Kong,,['Real Estate'],,,False,Increased
+2010,3,23,18.0 B,Bloomberg,Michael,Michael Bloomberg,1942-02-14,68,Male,United States,United States,New York,Politics,['Politics'],,,False,Increased
+2010,3,24,17.5 B,Brin,Sergey,Sergey Brin,1973-08-21,36,Male,United States,United States,Los Altos,Technology,['Technology                    '],Google,"Cofounder, Director Of Special Projects",False,Increased
+2010,3,24,17.5 B,Koch,Charles,Charles Koch,1935-11-01,74,Male,United States,United States,Wichita,Diversified,['Diversified'],,,False,Increased
+2010,3,24,17.5 B,Koch,David,David Koch,1940-05-03,69,Male,United States,United States,New York,Diversified,['Diversified'],,,False,Increased
+2010,3,24,17.5 B,Page,Larry,Larry Page,1973-03-26,37,Male,United States,United States,Palo Alto,Technology,['Technology                    '],Google,CEO,False,Increased
+2010,3,28,17.0 B,Ferrero,Michele,Michele Ferrero & family,1927-01-01,83,Male,Italy,Monaco,Monte Carlo,,['Food and Beverage'],,,False,Increased
+2010,3,28,17.0 B,Kwok family,,Kwok Thomas & Raymond & family,,0,Male,Hong Kong,Hong Kong,Hong Kong,,['Real Estate'],,,False,Increased
+2010,3,28,17.0 B,Premji,Azim,Azim Premji,1945-07-24,64,Male,India,India,Bangalore,,['Technology'],,,False,Increased
+2010,3,31,16.7 B,Albrecht,Theo,Theo Albrecht,1922-03-28,87,Male,Germany,,,,,,,False,Decreased
+2010,3,32,15.8 B,Lisin,Vladimir,Vladimir Lisin,1956-05-07,53,Male,Russia,Russia,Moscow,,['Metals & Mining'],,,False,Increased
+2010,3,33,14.5 B,Ballmer,Steven,Steve Ballmer,1956-03-24,53,Male,United States,United States,Hunts Point,Technology,['Technology                    '],Microsoft,CEO,False,Increased
+2010,3,33,14.5 B,Kuok,Robert,Robert Kuok,1923-10-06,86,Male,Malaysia,Hong Kong,Hong Kong,,['Diversified'],,,False,Increased
+2010,3,35,14.0 B,Soros,George,George Soros,1930-08-12,79,Male,United States,United States,Katonah,Investments,['Investments                   '],,,False,Increased
+2010,3,36,13.7 B,Ambani,Anil,Anil Ambani,1959-06-04,50,Male,India,India,Mumbai,,['Diversified'],,,False,Increased
+2010,3,37,13.5 B,Allen,Paul,Paul Allen,1953-01-21,57,Male,United States,United States,Mercer Island,Technology,['Technology                    '],,,False,Increased
+2010,3,37,13.5 B,Dell,Michael,Michael Dell,1965-02-23,45,Male,United States,United States,Austin,Technology,['Technology                    '],Dell,Chairman and CEO,False,Increased
+2010,3,39,13.4 B,Prokhorov,Mikhail,Mikhail Prokhorov,1965-05-03,44,Male,Russia,Russia,Moscow,,['Investments'],,,False,Increased
+2010,3,40,13.0 B,Rausing,Birgit,Birgit Rausing & family,1924-01-01,86,Female,Sweden,,,Manufacturing,['Manufacturing'],,,False,Increased
+2010,3,40,13.0 B,Ruia,Shashi &#38; Ravi,Shashi & Ravi Ruia,1943-12-23,66,Male,India,India,Mumbai,,['Diversified'],,,False,Increased
+2010,3,42,12.7 B,Fridman,Mikhail,Mikhail Fridman,1964-04-21,45,Male,Russia,Russia,Moscow,,['Energy'],,,False,Increased
+2010,3,43,12.3 B,Bezos,Jeffrey,Jeff Bezos,1964-01-12,46,Male,United States,United States,Seattle,Technology,['Technology                    '],Amazon.com,CEO,False,Increased
+2010,3,44,12.2 B,Jindal,Savitri,Savitri Jindal & family,1950-03-20,59,Female,India,India,Delhi & Hisar,,['Metals & Mining'],,,False,Increased
+2010,3,45,12.0 B,Bren,Donald,Donald Bren,1932-05-11,77,Male,United States,United States,Newport Beach,Real Estate,['Real Estate                   '],Irvine Company,Chairman,False,Remained Even
+2010,3,45,12.0 B,Grosvenor,Gerald Cavendish,Gerald Cavendish Grosvenor & family,1951-12-22,58,Male,United Kingdom,United Kingdom,Chester,,['Real Estate'],,,False,Increased
+2010,3,45,12.0 B,Paulson,John,John Paulson,1956-01-01,54,Male,United States,United States,New York,Investments,['Investments                   '],,,False,Increased
+2010,3,48,11.5 B,Johnson,Abigail,Abigail Johnson,1961-12-19,48,Female,United States,United States,Milton,Business,['Business'],Fidelity Investments,"President, Fidelity Personal, Workplace and Institutional Services",False,Increased
+2010,3,48,11.5 B,Lemann,Jorge Paulo,Jorge Paulo Lemann,1939-08-26,70,Male,Brazil,Brazil,Sao Paulo,,['Finance'],,,False,Increased
+2010,3,50,11.2 B,Abramovich,Roman,Roman Abramovich,1966-10-24,43,Male,Russia,Russia,Moscow,,['Diversified'],,,False,Increased
+2010,3,51,11.1 B,Klatten,Susanne,Susanne Klatten,1962-04-28,47,Female,Germany,Germany,Bad Homburg,,['Automotive'],,,False,Increased
+2010,3,52,11.0 B,Fontbona,Iris,Iris Fontbona & family,,0,Female,Chile,Chile,Santiago,,['Metals & Mining'],,,False,Increased
+2010,3,52,11.0 B,Mars,Forrest,"Forrest Mars, Jr.",1931-08-13,78,Male,United States,United States,Big Horn,Food and Beverage,['Food and Beverage'],,,False,Increased
+2010,3,52,11.0 B,Mars,Jacqueline,Jacqueline Mars,1939-10-10,70,Female,United States,United States,The Plains,Food and Beverage,['Food and Beverage'],,,False,Increased
+2010,3,52,11.0 B,Mars,John,John Mars,1936-06-01,73,Male,United States,United States,Jackson,Food and Beverage,['Food and Beverage'],,,False,Increased
+2010,3,52,11.0 B,Perelman,Ronald,Ronald Perelman,1943-01-01,67,Male,United States,United States,New York,Investments,['Investments                   '],,,False,Increased
+2010,3,57,10.7 B,Deripaska,Oleg,Oleg Deripaska,1968-01-02,42,Male,Russia,Russia,Moscow,,['Metals & Mining'],,,False,Increased
+2010,3,58,10.6 B,Alekperov,Vagit,Vagit Alekperov,1950-09-01,59,Male,Russia,Russia,Moscow,,['Energy'],,,False,Increased
+2010,3,59,10.5 B,Del Vecchio,Leonardo,Leonardo Del Vecchio,1935-05-22,74,Male,Italy,Italy,Milan,,['Fashion and Retail'],,,False,Increased
+2010,3,59,10.5 B,Icahn,Carl,Carl Icahn,1936-02-16,74,Male,United States,United States,New York,Investments,['Investments                   '],Icahn Enterprises L.P.,Chairman,False,Increased
+2010,3,61,10.3 B,Potanin,Vladimir,Vladimir Potanin,1961-01-03,49,Male,Russia,Russia,Moscow,,['Metals & Mining'],,,False,Increased
+2010,3,62,10.2 B,Knight,Philip,Phil Knight,1938-02-24,72,Male,United States,United States,Hillsboro,Fashion and Retail,['Fashion and Retail            '],NIKE,Chairman,False,Increased
+2010,3,63,10.1 B,Salinas Pliego,Ricardo,Ricardo Salinas Pliego & family,1955-10-19,54,Male,Mexico,Mexico,Mexico City,,['Fashion and Retail'],,,False,Increased
+2010,3,64,10.0 B,Al Amoudi,Mohammed,Mohammed Al Amoudi,1945-01-01,65,Male,Saudi Arabia,Saudi Arabia,Jeddah,,['Energy'],,,False,Increased
+2010,3,64,10.0 B,Bertarelli,Ernesto,Ernesto Bertarelli & family,1965-09-22,44,Male,Switzerland,Switzerland,Gstaad,,['Health care'],,,False,Increased
+2010,3,64,10.0 B,Chambers,Anne Cox,Anne Cox Chambers,1919-12-01,90,Female,United States,United States,Atlanta,Media,['Media                         '],,,False,Increased
+2010,3,64,10.0 B,Kaiser,George,George Kaiser,1942-07-29,67,Male,United States,United States,Tulsa,Energy,['Energy                        '],BOK Financial,Chairman,False,Increased
+2010,3,64,10.0 B,Rausing,Hans,Hans Rausing,1926-03-25,83,Male,Sweden,United Kingdom,Wadhurst,,['Media'],,,False,Remained Even
+2010,3,64,10.0 B,Safra,Joseph,Joseph Safra,1939-01-01,71,Male,Brazil,Brazil,Sao Paulo,,['Finance'],,,False,Increased
+2010,3,70,9.9 B,Mordashov,Alexey,Alexey Mordashov,1965-09-26,44,Male,Russia,Russia,Moscow,,['Metals & Mining'],,,False,Increased
+2010,3,71,9.8 B,Rashnikov,Viktor,Viktor Rashnikov,1948-10-13,61,Male,Russia,Russia,Magnitogorsk,,['Manufacturing'],,,False,Increased
+2010,3,72,9.7 B,Larrea Mota Velasco,German,German Larrea Mota Velasco & family,1953-10-26,56,Male,Mexico,Mexico,Mexico City,,['Metals & Mining'],,,False,Increased
+2010,3,73,9.3 B,Adelson,Sheldon,Sheldon Adelson,1933-08-04,76,Male,United States,United States,Las Vegas,Gaming,['Gaming'],Las Vegas Sands,Chairman and CEO,False,Increased
+2010,3,74,9.0 B,Berlusconi,Silvio,Silvio Berlusconi & family,1936-09-29,73,Male,Italy,Italy,North of Milan,,['Politics'],,,False,Increased
+2010,3,74,9.0 B,Duncan,Dan,Dan Duncan,1933-01-02,77,Male,United States,United States,Houston,,['Energy'],,,False,Increased
+2010,3,74,9.0 B,Singh,Kushal Pal,Kushal Pal Singh,1931-08-15,78,Male,India,India,Delhi,,['Real Estate'],,,False,Increased
+2010,3,77,8.7 B,Al-Kharafi,Nasser,Nasser Al-Kharafi & family,1943-06-17,66,Male,Kuwait,,,,['Diversified'],,,False,Increased
+2010,3,77,8.7 B,Pinault,Francois,Francois Pinault & family,1936-08-21,73,Male,France,France,Paris,,['Fashion and Retail'],,,False,Increased
+2010,3,79,8.6 B,Rybolovlev,Dmitry,Dmitry Rybolovlev,1966-11-22,43,Male,Russia,Russia,Moscow,,['Manufacturing'],,,False,Increased
+2010,3,80,8.5 B,Makhmudov,Iskander,Iskander Makhmudov,1963-12-05,46,Male,Russia,Russia,Moscow,,['Metals & Mining'],,,False,Increased
+2010,3,80,8.5 B,Simons,James,James Simons,1938-05-01,71,Male,United States,United States,East Setauket,Investments,['Investments                   '],Renaissance Technologies Corp.,Founder,False,Increased
+2010,3,82,8.3 B,Bailleres,Alberto,Alberto Bailleres Gonzalez & family,1931-08-22,77,Male,Mexico,Mexico,Mexico City,,['Metals & Mining'],,,False,Increased
+2010,3,83,8.2 B,Khan,German,German Khan,1961-10-24,48,Male,Russia,Russia,Moscow,,['Energy'],,,False,Increased
+2010,3,84,8.1 B,Matte,"Eliodoro, Bernardo &#38; Patricia","Eliodoro, Bernardo & Patricia Matte",,0,Male,Chile,Chile,Santiago,,['Manufacturing'],,,False,Increased
+2010,3,85,8.0 B,Johnson,Edward,"Edward Johnson, III.",1930-06-29,79,Male,United States,United States,Boston,Investments,['Investments                   '],,,False,Increased
+2010,3,86,7.9 B,Birla,Kumar,Kumar Birla,1967-06-14,42,Male,India,India,Mumbai,,['Diversified'],,,False,Increased
+2010,3,87,7.8 B,Mittal,Sunil,Sunil Mittal & family,1957-10-23,52,Male,India,India,Delhi,,['Telecom'],,,False,Increased
+2010,3,88,7.7 B,Fredriksen,John,John Fredriksen,1945-02-01,65,Male,Cyprus,United Kingdom,London,,['Logistics'],,,False,Increased
+2010,3,89,7.6 B,Dassault,Serge,Serge Dassault & family,1925-04-04,84,Male,France,France,Paris,,['Manufacturing'],,,False,Increased
+2010,3,89,7.6 B,Kellner,Petr,Petr Kellner,1964-05-20,45,Male,Czech Republic,Czech Republic,Vrane nad Vltavou,,['Finance'],,,False,Increased
+2010,3,89,7.6 B,Krishnan,Ananda,Ananda Krishnan,1938-04-01,71,Male,Malaysia,Malaysia,Kuala Lumpur,,['Telecom'],,,False,Increased
+2010,3,89,7.6 B,Yanai,Tadashi,Tadashi Yanai & family,1949-02-07,61,Male,Japan,Japan,Tokyo,,['Fashion and Retail'],,,False,Increased
+2010,3,93,7.5 B,Al Jaber,Mohamed Bin Issa,Mohamed Bin Issa Al Jaber,1959-01-01,51,Male,Saudi Arabia,Saudi Arabia,Jeddah,,['Real Estate'],,,False,Increased
+2010,3,93,7.5 B,Blavatnik,Len,Len Blavatnik,1957-06-01,52,Male,United States,United Kingdom,London,Energy,['Energy                        '],,,False,Increased
+2010,3,93,7.5 B,Reuben,David &#38; Simon,David & Simon Reuben,1943-01-01,67,Male,United Kingdom,United Kingdom,London,,['Real Estate'],,,False,Increased
+2010,3,93,7.5 B,Saji,Nobutada,Nobutada Saji & family,1945-11-25,64,Male,Japan,Japan,Tokyo,,,,,False,Increased
+2010,3,93,7.5 B,Wertheimer,Alain &#38; Gerard,Alain & Gerard Wertheimer,,0,Male,France,,New York & Cologny,,['Fashion and Retail'],,,False,Decreased
+2010,3,93,7.5 B,Yevtushenkov,Vladimir,Vladimir Yevtushenkov,1948-09-25,61,Male,Russia,Russia,Moscow,,['Telecom'],,,False,Increased
+2010,3,99,7.3 B,von Finck,August,August von Finck,1930-03-11,80,Male,Germany,Switzerland,Thurgau,,['Investments'],,,False,Increased
+2010,3,100,7.2 B,Lee,Kun-Hee,Lee Kun-Hee,1942-01-09,68,Male,South Korea,South Korea,Seoul,,['Diversified'],,,False,Increased
+2010,3,100,7.2 B,Usmanov,Alisher,Alisher Usmanov,1953-09-09,56,Male,Russia,Russia,Moscow,,['Metals & Mining'],,,False,Increased
+2010,3,100,7.2 B,Weston,Galen,Galen Weston & family,1940-10-29,69,Male,Canada,Canada,Toronto,,['Fashion and Retail'],,,False,Increased
+2010,3,103,7.0 B,de Carvalho-Heineken,Charlene,Charlene de Carvalho-Heineken,1954-06-30,55,Female,Netherlands,United Kingdom,London,,['Food and Beverage'],,,False,Increased
+2010,3,103,7.0 B,Zong,Qinghou,Zong Qinghou,1945-10-01,64,Male,China,China,Hangzhou,,['Food and Beverage'],,,False,Increased
+2010,3,105,6.9 B,Goodnight,James,James Goodnight,1943-01-06,67,Male,United States,United States,Cary,Technology,['Technology                    '],SAS Institute,CEO,False,Increased
+2010,3,106,6.8 B,Cheng,Yu-tung,Cheng Yu-tung,1925-08-15,84,Male,Hong Kong,Hong Kong,Hong Kong,,['Real Estate'],,,False,Increased
+2010,3,107,6.7 B,Green,Philip &#38; Cristina,Philip & Cristina Green,1952-03-15,58,,United Kingdom,United Kingdom,London,,['Fashion and Retail'],,,False,Increased
+2010,3,108,6.6 B,Kuhne,Klaus-Michael,Klaus-Michael Kuhne,1937-06-02,72,Male,Germany,Switzerland,Schindellegi,,['Logistics'],,,False,Increased
+2010,3,109,6.5 B,Al Rajhi,Sulaiman,Sulaiman Al Rajhi,1920-01-21,90,Male,Saudi Arabia,Saudi Arabia,Riyadh,,['Finance'],,,False,Increased
+2010,3,109,6.5 B,Kluge,John,John Kluge,1914-09-01,95,Male,United States,United States,Palm Beach,,['Media'],,,False,Increased
+2010,3,109,6.5 B,Kuzmichev,Alexei,Alexei Kuzmichev,1962-10-15,47,Male,Russia,Russia,Moscow,,['Energy'],,,False,Increased
+2010,3,109,6.5 B,Ofer,Sammy,Sammy Ofer & family,1922-01-01,88,Male,Israel,,,,['Logistics'],,,False,Increased
+2010,3,113,6.4 B,Agarwal,Anil,Anil Agarwal,1953-10-01,56,Male,India,United Kingdom,London,,['Metals & Mining'],,,False,Increased
+2010,3,113,6.4 B,Cohen,Steven,Steve Cohen,1956-01-01,54,Male,United States,United States,Greenwich,Investments,['Investments                   '],SAC Capital Advisors,Founder,False,Increased
+2010,3,113,6.4 B,Vekselberg,Viktor,Viktor Vekselberg,1957-04-14,52,Male,Russia,Russia,Moscow,,['Energy'],,,False,Increased
+2010,3,113,6.4 B,Zyuzin,Igor,Igor Zyuzin,1960-05-29,49,Male,Russia,Russia,Moscow,,['Metals & Mining'],,,False,Increased
+2010,3,117,6.3 B,Engelhorn,Curt,Curt Engelhorn,1926-05-25,83,Male,Germany,Switzerland,Gstaad,,['Health care'],,,False,Remained Even
+2010,3,117,6.3 B,Mori,Akira,Akira Mori & family,1936-07-12,73,Male,Japan,Japan,Tokyo,,['Real Estate'],,,False,Increased
+2010,3,117,6.3 B,Murdoch,Rupert,Rupert Murdoch,1931-03-11,79,Male,United States,United States,New York,Media,['Media                         '],News Corp,Chairman and CEO,False,Increased
+2010,3,117,6.3 B,Schmidt,Eric,Eric Schmidt,1955-04-27,54,Male,United States,United States,Atherton,Technology,['Technology                    '],Google,Executive Chairman,False,Increased
+2010,3,121,6.1 B,Abramov,Alexander,Alexander Abramov,1959-02-20,51,Male,Russia,Russia,Moscow,,['Metals & Mining'],,,False,Increased
+2010,3,121,6.1 B,Wyss,Hansjorg,Hansjorg Wyss,1935-01-01,75,Male,Switzerland,United States,West Chester,,['Health care'],,,False,Increased
+2010,3,123,6.0 B,Anschutz,Philip,Philip Anschutz,1939-12-28,70,Male,United States,United States,Denver,Investments,['Investments                   '],,,False,Increased
+2010,3,123,6.0 B,Johnson,Antonia,Antonia Johnson,1943-09-06,66,Female,Sweden,Sweden,Stockholm,,['Diversified'],,,False,Increased
+2010,3,123,6.0 B,Santo Domingo,Julio Mario,Julio Mario Santo Domingo,1923-10-16,86,Male,Colombia,,,,['Food and Beverage'],,,False,Increased
+2010,3,123,6.0 B,Taylor,Jack,Jack Taylor & family,1922-09-01,87,Male,United States,United States,St. Louis,Service,['Service'],Enterprise Rent-A-Car,Founder,False,Decreased
+2010,3,127,5.9 B,Sawiris,Nassef,Nassef Sawiris,1961-01-19,48,Male,Egypt,Egypt,Cairo,,['Construction & Engineering'],,,False,Increased
+2010,3,127,5.9 B,Son,Masayoshi,Masayoshi Son,1957-08-11,52,Male,Japan,Japan,Tokyo,Telecom,['Telecom'],Softbank,CEO,False,Increased
+2010,3,129,5.8 B,Al Rajhi,Saleh,Saleh Al Rajhi,1912-01-01,98,Male,Saudi Arabia,Saudi Arabia,Riyadh,,['Finance'],,,False,Increased
+2010,3,129,5.8 B,Lau,Joseph,Joseph Lau,1951-07-01,58,Male,Hong Kong,Hong Kong,Hong Kong,,['Real Estate'],,,False,Increased
+2010,3,129,5.8 B,Mistry,Pallonji,Pallonji Mistry,1929-06-01,80,Male,Ireland,India,Mumbai,,['Construction & Engineering'],,,False,Increased
+2010,3,132,5.7 B,Broad,Eli,Eli Broad,1933-06-06,76,Male,United States,United States,Los Angeles,Investments,['Investments                   '],,,False,Increased
+2010,3,132,5.7 B,Quandt,Stefan,Stefan Quandt,1966-05-09,43,Male,Germany,Germany,Frankfurt,,['Automotive'],,,False,Increased
+2010,3,132,5.7 B,Wurth,Reinhold,Reinhold Wurth,1935-04-20,74,Male,Germany,Germany,Kuenzelsau,,['Manufacturing'],,,False,Increased
+2010,3,135,5.6 B,Sarmiento,Luis Carlos,Luis Carlos Sarmiento,1933-01-27,77,Male,Colombia,Colombia,Bogota,,['Finance'],,,False,Increased
+2010,3,136,5.5 B,Fedun,Leonid,Leonid Fedun,1956-04-05,53,Male,Russia,Russia,Moscow,,['Energy'],,,False,Increased
+2010,3,136,5.5 B,Gou,Terry,Terry Gou,1950-10-18,59,Male,Taiwan,Taiwan,Taipei,,['Technology'],,,False,Increased
+2010,3,136,5.5 B,Hamm,Harold,Harold Hamm,1945-12-11,64,Male,United States,United States,Oklahoma City,Energy,['Energy                        '],Continental Resources,Chairman and CEO,False,Increased
+2010,3,136,5.5 B,Jobs,Steven,Steve Jobs,1955-02-24,55,Male,United States,,,Technology,['Technology                    '],,,False,Increased
+2010,3,136,5.5 B,Kerimov,Suleiman,Suleiman Kerimov,1966-03-12,43,Male,Russia,Russia,Moscow,,['Investments'],,,False,Increased
+2010,3,136,5.5 B,Menard,John,"John Menard, Jr.",1940-01-22,70,Male,United States,United States,Eau Claire,Fashion and Retail,['Fashion and Retail            '],"Menard, Inc.",president and CEO,False,Increased
+2010,3,136,5.5 B,Steinbruch,Dorothea,Dorothea Steinbruch & family,,0,Female,Brazil,Brazil,Sao Paulo,,['Metals & Mining'],,,False,Increased
+2010,3,143,5.4 B,Busujima,Kunio,Kunio Busujima & family,1925-04-01,84,Male,Japan,Japan,Gunma,,['Gaming'],,,False,Increased
+2010,3,144,5.3 B,Armani,Giorgio,Giorgio Armani,1934-07-11,75,Male,Italy,Italy,Milan,,['Fashion and Retail'],,,False,Increased
+2010,3,144,5.3 B,Hart,Graeme,Graeme Hart,1955-06-06,54,Male,New Zealand,New Zealand,Auckland,,['Investments'],,,False,Increased
+2010,3,144,5.3 B,Latsis,Spiro,Spiro Latsis & family,1947-01-01,63,Male,Greece,Switzerland,Geneva,,['Diversified'],,,False,Increased
+2010,3,144,5.3 B,Rennert,Ira,Ira Rennert,1934-05-31,75,Male,United States,United States,New York,Investments,['Investments'],,,False,Increased
+2010,3,148,5.2 B,Akhmetov,Rinat,Rinat Akhmetov,1966-09-21,43,Male,Ukraine,Ukraine,Donetsk,,['Metals & Mining'],,,False,Increased
+2010,3,148,5.2 B,Ergen,Charles,Charles Ergen,1953-03-01,57,Male,United States,United States,Denver,Media,['Media                         '],DISH Network,Founder and Chairman,False,Increased
+2010,3,148,5.2 B,Godrej,Adi,Adi Godrej & family,1942-04-03,67,Male,India,India,Mumbai,,['Diversified'],,,False,Increased
+2010,3,148,5.2 B,Omidyar,Pierre,Pierre Omidyar,1967-06-21,42,Male,United States,United States,Honolulu,Technology,['Technology                    '],Ebay,Founder and Chairman,False,Increased
+2010,3,152,5.1 B,Kadoorie,Michael,Michael Kadoorie & family,1941-01-01,69,Male,Hong Kong,Hong Kong,Hong Kong,,['Diversified'],,,False,Increased
+2010,3,152,5.1 B,Telles,Marcel Herrmann,Marcel Herrmann Telles,1950-01-01,60,Male,Brazil,Brazil,Sao Paulo,,['Food and Beverage'],,,False,Increased
+2010,3,154,5.0 B,Geffen,David,David Geffen,1943-02-21,67,Male,United States,United States,Malibu,Media,['Media                         '],,,False,Increased
+2010,3,154,5.0 B,Kennedy,Jim,Jim Kennedy,1947-11-29,62,Male,United States,United States,Atlanta,Media,['Media                         '],Cox Enterprises,Chairman,False,Increased
+2010,3,154,5.0 B,Kipp,Karl-Heinz,Karl-Heinz Kipp,1924-02-12,86,Male,Germany,Switzerland,Arosa,,['Fashion and Retail'],,,False,Decreased
+2010,3,154,5.0 B,Liu,Yongxing,Liu Yongxing,1948-06-01,62,Male,China,China,Shanghai,,['Service'],,,False,Increased
+2010,3,154,5.0 B,Meijer,Frederik G.H.,Frederik G.H. Meijer,1919-12-07,90,Male,United States,,,Fashion and Retail,['Fashion and Retail            '],,,False,Increased
+2010,3,154,5.0 B,Oppenheimer,Nicky,Nicky Oppenheimer & family,1945-06-08,64,Male,South Africa,South Africa,Johannesburg,,['Metals & Mining'],,,False,Remained Even
+2010,3,154,5.0 B,Parry-Okeden,Blair,Blair Parry-Okeden,1951-01-01,59,Female,United States,Australia,Scone,Media,['Media                         '],,,False,Increased
+2010,3,154,5.0 B,Paulmann,Horst,Horst Paulmann & family,1935-01-01,75,Male,Chile,Chile,,,['Fashion and Retail'],,,False,
+2010,3,154,5.0 B,Plattner,Hasso,Hasso Plattner,1944-01-21,66,Male,Germany,Germany,Heidelberg,,['Technology'],,,False,Increased
+2010,3,154,5.0 B,Popov,Sergei,Sergei Popov,1971-08-12,38,Male,Russia,Russia,Moscow,,['Finance'],,,False,Increased
+2010,3,154,5.0 B,Quandt,Johanna,Johanna Quandt,1926-06-21,83,Female,Germany,Germany,Bad Homburg,,['Automotive'],,,False,Increased
+2010,3,154,5.0 B,Soon-Shiong,Patrick,Patrick Soon-Shiong,1952-01-01,58,Male,United States,United States,Los Angeles,Health care,['Health care'],,,False,Decreased
+2010,3,166,4.9 B,Tsai,Wan-Tsai,Tsai Wan-tsai,1929-08-05,80,Male,Taiwan,,,Finance and Investments,['Finance and Investments'],,,True,Increased
+2010,3,167,4.8 B,Adani,Gautam,Gautam Adani,1962-06-24,47,Male,India,India,Ahmedabad,Diversified,['Diversified'],,,True,Increased
+2010,3,167,4.8 B,Andic,Isak,Isak Andic & family,1955-01-01,55,Male,Spain,Spain,Barcelona,,['Fashion and Retail'],,,False,Increased
+2010,3,167,4.8 B,Ivanishvili,Boris,Boris Ivanishvili,1956-02-18,54,Male,Russia,Georgia,Chorvila,,['Investments'],,,False,Increased
+2010,3,167,4.8 B,Mikitani,Hiroshi,Hiroshi Mikitani,1965-01-01,45,Male,Japan,Japan,Tokyo,,['Technology'],,,False,Increased
+2010,3,171,4.7 B,Schwab,Charles,Charles Schwab,1937-07-29,72,Male,United States,United States,Atherton,Investments,['Investments                   '],Charles Schwab,Chairman and Founder,False,Increased
+2010,3,171,4.7 B,Schwarzman,Stephen,Stephen Schwarzman,1947-02-14,63,Male,United States,United States,New York,Investments,['Investments                   '],Blackstone Group,Chairman and CEO,False,Increased
+2010,3,173,4.6 B,Decaux,Jean-Claude,Jean-Claude Decaux & family,1938-01-01,72,Male,France,France,Paris,,['Media'],,,False,Increased
+2010,3,173,4.6 B,Lauren,Ralph,Ralph Lauren,1939-10-14,70,Male,United States,United States,New York,Fashion and Retail,['Fashion and Retail            '],Ralph Lauren,Chairman and CEO,False,Increased
+2010,3,173,4.6 B,Shanghvi,Dilip,Dilip Shanghvi,1955-10-01,54,Male,India,India,Mumbai,,['Health care'],,,False,Increased
+2010,3,176,4.5 B,Bass,Robert,Robert Bass,1948-01-01,62,Male,United States,United States,Fort Worth,Energy,['Energy                        '],,,False,Remained Even
+2010,3,176,4.5 B,Beal,Andrew,Andrew Beal,1952-11-29,57,Male,United States,United States,Dallas,Investments,['Investments                   '],,,False,Returned to List
+2010,3,176,4.5 B,Cook,William,William Cook,1931-09-01,78,Male,United States,,,,['Health care'],,,False,Increased
+2010,3,176,4.5 B,DeVos,Richard,Richard DeVos,1926-03-04,84,Male,United States,United States,Holland,Service,['Service'],,,False,Increased
+2010,3,176,4.5 B,Haub,Erivan,Erivan Haub & family,1932-09-29,77,Male,Germany,Germany,Mulheim an der Ruhr,,['Service'],,,False,Decreased
+2010,3,176,4.5 B,Keinath,Pauline MacMillan,Pauline MacMillan Keinath,1934-01-01,76,Female,United States,United States,St. Louis,Food and Beverage,['Food and Beverage'],,,False,Increased
+2010,3,176,4.5 B,MacMillan,Cargill,"Cargill MacMillan, Jr.",1927-03-29,82,Male,United States,,,Food and Beverage,['Food and Beverage'],,,False,Increased
+2010,3,176,4.5 B,MacMillan,Whitney,Whitney MacMillan,1929-01-01,81,Male,United States,United States,Minneapolis,Food and Beverage,['Food and Beverage'],,,False,Increased
+2010,3,176,4.5 B,Newhouse,Samuel,"Samuel Newhouse, Jr.",1928-01-01,82,Male,United States,United States,New York,Media,['Media                         '],,,False,Increased
+2010,3,176,4.5 B,Pictet,Marion MacMillan,Marion MacMillan Pictet,,77,Female,United States,,,Food and Beverage,['Food and Beverage'],,,False,Increased
+2010,3,176,4.5 B,Sicupira,Carlos Alberto,Carlos Alberto Sicupira,1948-01-01,62,Male,Brazil,Brazil,Sao Paulo,,['Food and Beverage'],,,False,Increased
+2010,3,176,4.5 B,Simmons,Harold,Harold Simmons,1931-05-13,78,Male,United States,United States,Dallas,Investments,['Investments                   '],Valhi Inc.,Chairman,False,Increased
+2010,3,176,4.5 B,Zhang,Jindong,Zhang Jindong,1963-03-28,46,Male,China,China,Nanjing,,['Fashion and Retail'],,,False,Increased
+2010,3,189,4.4 B,Arison,Micky,Micky Arison,1949-06-29,60,Male,United States,United States,Bal Harbour,Service,['Service'],Carnival,Chairman and CEO,False,Increased
+2010,3,189,4.4 B,Lee,Shin Cheng,Lee Shin Cheng,1939-03-06,70,Male,Malaysia,Malaysia,Jeram,,['Manufacturing'],,,False,Increased
+2010,3,189,4.4 B,Melnichenko,Andrey,Andrey Melnichenko,1972-03-08,38,Male,Russia,Russia,Moscow,,['Energy'],,,False,Increased
+2010,3,189,4.4 B,Mikhelson,Leonid,Leonid Mikhelson,1955-08-11,54,Male,Russia,Russia,Moscow,,['Energy'],,,False,Increased
+2010,3,189,4.4 B,Mohn,Elizabeth,Elizabeth Mohn & family,1941-01-01,69,Female,Germany,Germany,Guetersloh,,['Media'],,,False,
+2010,3,189,4.4 B,Rowling,Robert,Robert Rowling,1953-09-26,56,Male,United States,United States,Dallas,Energy,['Energy                        '],,,False,Increased
+2010,3,189,4.4 B,Wang,Chuanfu,Wang Chuanfu,1966-02-15,44,Male,China,China,Shenzhen,,['Manufacturing'],,,False,Increased
+2010,3,189,4.4 B,Wlaschek,Karl,Karl Wlaschek,1917-08-04,92,Male,Austria,Austria,Vienna,,['Fashion and Retail'],,,False,Increased
+2010,3,197,4.3 B,Deichmann,Heinz-Horst,Heinz-Horst Deichmann,1926-09-30,83,Male,Germany,Germany,Essen,,['Fashion and Retail'],,,False,Increased
+2010,3,197,4.3 B,Schmidheiny,Thomas,Thomas Schmidheiny,1945-12-17,64,Male,Switzerland,Switzerland,Balgach,,['Construction & Engineering'],,,False,Increased
+2010,3,197,4.3 B,Tsai,Eng-Meng,Tsai Eng-Meng,1957-01-01,53,Male,Taiwan,China,Shanghai,,['Food and Beverage'],,,False,Increased
+2010,3,197,4.3 B,Woo,Peter,Peter Woo & family,1946-01-01,64,Male,Hong Kong,Hong Kong,Hong Kong,,['Real Estate'],,,False,Increased
+2010,3,201,4.2 B,Cisneros,Gustavo,Gustavo Cisneros & family,1945-06-01,64,Male,Venezuela,Venezuela,Caracas,,['Media'],,,False,Increased
+2010,3,201,4.2 B,Faria,Aloysio de Andrade,Aloysio de Andrade Faria,1920-11-09,89,Male,Brazil,Brazil,Sao Paulo,,['Finance'],,,False,Increased
+2010,3,201,4.2 B,Kravis,Henry,Henry Kravis,1944-01-06,66,Male,United States,United States,New York,Investments,['Investments                   '],KKR and Co,Co-Chair and Co-CEO,False,Increased
+2010,3,201,4.2 B,Nadar,Shiv,Shiv Nadar,1945-07-18,64,Male,India,India,Delhi,,['Technology'],,,False,Increased
+2010,3,201,4.2 B,Sy,Henry,Henry Sy & family,1924-10-25,85,Male,Philippines,Philippines,Manila,,['Diversified'],,,False,Increased
+2010,3,201,4.2 B,Washington,Dennis,Dennis Washington,1934-07-27,75,Male,United States,United States,Missoula,Logistics,['Logistics'],,,False,Remained Even
+2010,3,201,4.2 B,Yamauchi,Hiroshi,Hiroshi Yamauchi,1927-11-07,82,Male,Japan,Japan,Kyoto,,['Gaming'],,,False,Decreased
+2010,3,208,4.1 B,Crown,Lester,Lester Crown & family,1925-06-07,84,Male,United States,United States,Wilmette,,['Investments'],,,False,Increased
+2010,3,208,4.1 B,Forrest,Andrew,Andrew Forrest,1961-11-18,48,Male,Australia,Australia,Perth,,['Metals & Mining'],,,False,Increased
+2010,3,208,4.1 B,Mateschitz,Dietrich,Dietrich Mateschitz,1944-05-20,65,Male,Austria,Austria,Fuschl am See,,['Food and Beverage'],,,False,Increased
+2010,3,208,4.1 B,Yoovidhya,Chaleo,Yoovidhya Family,,78,Male,Thailand,Thailand,Bangkok,Food and Beverage,['Food and Beverage'],,,False,Increased
+2010,3,212,4.0 B,Amorim,Americo,Americo Amorim,1934-07-21,75,Male,Portugal,Portugal,Grijo,,['Diversified'],,,False,Increased
+2010,3,212,4.0 B,Arango,Jeronimo,Jeronimo Arango & family,1926-01-01,84,Male,Mexico,Mexico,Mexico City,,['Fashion and Retail'],,,False,Increased
+2010,3,212,4.0 B,Arnold,John,John Arnold,1974-03-09,36,Male,United States,United States,Houston,Investments,['Investments                   '],Centaurus Advisors,Founder,False,Increased
+2010,3,212,4.0 B,Branson,Richard,Richard Branson,1950-07-18,59,Male,United Kingdom,United Kingdom,London,,['Media'],,,False,Increased
+2010,3,212,4.0 B,Butt,Charles,Charles Butt,1938-02-03,72,Male,United States,United States,San Antonio,,,,,False,Increased
+2010,3,212,4.0 B,Dalio,Ray,Ray Dalio,1949-08-01,60,Male,United States,United States,Greenwich,Investments,['Investments                   '],Bridgewater Associates,Founder & Co-Chief Investment Officer,False,Increased
+2010,3,212,4.0 B,DeJoria,John Paul,John Paul DeJoria,1944-01-01,66,Male,United States,United States,Austin,Fashion and Retail,['Fashion and Retail            '],,,False,Increased
+2010,3,212,4.0 B,Ecclestone,Bernard,Bernard Ecclestone & family,1930-10-28,79,Male,United Kingdom,United Kingdom,London,,['Sports'],,,False,Increased
+2010,3,212,4.0 B,Hui,Ka Yan,Hui Ka Yan,1958-10-01,51,Male,China,China,Guangzhou,,['Real Estate'],,,False,Returned to List
+2010,3,212,4.0 B,Irving,"James, Arthur &#38; John",James & Arthur Irving,,0,Male,Canada,Canada,Saint John,,['Energy'],,,False,Increased
+2010,3,212,4.0 B,Johnson,Charles,Charles Johnson,1933-01-06,77,Male,United States,United States,Hillsborough,Investments,['Investments                   '],Franklin Resources,Chairman,False,Increased
+2010,3,212,4.0 B,Lauder,Leonard,Leonard Lauder,1933-03-19,76,Male,United States,United States,New York,Service,['Service'],Est&#233;e Lauder Cos,Chairman Emeritus,False,Increased
+2010,3,212,4.0 B,LeFrak,Richard,Richard LeFrak & family,1945-08-29,64,Male,United States,United States,New York,Real Estate,['Real Estate                   '],,,False,Remained Even
+2010,3,212,4.0 B,Merieux,Alain,Alain Merieux & family,1938-01-01,72,Male,France,France,Lyon,,['Health care'],,,False,Increased
+2010,3,212,4.0 B,Newhouse,Donald,Donald Newhouse,1930-01-01,80,Male,United States,United States,Somerset County,Media,['Media                         '],,,False,Remained Even
+2010,3,212,4.0 B,Pattison,Jim,Jim Pattison,1928-10-01,81,Male,Canada,Canada,Vancouver,,['Diversified'],,,False,Increased
+2010,3,212,4.0 B,Ziff,Daniel,Daniel Ziff,1971-11-02,38,Male,United States,United States,New York,Investments,['Investments                   '],,,False,Increased
+2010,3,212,4.0 B,Ziff,Dirk,Dirk Ziff,1964-04-01,45,Male,United States,United States,North Palm Beach,Investments,['Investments                   '],,,False,Increased
+2010,3,212,4.0 B,Ziff,Robert,Robert Ziff,1966-08-12,43,Male,United States,United States,New York,Investments,['Investments                   '],,,False,Increased
+2010,3,212,4.0 B,Zuckerberg,Mark,Mark Zuckerberg,1984-05-14,25,Male,United States,United States,Palo Alto,Technology,['Technology                    '],Facebook,"Cofounder, Chairman and CEO",False,Returned to List
+2010,3,232,3.9 B,Desmarais,Paul,Paul Desmarais,1927-01-04,83,Male,Canada,Canada,Montreal,,['Finance'],,,False,Increased
+2010,3,232,3.9 B,Hayek,Nicolas,Nicolas Hayek,1928-10-06,81,Male,Switzerland,Switzerland,Biel,,,,,False,Increased
+2010,3,232,3.9 B,Holding,Robert,Robert Holding,1926-11-29,83,Male,United States,United States,Sun Valley,Energy,['Energy                        '],,,False,Increased
+2010,3,232,3.9 B,Hughes,Bradley,B. Wayne Hughes,1933-07-01,76,Male,United States,United States,Lexington,Service,['Service'],,,False,Increased
+2010,3,232,3.9 B,Wu,Yajun,Wu Yajun & family,1964-01-01,46,Female,China,China,Chongqing,,['Real Estate'],,,False,
+2010,3,237,3.8 B,Herz,Michael,Michael Herz,1945-09-28,64,Male,Germany,Germany,Hamburg,,['Fashion and Retail'],,,False,Increased
+2010,3,237,3.8 B,Herz,Wolfgang,Wolfgang Herz,1951-01-01,59,Male,Germany,Germany,Hamburg,,['Fashion and Retail'],,,False,Increased
+2010,3,237,3.8 B,Johnson,Rupert,"Rupert Johnson, Jr.",1941-04-10,68,Male,United States,United States,Burlingame,Investments,['Investments                   '],Franklin Resources,Vice Chairman and Director,False,Increased
+2010,3,237,3.8 B,Milstein,Paul,Paul Milstein & family,1922-05-12,87,Male,United States,United States,New York,,['Real Estate'],,,False,Decreased
+2010,3,237,3.8 B,Moore,Gordon,Gordon Moore,1929-01-03,81,Male,United States,United States,Woodside,Technology,['Technology                    '],Intel,Cofounder and Chairman Emeritus,False,Increased
+2010,3,237,3.8 B,Roberts,George,George Roberts,1943-09-14,66,Male,United States,United States,Atherton,Investments,['Investments                   '],,,False,Increased
+2010,3,237,3.8 B,Sherman,Bernard (Barry),Bernard (Barry) Sherman,1942-02-25,68,Male,Canada,Canada,Toronto,,['Health care'],,,False,Increased
+2010,3,237,3.8 B,Strungmann,Andreas,Andreas Strungmann,1950-02-16,60,Male,Germany,Germany,Tegernsee,,['Health care'],,,False,Increased
+2010,3,237,3.8 B,Strungmann,Thomas,Thomas Strungmann,1950-02-16,60,Male,Germany,Germany,Tegernsee,,['Health care'],,,False,Increased
+2010,3,237,3.8 B,Zell,Samuel,Sam Zell,1941-09-28,68,Male,United States,United States,Chicago,Real Estate,['Real Estate                   '],,,False,Increased
+2010,3,247,3.7 B,Kim,Vladimir,Vladimir Kim,1960-10-29,49,Male,Kazakhstan,Kazakhstan,Almaty,,['Metals & Mining'],,,False,Returned to List
+2010,3,247,3.7 B,Schnabel,Hermann,Hermann Schnabel,1921-03-29,88,Male,Germany,Germany,Hamburg,,,,,False,Increased
+2010,3,249,3.6 B,Aven,Pyotr,Pyotr Aven,1955-03-16,54,Male,Russia,Russia,Moscow,,['Energy'],,,False,Increased
+2010,3,249,3.6 B,Beisheim,Otto,Otto Beisheim,1924-01-03,86,Male,Germany,,,Fashion and Retail,['Fashion and Retail'],,,False,Increased
+2010,3,249,3.6 B,Chung,Mong-Koo,Chung Mong-Koo,1938-03-19,71,Male,South Korea,South Korea,Seoul,,['Automotive'],,,False,Increased
+2010,3,249,3.6 B,Kinder,Richard,Richard Kinder,1944-10-19,65,Male,United States,United States,Houston,Energy,['Energy                        '],Kinder Morgan,Chairman and CEO,False,Increased
+2010,3,249,3.6 B,Liang,Wengen,Liang Wengen,1956-12-14,53,Male,China,China,Changsha,,['Manufacturing'],,,False,Increased
+2010,3,249,3.6 B,Lowy,Frank,Frank Lowy & family,1930-10-22,79,Male,Australia,Australia,Sydney,,['Real Estate'],,,False,Increased
+2010,3,249,3.6 B,Ma,Huateng,Ma Huateng,1971-10-01,38,Male,China,China,Shenzhen,,['Technology'],,,False,Increased
+2010,3,249,3.6 B,Milchan,Arnon,Arnon Milchan,1944-12-06,65,Male,Israel,Israel,Tel Aviv,,['Media'],,,False,Increased
+2010,3,249,3.6 B,Stern,Leonard,Leonard Stern,1938-03-28,71,Male,United States,United States,New York,Real Estate,['Real Estate                   '],"Hartz Mountain Industries, Inc.",Chairman and CEO,False,Decreased
+2010,3,258,3.5 B,Al Ghurair,Abdul Aziz,Abdul Aziz Al Ghurair & family,1954-07-01,55,Male,United Arab Emirates,,,Finance,['Finance'],,,False,Decreased
+2010,3,258,3.5 B,Dolby,Ray,Ray Dolby,1933-01-18,77,Male,United States,United States,San Francisco,Technology,['Technology                    '],Dolby Laboratories,Founder and director emeritus,False,Increased
+2010,3,258,3.5 B,Fung,William,William Fung,1948-01-01,62,Male,Hong Kong,Hong Kong,Hong Kong,,['Fashion and Retail'],,,False,Increased
+2010,3,258,3.5 B,Hagen,Stein Erik,Stein Erik Hagen & family,1956-07-22,53,Male,Norway,Norway,Oslo,,['Fashion and Retail'],,,False,Increased
+2010,3,258,3.5 B,Hartono,Michael,Michael Hartono,1939-10-02,70,Male,Indonesia,Indonesia,Kudus,,['Manufacturing'],,,False,Increased
+2010,3,258,3.5 B,Hartono,R. Budi,R. Budi Hartono,1941-01-01,69,Male,Indonesia,Indonesia,Kudus,,['Finance'],,,False,Increased
+2010,3,258,3.5 B,Kovner,Bruce,Bruce Kovner,1945-02-25,65,Male,United States,United States,New York,Investments,['Investments                   '],Caxton Associates LP,Founder,False,Remained Even
+2010,3,258,3.5 B,Kristiansen,Kjeld Kirk,Kjeld Kirk Kristiansen,1947-12-27,62,Male,Denmark,Denmark,Billund,,['Manufacturing'],,,False,Increased
+2010,3,258,3.5 B,Kuok,Khoon Hong,Kuok Khoon Hong,1950-01-01,60,Male,Singapore,,Singapore,,['Manufacturing'],,,False,Returned to List
+2010,3,258,3.5 B,Li,Robin,Robin Li,1968-11-17,41,Male,China,China,Beijing,,['Technology'],,,False,Returned to List
+2010,3,258,3.5 B,Mendoza,Lorenzo,Lorenzo Mendoza & family,1965-10-05,44,Male,Venezuela,Venezuela,Caracas,,['Food and Beverage'],,,False,Increased
+2010,3,258,3.5 B,Mera,Rosalia,Rosalia Mera,1944-01-28,66,Female,Spain,,,Fashion and Retail,['Fashion and Retail'],,"Investor, Philanthropist",False,Increased
+2010,3,258,3.5 B,O'Brien,Denis,Denis O'Brien,1958-04-17,51,Male,Ireland,Ireland,Dublin,,['Telecom'],,,False,Increased
+2010,3,258,3.5 B,Packer,James,James Packer,1967-09-08,42,Male,Australia,Australia,Sydney,,['Diversified'],,,False,Increased
+2010,3,258,3.5 B,Schmidt-Ruthenbeck,Michael &#38; Rainer,Michael & Rainer Schmidt-Ruthenbeck,,0,Male,Germany,Germany,Duisburg,,['Fashion and Retail'],,,False,Increased
+2010,3,258,3.5 B,Tepper,David,David Tepper,1957-09-11,52,Male,United States,United States,Livingston,Investments,['Investments                   '],Appaloosa Management,President and Founder,False,Increased
+2010,3,258,3.5 B,Wee,Cho Yaw,Wee Cho Yaw,1929-01-10,81,Male,Singapore,,Singapore,,['Finance'],,,False,Increased
+2010,3,258,3.5 B,Wertheimer,Stef,Stef Wertheimer & family,1926-01-01,84,Male,Israel,Israel,Tefen,,['Manufacturing'],,,False,Remained Even
+2010,3,258,3.5 B,Wobben,Aloys,Aloys Wobben,1952-01-22,58,Male,Germany,Germany,Aurich,,['Energy'],,,False,Remained Even
+2010,3,277,3.4 B,Arison,Shari,Shari Arison,1957-09-09,52,Female,Israel,Israel,Tel Aviv,Billionaire,['Billionaire'],,"Investor, Philanthropist",False,Increased
+2010,3,277,3.4 B,Bouygues,Martin &#38; Olivier,Martin & Olivier Bouygues,,57,Male,France,France,Paris,,['Construction & Engineering'],,,False,Increased
+2010,3,277,3.4 B,Broermann,Bernard,Bernard Broermann,1943-11-22,66,Male,Germany,Germany,Koenigstein,,['Health care'],,,False,Increased
+2010,3,277,3.4 B,Chen,Fashu,Chen Fashu,1960-10-26,49,Male,China,China,Fuzhou,,['Diversified'],,,False,Increased
+2010,3,277,3.4 B,Itoyama,Eitaro,Eitaro Itoyama,1942-06-04,67,Male,Japan,Japan,Tokyo,Real Estate,['Real Estate'],,,False,Decreased
+2010,3,277,3.4 B,Quek,Leng Chan,Quek Leng Chan,1941-01-01,69,Male,Malaysia,Malaysia,Wee,,['Diversified'],,,False,Increased
+2010,3,277,3.4 B,Ross,Stephen,Stephen Ross,1940-05-10,69,Male,United States,United States,New York,Real Estate,['Real Estate                   '],,,False,Increased
+2010,3,277,3.4 B,Sall,John,John Sall,1948-04-04,61,Male,United States,United States,Cary,Technology,['Technology                    '],SAS Institute,"Co-Founder, Executive Vice President",False,Increased
+2010,3,277,3.4 B,Teh,Hong Piow,Teh Hong Piow,1930-03-14,80,Male,Malaysia,Malaysia,Kuala Lumpur,,['Finance'],,,False,Increased
+2010,3,277,3.4 B,Yang,Huiyan,Yang Huiyan,1981-09-27,28,Female,China,China,Foshan,,['Real Estate'],,,False,Increased
+2010,3,287,3.3 B,Chodiev,Patokh,Patokh Chodiev,1953-01-01,57,Male,Belgium,Kazakhstan,Almaty,,['Metals & Mining'],,,False,Increased
+2010,3,287,3.3 B,Fung,Victor,Victor Fung & family,1946-01-01,64,Male,United States,,Hong Kong,Logistics,['Logistics'],,,False,Increased
+2010,3,287,3.3 B,Haefner,Walter,Walter Haefner,1910-09-13,99,Male,Switzerland,,,Technology,['Technology'],,,False,Increased
+2010,3,287,3.3 B,He,Xiangjian,He Xiangjian,1942-08-11,67,Male,China,China,Foshan,,['Manufacturing'],,,False,Increased
+2010,3,287,3.3 B,Hui,Wing Mau,Hui Wing Mau,1950-07-01,60,Male,Hong Kong,Hong Kong,Hong Kong,,['Real Estate'],,,False,Increased
+2010,3,287,3.3 B,Ibragimov,Alijan,Alijan Ibragimov,1954-01-01,56,Male,Kazakhstan,Kazakhstan,Almaty,,['Metals & Mining'],,,False,Increased
+2010,3,287,3.3 B,Machkevich,Alexander,Alexander Machkevich,1954-01-01,56,Male,Israel,Kazakhstan,Almaty,,['Metals & Mining'],,,False,Increased
+2010,3,287,3.3 B,Och,Daniel,Daniel Och,1961-01-01,49,Male,United States,United States,Scarsdale,Investments,['Investments                   '],Och-Ziff Capital Management Group,Chairman and CEO,False,Increased
+2010,3,287,3.3 B,Perot,Henry Ross,"Henry Ross Perot, Sr.",1930-06-27,79,Male,United States,United States,Dallas,Technology,['Technology                    '],,,False,Decreased
+2010,3,287,3.3 B,Saban,Haim,Haim Saban,1944-10-15,65,Male,United States,United States,Beverly Hills,Media,['Media                         '],,,False,Increased
+2010,3,297,3.2 B,Burkle,Ronald,Ron Burkle,1952-11-12,57,Male,United States,United Kingdom,London,Investments,['Investments                   '],"The Yucaipa Companies, LLC",Founder,False,Increased
+2010,3,297,3.2 B,Chen,Din Hwa,Chen Din Hwa,1923-01-01,87,Male,Hong Kong,,,Real Estate,['Real Estate'],,,False,Increased
+2010,3,297,3.2 B,Goldschmeding,Frits,Frits Goldschmeding,1933-08-02,76,Male,Netherlands,Netherlands,Amsterdam,,['Service'],,,False,Increased
+2010,3,297,3.2 B,Jones,Paul Tudor,"Paul Tudor Jones, II.",1954-09-28,55,Male,United States,United States,Greenwich,Investments,['Investments                   '],Tudor Investment Corporation,Founder,False,Increased
+2010,3,297,3.2 B,Kroenke,Ann Walton,Ann Walton Kroenke,1948-12-18,61,Female,United States,United States,Columbia,Fashion and Retail,['Fashion and Retail            '],,,False,Increased
+2010,3,297,3.2 B,Liu,Zhongtian,Liu Zhongtian,1964-02-01,46,Male,China,China,Liaoyang,,['Metals & Mining'],,,False,
+2010,3,297,3.2 B,Rao,G. M.,G. M. Rao,1950-07-01,59,Male,India,India,Bangalore,Logistics,['Logistics'],,,True,Increased
+2010,3,297,3.2 B,Schlecker,Anton,Anton Schlecker,1944-10-24,65,Male,Germany,Germany,Ehingen,,['Fashion and Retail'],,,False,Decreased
+2010,3,297,3.2 B,Singh,Malvinder &#38; Shivinder,Malvinder & Shivinder Singh,1972-11-27,37,Male,India,India,Delhi,,['Health care'],,,False,Increased
+2010,3,297,3.2 B,Tsvetkov,Nikolai,Nikolai Tsvetkov,1960-05-12,49,Male,Russia,Russia,Moscow,,['Finance'],,,False,Increased
+2010,3,307,3.1 B,Chandler,Richard,Richard Chandler,1959-01-01,51,Male,New Zealand,Singapore,,,['Investments'],,,False,Increased
+2010,3,307,3.1 B,Horten,Heidi,Heidi Horten,1941-01-01,69,Female,Austria,Austria,Vienna,,['Fashion and Retail'],,,False,Increased
+2010,3,307,3.1 B,Kerkorian,Kirk,Kirk Kerkorian,1917-06-06,92,Male,United States,United States,Beverly Hills,Gaming,['Gaming'],,,False,Decreased
+2010,3,307,3.1 B,Lu,Xiangyang,Lu Xiangyang,1962-12-28,48,Male,China,China,Guangzhou,,['Investments'],,,False,
+2010,3,307,3.1 B,McGovern,Patrick,Patrick McGovern,1937-08-11,72,Male,United States,United States,Hollis,Media,['Media                         '],International Data Group,Founder and Chairman,False,Increased
+2010,3,307,3.1 B,Pinchuk,Victor,Victor Pinchuk,1960-12-14,49,Male,Ukraine,Ukraine,Kiev,,['Metals & Mining'],,,False,Increased
+2010,3,307,3.1 B,Sawiris,Onsi,Onsi Sawiris,1930-01-02,80,Male,Egypt,Egypt,Cairo,,['Construction & Engineering'],,,False,Increased
+2010,3,307,3.1 B,Takizaki,Takemitsu,Takemitsu Takizaki,1945-06-10,64,Male,Japan,Japan,Osaka,,['Manufacturing'],,,False,Increased
+2010,3,307,3.1 B,Zhou,Chengjian,Zhou Chengjian,1965-04-30,44,Male,China,China,Shanghai,,['Fashion and Retail'],,,False,Increased
+2010,3,316,3.0 B,Bechtel,Riley,Riley Bechtel,1952-03-25,57,Male,United States,United States,San Francisco,Construction & Engineering,['Construction & Engineering'],Bechtel Corp.,Chairman and CEO,False,Increased
+2010,3,316,3.0 B,Bechtel,Stephen,"Stephen Bechtel, Jr.",1925-05-10,84,Male,United States,United States,San Francisco,Construction & Engineering,['Construction & Engineering'],Bechtel Corp.,Former Chairman,False,Increased
+2010,3,316,3.0 B,Diniz,Abilio dos Santos,Abilio dos Santos Diniz,1936-12-28,73,Male,Brazil,Brazil,Sao Paulo,,['Fashion and Retail'],,,False,Increased
+2010,3,316,3.0 B,Ermirio de Moraes,Antonio,Antonio Ermirio de Moraes & family,1928-06-04,81,Male,Brazil,Brazil,Sao Paulo,,['Diversified'],,,False,Increased
+2010,3,316,3.0 B,Frist,Thomas,"Thomas Frist, Jr. & family",1938-08-12,71,Male,United States,United States,Nashville,Health care,['Health care'],,,False,Increased
+2010,3,316,3.0 B,Green,David,David Green,1941-11-13,68,Male,United States,United States,Oklahoma City,Fashion and Retail,['Fashion and Retail            '],Hobby Lobby,CEO,False,Increased
+2010,3,316,3.0 B,Hariri,Bahaa,Bahaa Hariri,1966-04-26,43,Male,Switzerland,Switzerland,Geneva,,['Real Estate'],,,False,Increased
+2010,3,316,3.0 B,Hunt,Ray Lee,Ray Lee Hunt,1943-01-01,67,Male,United States,United States,Dallas,Energy,['Energy                        '],,,False,Increased
+2010,3,316,3.0 B,Jannard,James,James Jannard,1949-06-08,60,Male,United States,United States,San Juan Islands,Fashion and Retail,['Fashion and Retail            '],,,False,Increased
+2010,3,316,3.0 B,Johnson,Barbara Piasecka,Barbara Piasecka Johnson,1937-02-25,73,Female,United States,Poland,,Health care,['Health care'],,,False,Increased
+2010,3,316,3.0 B,Kellogg,Peter,Peter Kellogg,1942-09-01,67,Male,United States,United States,Short Hills,Investments,['Investments                   '],,,False,Increased
+2010,3,316,3.0 B,Koch,William,William Koch,1940-05-03,69,Male,United States,United States,Palm Beach,Energy,['Energy                        '],,,False,Increased
+2010,3,316,3.0 B,Kohler,Herbert,"Herbert Kohler, Jr. & family",1939-02-20,71,Male,United States,United States,Kohler,Manufacturing,['Manufacturing'],Kohler Co.,Chairman and CEO,False,Increased
+2010,3,316,3.0 B,Kotak,Uday,Uday Kotak,1959-03-15,51,Male,India,India,Mumbai,,['Finance'],,,False,Increased
+2010,3,316,3.0 B,Lampert,Edward,Edward Lampert,1962-09-30,47,Male,United States,United States,Miami Beach,Investments,['Investments                   '],,,False,Increased
+2010,3,316,3.0 B,Lerner,Theodore,Ted Lerner,1925-10-15,84,Male,United States,United States,Chevy Chase,Real Estate,['Real Estate                   '],,,False,Decreased
+2010,3,316,3.0 B,Lewis,Joseph,Joe Lewis,1937-02-05,73,Male,United Kingdom,Bahamas,Lyford Cay,,['Investments'],,,False,Increased
+2010,3,316,3.0 B,Lucas,George,George Lucas,1944-05-14,65,Male,United States,United States,San Anselmo,Media,['Media                         '],,Director/Producer,False,Remained Even
+2010,3,316,3.0 B,Ozyegin,Husnu,Husnu Ozyegin,1944-09-01,65,Male,Turkey,Turkey,Istanbul,,['Finance'],,,False,Increased
+2010,3,316,3.0 B,Persson,Liselott,Liselott Persson,1949-04-18,60,Female,Sweden,Sweden,Stockholm,,['Fashion and Retail'],,,False,Increased
+2010,3,316,3.0 B,Schneider,Donald,Donald Schneider,1935-10-19,74,Male,United States,,,Logistics,['Logistics'],,,False,Increased
+2010,3,316,3.0 B,Sitorus,Martua,Martua Sitorus,1960-02-18,50,Male,Indonesia,Singapore,Singapore,,['Manufacturing'],,,False,Increased
+2010,3,316,3.0 B,Spielberg,Steven,Steven Spielberg,1946-12-18,63,Male,United States,United States,Pacific Palisades,Media,['Media                         '],,Director/Producer,False,Remained Even
+2010,3,316,3.0 B,Stephens,Warren,Warren Stephens,1957-02-01,53,Male,United States,United States,Little Rock,Investments,['Investments                   '],,,False,
+2010,3,316,3.0 B,Triguboff,Harry,Harry Triguboff,1933-03-03,77,Male,Australia,Australia,Sydney,,['Real Estate'],,,False,Increased
+2010,3,316,3.0 B,Wang,Jianlin,Wang Jianlin,1954-10-01,56,Male,China,China,Dalian,,['Real Estate'],,,False,
+2010,3,342,2.9 B,Baturina,Elena,Elena Baturina,1963-03-08,47,Female,Russia,Russia,Moscow,,['Construction & Engineering'],,,False,Returned to List
+2010,3,342,2.9 B,Cadogan,Charles,Charles Cadogan & family,1937-03-24,72,Male,United Kingdom,United Kingdom,London,,['Real Estate'],,,False,Decreased
+2010,3,342,2.9 B,Galitsky,Sergei,Sergei Galitsky,1967-08-14,42,Male,Russia,Russia,Krasnodar,,['Fashion and Retail'],,,False,Returned to List
+2010,3,342,2.9 B,Karamehmet,Mehmet Emin,Mehmet Emin Karamehmet,1944-04-01,65,Male,Turkey,Turkey,Istanbul,,['Telecom'],,,False,Increased
+2010,3,342,2.9 B,Kroenke,E. Stanley,Stanley Kroenke,1947-07-29,62,Male,United States,United States,Columbia,Sports,['Sports                        '],,,False,Decreased
+2010,3,342,2.9 B,Lam,Barry,Barry Lam,1949-04-24,60,Male,Taiwan,Taiwan,Taipei,,['Technology'],,,False,Increased
+2010,3,342,2.9 B,Maran,Kalanithi,Kalanithi Maran,1965-07-26,44,Male,India,India,Chennai,,['Media'],,,False,Increased
+2010,3,342,2.9 B,Pumpyansky,Dmitry,Dmitry Pumpyansky,1964-03-22,45,Male,Russia,Russia,Moscow,,['Metals & Mining'],,,False,Returned to List
+2010,3,342,2.9 B,Schulze,Richard,Richard Schulze,1941-01-02,69,Male,United States,United States,Bonita Springs,Fashion and Retail,['Fashion and Retail            '],Best Buy,Chairman,False,Increased
+2010,3,342,2.9 B,Sirivadhanabhakdi,Charoen,Charoen Sirivadhanabhakdi,1944-05-02,65,Male,Thailand,Thailand,Bangkok,Food and Beverage,['Food and Beverage'],,,False,Increased
+2010,3,342,2.9 B,Sobrato,John,John A. Sobrato & family,1939-05-23,70,Male,United States,United States,Atherton,Real Estate,['Real Estate                   '],Sobrato Development Cos.,Chairman,False,Decreased
+2010,3,342,2.9 B,Warner,Ty,Ty Warner,1944-01-01,66,Male,United States,United States,Oak Brook,Real Estate,['Real Estate                   '],,,False,Decreased
+2010,3,354,2.8 B,Chandra,Subhash,Subhash Chandra & family,1950-11-30,59,Male,India,India,Mumbai,,['Media'],,,False,Increased
+2010,3,354,2.8 B,Druckenmiller,Stanley,Stanley Druckenmiller,1953-06-14,56,Male,United States,United States,New York,Investments,['Investments                   '],,,False,Decreased
+2010,3,354,2.8 B,Frolov,Alexander,Alexander Frolov,1964-05-17,45,Male,Russia,Russia,Moscow,,['Metals & Mining'],,,False,Increased
+2010,3,354,2.8 B,Happel,Otto,Otto Happel,1948-02-09,62,Male,Germany,Switzerland,Luzerne,,['Construction & Engineering'],,,False,Increased
+2010,3,354,2.8 B,Jagtiani,Micky,Micky Jagtiani,1951-09-28,58,Male,India,United Arab Emirates,Dubai,,['Fashion and Retail'],,,False,Increased
+2010,3,354,2.8 B,Jain,Indu,Indu Jain,1936-09-08,73,Female,India,India,Delhi,,['Media'],,,False,Increased
+2010,3,354,2.8 B,Mantegazza,Sergio,Sergio Mantegazza,1927-10-31,82,Male,Switzerland,Switzerland,Lugano,,['Service'],,,False,Increased
+2010,3,354,2.8 B,Schmidheiny,Stephan,Stephan Schmidheiny,1947-10-29,62,Male,Switzerland,Switzerland,Zurich,,['Investments'],,,False,Increased
+2010,3,354,2.8 B,Wang,Roger,Roger Wang,1949-01-01,61,Male,United States,China,Nanjing,Fashion and Retail,['Fashion and Retail            '],,,False,Returned to List
+2010,3,363,2.7 B,Laurie,Nancy Walton,Nancy Walton Laurie,1951-05-15,58,Female,United States,United States,Henderson,Fashion and Retail,['Fashion and Retail            '],,,False,Increased
+2010,3,363,2.7 B,Thiele,Heinz Hermann,Heinz Hermann Thiele & family,1941-04-02,68,Male,Germany,Germany,Munich,,['Construction & Engineering'],,,False,Decreased
+2010,3,363,2.7 B,Tisch,Joan,Joan Tisch,1926-01-01,84,Female,United States,United States,New York,Investments,['Investments                   '],,,False,Increased
+2010,3,363,2.7 B,Udvar-Hazy,Steven,Steven Udvar-Hazy,1946-02-23,64,Male,United States,United States,Beverly Hills,Service,['Service'],"SkyWest Airlines, Inc.",Director,False,Increased
+2010,3,367,2.6 B,Dolan,Charles,Charles Dolan & family,1926-10-16,83,Male,United States,United States,Oyster Bay,Media,['Media                         '],Cablevision Systems Corp.,Chairman and Founder,False,Increased
+2010,3,367,2.6 B,Frere,Albert,Albert Frere,1926-02-04,84,Male,Belgium,Belgium,Charleroi,,['Investments'],,,False,Increased
+2010,3,367,2.6 B,Kamel,Saleh,Saleh Kamel,1941-04-01,68,Male,Saudi Arabia,Saudi Arabia,Jeddah,,['Diversified'],,,False,Decreased
+2010,3,367,2.6 B,Lauder,Ronald,Ronald Lauder,1944-02-26,66,Male,United States,United States,New York,Fashion and Retail,['Fashion and Retail            '],,,False,Increased
+2010,3,367,2.6 B,Rales,Mitchell,Mitchell Rales,1956-08-21,53,Male,United States,United States,Potomac,Manufacturing,['Manufacturing'],,,False,Increased
+2010,3,367,2.6 B,Rales,Steven,Steven Rales,1951-03-31,58,Male,United States,United States,Washington,Service,['Service'],Danaher,Chairman,False,Increased
+2010,3,367,2.6 B,Tara,Sarik,Sarik Tara,1930-04-22,79,Male,Turkey,Turkey,Istanbul,,['Construction & Engineering'],,,False,Increased
+2010,3,374,2.5 B,Azrieli,David,David Azrieli & family,1922-05-10,87,Male,Canada,Canada,Montreal,,['Real Estate'],,,False,Increased
+2010,3,374,2.5 B,Black,Leon,Leon Black,1951-07-01,58,Male,United States,United States,New York,Investments,['Investments                   '],,,False,Increased
+2010,3,374,2.5 B,Bronfman,Edgar,Edgar Bronfman Sr,1929-06-20,80,Male,United States,United States,New York,,['Service'],,,False,Remained Even
+2010,3,374,2.5 B,Burda,Hubert,Hubert Burda,1940-02-09,70,Male,Germany,Germany,Munich,,['Media'],,,False,Increased
+2010,3,374,2.5 B,Conway,William,"William Conway, Jr.",1949-08-01,60,Male,United States,United States,McLean,Investments,['Investments                   '],Carlyle Group,Co-Chief Executive Officer and Co-founder,False,Increased
+2010,3,374,2.5 B,D'Aniello,Daniel,Daniel D'Aniello,1946-09-14,63,Male,United States,United States,Vienna,Investments,['Investments                   '],,,False,Increased
+2010,3,374,2.5 B,Fisher,Doris,Doris Fisher,1931-08-23,78,Female,United States,United States,San Francisco,Fashion and Retail,['Fashion and Retail            '],Gap,Cofounder,False,Returned to List
+2010,3,374,2.5 B,Graff,Laurence,Laurence Graff,1938-06-13,71,Male,United Kingdom,Switzerland,Gstaad,,['Fashion and Retail'],,,False,Increased
+2010,3,374,2.5 B,Hilton,William,W. Barron Hilton,1927-10-27,82,Male,United States,United States,Los Angeles,,['Service'],,,False,Increased
+2010,3,374,2.5 B,Laliberte,Guy,Guy Laliberte,1960-01-01,50,Male,Canada,Canada,Montreal,,['Media'],,,False,Remained Even
+2010,3,374,2.5 B,Leprino,James,James Leprino,1937-11-22,72,Male,United States,United States,Indian Hills,Food and Beverage,['Food and Beverage'],Leprino Foods,Chairman,False,Increased
+2010,3,374,2.5 B,Liu,Yonghao,Liu Yonghao & family,1951-09-01,58,Male,China,China,Chengdu,,['Service'],,,False,Remained Even
+2010,3,374,2.5 B,Lu,Zhiqiang,Lu Zhiqiang,1952-10-01,58,Male,China,China,Beijing,,['Diversified'],,,False,Increased
+2010,3,374,2.5 B,Mikati,Najib,Najib Mikati,1955-11-24,54,Male,Lebanon,Lebanon,Beirut,,['Telecom'],,,False,Increased
+2010,3,374,2.5 B,Mikati,Taha,Taha Mikati,1949-01-01,61,Male,Lebanon,Lebanon,Beirut,,['Telecom'],,,False,Increased
+2010,3,374,2.5 B,Miller,Robert,Robert Miller,1945-07-03,64,Male,Canada,Canada,Montreal,,['Fashion and Retail'],,,False,Increased
+2010,3,374,2.5 B,Murdock,David,David Murdock,1923-04-10,86,Male,United States,United States,Los Angeles,Food and Beverage,['Food and Beverage'],,,False,Decreased
+2010,3,374,2.5 B,Rainwater,Richard,Richard Rainwater,1944-06-15,65,Male,United States,United States,Fort Worth,Investments,['Investments                   '],,,False,Increased
+2010,3,374,2.5 B,Rubenstein,David,David Rubenstein,1949-08-11,60,Male,United States,United States,Bethesda,Investments,['Investments                   '],Carlyle Group,Co-Chief Executive Officer and Co-founder,False,Increased
+2010,3,374,2.5 B,Sawiris,Naguib,Naguib Sawiris,1954-06-15,55,Male,Egypt,Egypt,Cairo,,['Telecom'],,,False,Decreased
+2010,3,374,2.5 B,Shaw,David,David Shaw,1951-03-29,58,Male,United States,United States,New York,Investments,['Investments                   '],D. E. Shaw & Co.,Founder,False,Increased
+2010,3,374,2.5 B,Springer,Friede,Friede Springer,1942-08-15,67,Female,Germany,Germany,Berlin,,['Media'],,,False,Increased
+2010,3,374,2.5 B,Sun,David,David Sun,1951-10-12,58,Male,United States,United States,Irvine,Technology,['Technology                    '],Kingston Technology Corporation,COO,False,Remained Even
+2010,3,374,2.5 B,Tu,John,John Tu,1941-01-01,68,Male,United States,United States,Rolling Hills,Technology,['Technology                    '],Kingston Technology Corporation,President,False,Remained Even
+2010,3,374,2.5 B,Ying,Michael,Michael Ying,1950-01-01,60,Male,Hong Kong,Hong Kong,Hong Kong,,['Fashion and Retail'],,,False,Increased
+2010,3,374,2.5 B,Zhang,Zhirong,Zhang Zhirong,1968-12-01,41,Male,Hong Kong,Hong Kong,Hong Kong,,['Logistics'],,,False,
+2010,3,400,2.4 B,Al Issa,Mohammed,Mohammed Al Issa,1925-01-01,85,Male,Saudi Arabia,Saudi Arabia,Riyadh,,['Investments'],,,False,Increased
+2010,3,400,2.4 B,Bogdanov,Vladimir,Vladimir Bogdanov,1951-05-28,58,Male,Russia,Russia,Surgut,,['Energy'],,,False,Increased
+2010,3,400,2.4 B,Calder,Clive,Clive Calder,1946-12-13,63,Male,United Kingdom,Cayman Islands,Cayman Islands,,['Media'],,,False,Remained Even
+2010,3,400,2.4 B,Cuban,Mark,Mark Cuban,1958-07-31,51,Male,United States,United States,Dallas,Media,['Media                         '],Dallas Mavericks,Owner,False,Increased
+2010,3,400,2.4 B,Dorrance,John,John Dorrance III,1944-01-01,66,Male,Ireland,Ireland,Dublin,,['Food and Beverage'],,,False,Increased
+2010,3,400,2.4 B,Galchev,Filaret,Filaret Galchev,1963-05-26,46,Male,Russia,Russia,Moscow,,['Construction & Engineering'],,,False,Returned to List
+2010,3,400,2.4 B,Gandel,John,John Gandel,1934-08-13,75,Male,Australia,Australia,Melbourne,,['Real Estate'],,,False,Increased
+2010,3,400,2.4 B,Glazer,Malcolm,Malcolm Glazer & family,1928-08-15,81,Male,United States,United States,Palm Beach,Sports,['Sports                        '],,,False,Increased
+2010,3,400,2.4 B,Guo,Guangchang,Guo Guangchang,1967-02-16,43,Male,China,China,Shanghai,,['Diversified'],,,False,Increased
+2010,3,400,2.4 B,Hawken,Xiuli,Hawken Xiu Li,1963-01-01,47,Female,United Kingdom,United Kingdom,London,,['Real Estate'],,,False,
+2010,3,400,2.4 B,Jove,Manuel,Manuel Jove,1941-06-21,68,Male,Spain,Spain,La Coruna,,['Real Estate'],,,False,Increased
+2010,3,400,2.4 B,Lu,Guanqiu,Lu Guanqiu,1945-01-01,65,Male,China,China,Hangzhou,,['Diversified'],,,False,Increased
+2010,3,400,2.4 B,Malone,John,John Malone,1941-03-07,69,Male,United States,United States,Elizabeth,Media,['Media                         '],,,False,Increased
+2010,3,400,2.4 B,Moretti Polegato,Mario,Mario Moretti Polegato,1952-08-16,57,Male,Italy,Italy,Crocetta del Montello,,['Fashion and Retail'],,,False,Increased
+2010,3,400,2.4 B,Redstone,Sumner,Sumner Redstone,1923-05-27,86,Male,United States,United States,Beverly Hills,Media,['Media                         '],Viacom,Chairman,False,Increased
+2010,3,400,2.4 B,Saputo,Emanuele (Lino),Emanuele (Lino) Saputo,1937-01-01,73,Male,Canada,Canada,Quebec,,['Food and Beverage'],,,False,Increased
+2010,3,400,2.4 B,Schnabel,Dieter,Dieter Schnabel,1946-01-01,64,Male,Germany,Germany,Hamburg,,['Manufacturing'],,,False,Increased
+2010,3,400,2.4 B,Skoll,Jeffrey,Jeffrey Skoll,1965-01-16,45,Male,Canada,United States,Woodside,Technology,['Technology'],,,False,Increased
+2010,3,400,2.4 B,Stryker,Ronda,Ronda Stryker,1954-05-01,55,Female,United States,United States,Portage,Health care,['Health care'],,,False,Increased
+2010,3,400,2.4 B,Winfrey,Oprah,Oprah Winfrey,1954-01-29,56,Female,United States,United States,Chicago,,['Media'],,,False,Decreased
+2010,3,400,2.4 B,Zhu,Yicai,Zhu Yicai,1964-03-27,45,Male,China,China,Nanjing,,['Diversified'],,,False,Increased
+2010,3,421,2.3 B,Al Ghurair,Saif,Saif Al Ghurair & family,,0,Male,United Arab Emirates,United Arab Emirates,Dubai,,['Diversified'],,,False,Decreased
+2010,3,421,2.3 B,Al Rajhi,Abdullah,Abdullah Al Rajhi,,0,Male,Saudi Arabia,Saudi Arabia,Riyadh,,['Finance'],,,False,Increased
+2010,3,421,2.3 B,Balsillie,James,James Balsillie,1961-02-03,49,Male,Canada,Canada,Waterloo,,['Technology'],,,False,Increased
+2010,3,421,2.3 B,Barclay,David &#38; Frederick,David & Frederick Barclay,1934-01-01,76,Male,United Kingdom,United Kingdom,Island of Brecquou,,['Media'],,,False,Increased
+2010,3,421,2.3 B,Emmerson,Archie Aldis,Archie Aldis Emmerson,1929-04-10,80,Male,United States,United States,Redding,Manufacturing,['Manufacturing'],,,False,Increased
+2010,3,421,2.3 B,Herz,Gunter,Gunter Herz,1940-07-22,69,Male,Germany,Germany,Hamburg,,['Investments'],,,False,Increased
+2010,3,421,2.3 B,Hostetter,Amos,"Amos Hostetter, Jr.",1937-01-12,73,Male,United States,United States,Boston,Media,['Media                         '],Pilot House Associates,Chair,False,Increased
+2010,3,421,2.3 B,Huang,Rulun,Huang Rulun,1951-09-18,58,Male,China,China,Beijing,,['Real Estate'],,,False,Increased
+2010,3,421,2.3 B,Lin,Rong San,Lin Rong San,1939-05-27,0,Male,Taiwan,Taiwan,Taipei,,['Real Estate'],,,False,Increased
+2010,3,421,2.3 B,McCain,Wallace,Wallace McCain,1930-01-01,80,Male,Canada,,,,['Food and Beverage'],,,False,Increased
+2010,3,421,2.3 B,Motsepe,Patrice,Patrice Motsepe,1962-01-28,48,Male,South Africa,South Africa,Johannesburg,,['Metals & Mining'],,,False,Increased
+2010,3,421,2.3 B,Quinn,Sean,Sean Quinn & family,1946-09-06,63,Male,Ireland,Ireland,Fermanagh,,,,,False,Increased
+2010,3,421,2.3 B,Rupert,Johann,Johann Rupert & family,1950-06-01,59,Male,South Africa,South Africa,Stellenbosch,,['Fashion and Retail'],,,False,Increased
+2010,3,421,2.3 B,Safra,Moise,Moise Safra,1935-01-01,75,Male,Brazil,Brazil,Sao Paulo,,['Finance'],,,False,Increased
+2010,3,421,2.3 B,Wexner,Leslie,Leslie Wexner,1937-09-08,72,Male,United States,United States,New Albany,Fashion and Retail,['Fashion and Retail            '],Limited Brands,Chairman and CEO,False,Increased
+2010,3,421,2.3 B,Yeoh,Tiong Lay,Yeoh Tiong Lay & family,1929-12-18,80,Male,Malaysia,Malaysia,Kuala Lumpur,,['Diversified'],,,False,Increased
+2010,3,437,2.2 B,Bellon,Pierre,Pierre Bellon & family,1930-01-24,80,Male,France,France,Paris,,['Service'],,,False,Remained Even
+2010,3,437,2.2 B,Berggruen,Nicolas,Nicolas Berggruen,1961-08-10,48,Male,United States,United States,Beverly Hills,Investments,['Investments                   '],,,False,Increased
+2010,3,437,2.2 B,Ding,William,William Ding,1971-10-01,38,Male,China,China,Guangzhou,,['Technology'],,,False,Increased
+2010,3,437,2.2 B,Elman,Richard,Richard Elman,1940-04-01,,Male,United Kingdom,Hong Kong,Hong Kong,Finance and Investments,['Finance and Investments'],,,True,Returned to List
+2010,3,437,2.2 B,Frost,Phillip,Phillip Frost,1936-11-11,73,Male,United States,United States,Miami Beach,Health care,['Health care'],,,False,Increased
+2010,3,437,2.2 B,Gores,Tom,Tom Gores,1964-07-31,45,Male,United States,United States,Beverly Hills,Investments,['Investments                   '],,,False,Increased
+2010,3,437,2.2 B,Gutseriev,Mikhail,Mikhail Gutseriev,1958-03-09,52,Male,Russia,United Kingdom,London,,['Energy'],,,False,Increased
+2010,3,437,2.2 B,Herz,Daniela,Daniela Herz,1954-01-01,56,Female,Germany,Germany,Hamburg,,['Investments'],,,False,Increased
+2010,3,437,2.2 B,Horn,Elie,Elie Horn,1946-01-01,64,Male,Brazil,Brazil,Sao Paulo,,['Real Estate'],,,False,Returned to List
+2010,3,437,2.2 B,Koplowitz,Alicia,Alicia Koplowitz,1954-09-12,55,Female,Spain,Spain,Madrid,,['Investments'],,,False,Increased
+2010,3,437,2.2 B,Lazaridis,Mike,Mike Lazaridis,1961-03-14,49,Male,Canada,Canada,Waterloo,,['Technology'],,,False,Increased
+2010,3,437,2.2 B,Malone,Mary Alice Dorrance,Mary Alice Dorrance Malone,1950-02-03,60,Female,United States,United States,Coatesville,Food and Beverage,['Food and Beverage'],,,False,Increased
+2010,3,437,2.2 B,Miki,Masahiro,Masahiro Miki,1955-07-26,54,Male,Japan,Japan,Tokyo,,['Fashion and Retail'],,,False,Increased
+2010,3,437,2.2 B,Mitchell,George,George Mitchell,1919-05-21,90,Male,United States,United States,The Woodlands,Energy,['Energy                        '],,,False,Increased
+2010,3,437,2.2 B,Neilson,Kerr,Kerr Neilson,1950-01-01,60,Male,Australia,Australia,Sydney,,['Investments'],,,False,Increased
+2010,3,437,2.2 B,Patriciu,Dinu,Dinu Patriciu,1950-08-03,59,Male,Romania,,,Oil,['Oil'],,,False,Increased
+2010,3,437,2.2 B,Pinera,Sebastian,Sebastian Pinera,1949-12-01,60,Male,Chile,Chile,Santiago,,['Politics'],,,False,Increased
+2010,3,437,2.2 B,Robertson,Julian,"Julian Robertson, Jr.",1932-01-01,78,Male,United States,United States,New York,Investments,['Investments                   '],,,False,Increased
+2010,3,437,2.2 B,Rockefeller,David,"David Rockefeller, Sr.",1915-06-12,94,Male,United States,United States,Sleepy Hollow,Energy,['Energy                        '],,,False,Remained Even
+2010,3,437,2.2 B,Schorghuber,Alexandra,Alexandra Schorghuber,1958-07-24,51,Female,Germany,Germany,Munich,,['Real Estate'],,,False,Increased
+2010,3,437,2.2 B,Schroder,Bruno,Bruno Schroder & family,1933-01-17,77,Male,United Kingdom,United Kingdom,London,,['Finance'],,,False,Increased
+2010,3,437,2.2 B,Seabra,Antonio Luiz,Antonio Luiz Seabra,1943-01-01,67,Male,Brazil,United Kingdom,London,,['Fashion and Retail'],,,False,Increased
+2010,3,437,2.2 B,Sondakh,Peter,Peter Sondakh,1952-02-26,58,Male,Indonesia,Indonesia,Surabaya,,['Investments'],,,False,Increased
+2010,3,437,2.2 B,Taylor,Glen,Glen Taylor,1941-04-20,68,Male,United States,United States,Mankato,Service,['Service'],,,False,Decreased
+2010,3,437,2.2 B,Thon,Olav,Olav Thon,1923-06-29,86,Male,Norway,Norway,Oslo,,['Real Estate'],,,False,Increased
+2010,3,437,2.2 B,von Thurn und Taxis,Albert,Albert von Thurn und Taxis,1983-06-24,26,Male,Germany,Germany,Regensburg,,['Diversified'],,,False,Increased
+2010,3,463,2.1 B,Al Futtaim,Majid,Majid Al Futtaim,,0,Male,United Arab Emirates,United Arab Emirates,Dubai,,['Real Estate'],,,False,Decreased
+2010,3,463,2.1 B,Benetton,Carlo,Carlo Benetton,1943-12-26,66,Male,Italy,Italy,Treviso,,['Fashion and Retail'],,,False,Increased
+2010,3,463,2.1 B,Benetton,Gilberto,Gilberto Benetton,1941-06-19,68,Male,Italy,Italy,Treviso,,['Fashion and Retail'],,,False,Increased
+2010,3,463,2.1 B,Benetton,Giuliana,Giuliana Benetton,1937-07-08,72,Female,Italy,Italy,Treviso,,['Fashion and Retail'],,,False,Increased
+2010,3,463,2.1 B,Benetton,Luciano,Luciano Benetton,1935-05-13,74,Male,Italy,Italy,Treviso,,['Fashion and Retail'],,,False,Increased
+2010,3,463,2.1 B,Chearavanont,Dhanin,Dhanin Chearavanont & family,1939-04-19,70,Male,Thailand,Thailand,Bangkok,Diversified,['Diversified'],,,False,Increased
+2010,3,463,2.1 B,Chu,Lam Yiu,Chu Lam Yiu,1969-12-01,41,Female,Hong Kong,Hong Kong,Hong Kong,,['Manufacturing'],,,False,Increased
+2010,3,463,2.1 B,Dangote,Aliko,Aliko Dangote,1957-04-10,52,Male,Nigeria,Nigeria,Lagos,,['Manufacturing'],,,False,Decreased
+2010,3,463,2.1 B,Hillman,Henry,Henry Hillman,1918-12-25,91,Male,United States,United States,Pittsburgh,Investments,['Investments                   '],,,False,Remained Even
+2010,3,463,2.1 B,Huizenga,H. Wayne,H. Wayne Huizenga,1937-12-29,72,Male,United States,United States,Fort Lauderdale,Investments,['Investments                   '],,,False,Increased
+2010,3,463,2.1 B,Ibrahim,Mohammed,Mohammed Ibrahim,1946-05-03,0,Male,United Kingdom,United Kingdom,London,,['Telecom'],,,False,Increased
+2010,3,463,2.1 B,Johnson,H. Fisk,H. Fisk Johnson,1958-05-19,51,Male,United States,United States,Racine,Manufacturing,['Manufacturing'],,,False,Increased
+2010,3,463,2.1 B,Johnson,Imogene Powers,Imogene Powers Johnson,1930-01-01,80,Female,United States,United States,Racine,Manufacturing,['Manufacturing'],,,False,Increased
+2010,3,463,2.1 B,Johnson,S. Curtis,S. Curtis Johnson,1955-05-05,54,Male,United States,United States,Racine,Manufacturing,['Manufacturing'],,,False,Increased
+2010,3,463,2.1 B,Johnson-Leipold,Helen,Helen Johnson-Leipold,1956-12-30,53,Female,United States,United States,Racine,Manufacturing,['Manufacturing'],,,False,Increased
+2010,3,463,2.1 B,Johnson-Marquart,Winnie,Winnie Johnson-Marquart,1959-04-06,50,Female,United States,United States,Virginia Beach,Manufacturing,['Manufacturing'],,,False,Increased
+2010,3,463,2.1 B,Kulczyk,Jan,Jan Kulczyk,1949-12-14,60,Male,Poland,Poland,Poznan,,['Telecom'],,,False,Returned to List
+2010,3,463,2.1 B,Leal,Guilherme Peirao,Guilherme Peirao Leal,1951-01-01,59,Male,Brazil,Brazil,Sao Paulo,,['Fashion and Retail'],,,False,Increased
+2010,3,463,2.1 B,Mehta,Sudhir &#38; Samir,Sudhir & Samir Mehta,1954-04-10,55,Male,India,India,Ahmedabad,,['Diversified'],,,False,
+2010,3,463,2.1 B,Ometto Silveira Mello,Rubens,Rubens Ometto Silveira Mello,1950-01-01,60,Male,Brazil,Brazil,Sao Paulo,,['Energy'],,,False,Returned to List
+2010,3,463,2.1 B,Perenchio,A. Jerrold,A. Jerrold Perenchio,1930-12-20,79,Male,United States,United States,Bel Air,Media,['Media                         '],Chartwell Leisure,Founder & Owner,False,Decreased
+2010,3,463,2.1 B,Sahenk,Ferit,Ferit Faik Sahenk,1964-03-18,46,Male,Turkey,Turkey,Istanbul,,['Finance'],,,False,Increased
+2010,3,463,2.1 B,Tshuva,Yitzhak,Yitzhak Tshuva,1948-07-07,61,Male,Israel,Israel,Netanya,,['Real Estate'],,,False,Increased
+2010,3,463,2.1 B,Ulker,Murat,Murat Ulker,1960-03-23,50,Male,Turkey,Turkey,Istanbul,,['Food and Beverage'],,,False,Increased
+2010,3,463,2.1 B,Wrigley,William,"William Wrigley, Jr.",1963-11-01,46,Male,United States,United States,North Palm Beach,Food and Beverage,['Food and Beverage'],"Wrigley Management, Inc.",Director,False,Decreased
+2010,3,488,2.0 B,Agaoglu,Ali Ibrahim,Ali Ibrahim Agaoglu,1954-03-03,56,Male,Turkey,Turkey,Istanbul,,['Construction & Engineering'],,,False,Increased
+2010,3,488,2.0 B,Bass,Lee,Lee Bass,1956-05-24,53,Male,United States,United States,Fort Worth,Energy,['Energy                        '],,,False,Remained Even
+2010,3,488,2.0 B,Bass,Sid,Sid Bass,1943-01-01,67,Male,United States,United States,Fort Worth,Energy,['Energy                        '],,,False,Remained Even
+2010,3,488,2.0 B,Bronfman,Charles,Charles Bronfman,1931-06-27,78,Male,Canada,Canada,Montreal,,['Food and Beverage'],,,False,Increased
+2010,3,488,2.0 B,Dangermond,Jack,Jack Dangermond,1945-07-23,65,Male,United States,United States,Redlands,Technology,['Technology                    '],,,False,
+2010,3,488,2.0 B,de Mol,John,John de Mol,1955-03-24,54,Male,Netherlands,Netherlands,Blaricum,,['Media'],,,False,Remained Even
+2010,3,488,2.0 B,Dorrance,Bennett,Bennett Dorrance,1946-02-09,64,Male,United States,United States,Paradise Valley,Food and Beverage,['Food and Beverage'],,,False,Increased
+2010,3,488,2.0 B,Douglas,Gustaf,Gustaf Douglas,1938-03-03,72,Male,Sweden,Sweden,Stockholm,,['Service'],,,False,Increased
+2010,3,488,2.0 B,Falcone,Philip,Philip Falcone,1962-07-14,46,Male,United States,United States,New York,,['Investments'],,,False,Decreased
+2010,3,488,2.0 B,Foriel-Destezet,Philippe,Philippe Foriel-Destezet,1935-09-12,74,Male,France,United Kingdom,London,,['Service'],,,False,Increased
+2010,3,488,2.0 B,Friedland,Robert,Robert Friedland,1950-08-18,59,Male,United States,Singapore,Singapore,Metals & Mining,['Metals & Mining'],Ivanhoe Energy Inc.,Founder and Executive Co-Chairman,False,Returned to List
+2010,3,488,2.0 B,Getty,Gordon,Gordon Getty,1933-12-20,76,Male,United States,United States,San Francisco,Energy,['Energy                        '],Ann & Gordon Getty Foundation,President and Chairman,False,Remained Even
+2010,3,488,2.0 B,Greene,Jeffrey,Jeff Greene,1954-12-01,55,Male,United States,United States,Palm Beach,Real Estate,['Real Estate                   '],,,False,Increased
+2010,3,488,2.0 B,Griffin,Kenneth,Ken Griffin,1968-10-15,41,Male,United States,United States,Chicago,Investments,['Investments                   '],Citadel LLC,Founder,False,Increased
+2010,3,488,2.0 B,Gross,William,Bill Gross,1944-04-13,65,Male,United States,United States,Newport Beach,Finance,['Finance'],Pacific Investment Management Company LLC,Cofounder and Co-Chief Investment Officer,False,Increased
+2010,3,488,2.0 B,Halle,Bruce,Bruce Halle,1930-05-01,79,Male,United States,United States,Paradise Valley,Automotive,['Automotive'],Discount Tire Co.,Chairman,False,
+2010,3,488,2.0 B,Hamied,Yusuf,Yusuf Hamied & family,1936-07-26,73,Male,India,India,Mumbai/London,,['Health care'],,,False,
+2010,3,488,2.0 B,Headington,Timothy,Timothy Headington,1950-04-24,59,Male,United States,United States,Dallas,Energy,['Energy                        '],,,False,Increased
+2010,3,488,2.0 B,Hendricks,Diane,Diane Hendricks,1947-03-02,63,Female,United States,United States,Afton,Manufacturing,['Manufacturing'],ABC Supply,Cofounder and Chairman,False,Remained Even
+2010,3,488,2.0 B,Hildebrand,Jeffrey,Jeffrey Hildebrand,1959-03-05,51,Male,United States,United States,Houston,Energy,['Energy                        '],,,False,Increased
+2010,3,488,2.0 B,Ho,Stanley,Stanley Ho & family,1921-11-25,88,Male,Hong Kong,Hong Kong,Hong Kong,,,,,False,Increased
+2010,3,488,2.0 B,Ilicak,Erman,Erman Ilicak,1967-01-01,43,Male,Turkey,Turkey,Istanbul,,['Construction & Engineering'],,,False,Returned to List
+2010,3,488,2.0 B,Ingram,Martha,Martha Ingram & family,1935-08-20,74,Female,United States,United States,Nashville,Media,['Media                         '],"Ingram Industries, Inc.",Former Chairman,False,Increased
+2010,3,488,2.0 B,Jacobs,Jeremy,"Jeremy Jacobs, Sr.",1940-01-20,70,Male,United States,United States,East Aurora,Service,['Service'],,,False,Increased
+2010,3,488,2.0 B,Kolomoyskyy,Ihor,Ihor Kolomoyskyy,1963-02-13,47,Male,Ukraine,Ukraine,Kiev,,['Diversified'],,,False,Increased
+2010,3,488,2.0 B,Koplowitz,Esther,Esther Koplowitz,1953-08-10,56,Female,Spain,Spain,Madrid,,['Construction & Engineering'],,,False,Increased
+2010,3,488,2.0 B,Lebedev,Alexander,Alexander Lebedev,1959-12-16,50,Male,Russia,,,Investments,['Investments'],,,False,Returned to List
+2010,3,488,2.0 B,Lee,Patrick,Patrick Lee,1942-01-01,0,Male,Hong Kong,Hong Kong,Hong Kong,,['Manufacturing'],,,False,Returned to List
+2010,3,488,2.0 B,Lin,Yu-lin,Lin Yu-lin,1936-01-01,74,Male,Taiwan,Taiwan,Taipei,,['Real Estate'],,,False,
+2010,3,488,2.0 B,Milken,Michael,Michael Milken,1946-07-04,63,Male,United States,United States,Los Angeles,Investments,['Investments                   '],,,False,Remained Even
+2010,3,488,2.0 B,Nagamori,Shigenobu,Shigenobu Nagamori,1944-08-28,65,Male,Japan,Japan,Kyoto,,['Manufacturing'],,,False,Increased
+2010,3,488,2.0 B,Niarchos,Philip,Philip Niarchos,1954-01-01,56,Male,Greece,,,,['Fashion and Retail'],,,False,
+2010,3,488,2.0 B,Perez Companc,Gregorio,Gregorio Perez Companc & family,1934-10-12,75,Male,Argentina,Argentina,Buenos Aires,,['Food and Beverage'],,,False,Increased
+2010,3,488,2.0 B,Peterson,Peter,Peter Peterson,1926-06-05,83,Male,United States,United States,New York,Investments,['Investments'],,,False,Increased
+2010,3,488,2.0 B,Poonawalla,Cyrus,Cyrus Poonawalla,1941-05-11,68,Male,India,India,Pune,,['Health care'],,,False,Increased
+2010,3,488,2.0 B,Raheja,Rajan,Rajan Raheja & family,1954-06-01,55,Male,India,India,Mumbai,,['Diversified'],,,False,Returned to List
+2010,3,488,2.0 B,Rich,Robert,"Robert Rich, Jr.",1941-01-25,69,Male,United States,United States,Islamorada,Food and Beverage,['Food and Beverage'],,,False,Increased
+2010,3,488,2.0 B,Rinehart,Gina,Georgina Rinehart,1954-02-09,56,Female,Australia,Australia,Perth,Billionaire,['Billionaire'],Hancock Prospecting,Executive Chairman,False,Increased
+2010,3,488,2.0 B,Ruffin,Phillip,Phillip Ruffin,1935-03-17,74,Male,United States,United States,Las Vegas,Diversified,['Diversified'],,,False,Remained Even
+2010,3,488,2.0 B,Sahenk,Filiz,Filiz Sahenk,1967-02-14,43,Female,Turkey,Turkey,Istanbul,,['Finance'],,,False,Increased
+2010,3,488,2.0 B,Solorz-Zak,Zygmunt,Zygmunt Solorz-Zak,1956-08-04,53,Male,Poland,Poland,Warsaw,,['Media'],,,False,Increased
+2010,3,488,2.0 B,Steinmetz,Beny,Beny Steinmetz,1956-04-02,53,Male,Israel,Israel,Netanya,,['Metals & Mining'],,,False,Remained Even
+2010,3,488,2.0 B,Takahara,Keiichiro,Keiichiro Takahara,1931-03-16,78,Male,Japan,Japan,Tokyo,,,,,False,
+2010,3,488,2.0 B,Tang,Yiu,Tang Yiu & family,1934-01-01,0,Male,Hong Kong,Hong Kong,Hong Kong,,['Fashion and Retail'],,,False,Increased
+2010,3,488,2.0 B,Trump,Donald,Donald Trump,1946-06-14,63,Male,United States,United States,New York,Real Estate,['Real Estate                   '],,"Entrepreneur, Personality",False,Increased
+2010,3,488,2.0 B,von Bechtolsheim,Andreas,Andreas von Bechtolsheim,1956-01-01,54,Male,Germany,United States,Palo Alto,,['Technology'],,,False,Increased
+2010,3,488,2.0 B,Wenchi Chen,Cher Wang &#38;,Cher Wang & Wenchi Chen,1958-01-01,52,,Taiwan,Taiwan,Taipei,,['Technology'],,,False,Returned to List
+2010,3,488,2.0 B,Zhang,Xin,Zhang Xin & family,1965-08-24,44,Female,China,China,Beijing,Business,['Business'],Soho China Ltd.,"Cofounder, CEO",False,Increased
+2010,3,536,1.9 B,Bonderman,David,David Bonderman,1942-11-27,67,Male,United States,United States,Fort Worth,Investments,['Investments                   '],,,False,Increased
+2010,3,536,1.9 B,Bruch,Thomas,Thomas Bruch,1950-04-25,59,Male,Germany,Germany,St. Wendel,,['Fashion and Retail'],,,False,Increased
+2010,3,536,1.9 B,Casden,Alan,Alan Casden,1946-02-14,64,Male,United States,United States,Beverly Hills,Real Estate,['Real Estate'],Casden Properties LLC,"CEO, Chairman & Founder",False,Increased
+2010,3,536,1.9 B,Chen,Yihong,Chen Yihong,1958-04-01,52,Male,China,China,Beijing,Fashion & Retail,['Fashion & Retail'],,,True,Returned to List
+2010,3,536,1.9 B,Cho,Tak Wong,Cho Tak Wong & family,1946-05-01,63,Male,Hong Kong,China,Fuqing,,['Manufacturing'],,,False,Increased
+2010,3,536,1.9 B,Doris,Ennio,Ennio Doris & family,1940-07-03,69,Male,Italy,Italy,Tombolo,,['Finance'],,,False,Increased
+2010,3,536,1.9 B,Gandur,Jean-Claude,Jean-Claude Gandur,1949-01-01,61,Male,Switzerland,United Kingdom,London,,['Energy'],,,False,Increased
+2010,3,536,1.9 B,Guriev,Andrei,Andrei Guriev,1960-03-24,49,Male,Russia,Russia,Moscow,,['Manufacturing'],,,False,
+2010,3,536,1.9 B,Hariri,Saad,Saad Hariri,1970-04-01,39,Male,Lebanon,Lebanon,Beirut,,['Construction & Engineering'],,,False,Increased
+2010,3,536,1.9 B,Ito,Masatoshi,Masatoshi Ito,1924-04-30,85,Male,Japan,Japan,Tokyo,,['Fashion and Retail'],,,False,Decreased
+2010,3,536,1.9 B,Jackson,Jess,Jess Jackson,1930-02-18,80,Male,United States,United States,Geyserville,,['Service'],,,False,Increased
+2010,3,536,1.9 B,Jaharis,Michael,Michael Jaharis,1928-07-16,81,Male,United States,United States,New York,Health care,['Health care'],,,False,Remained Even
+2010,3,536,1.9 B,Lee,Jay Y.,Jay Y. Lee,1968-06-23,41,Male,South Korea,South Korea,Seoul,,['Technology'],,,False,Returned to List
+2010,3,536,1.9 B,Lo,Vincent,Vincent Lo,1949-01-01,61,Male,Hong Kong,Hong Kong,Hong Kong,,['Real Estate'],,,False,Increased
+2010,3,536,1.9 B,Perez,Florentino,Florentino Perez,1947-03-08,63,Male,Spain,Spain,Madrid,,['Construction & Engineering'],,,False,Increased
+2010,3,536,1.9 B,Rahr,Stewart,Stewart Rahr,1946-02-18,64,Male,United States,United States,New York,Health care,['Health care'],,,False,Increased
+2010,3,536,1.9 B,Scott,Walter,"Walter Scott, Jr.",1931-05-21,78,Male,United States,United States,Omaha,Technology,['Technology                    '],Level 3 Communications,Chairman,False,Increased
+2010,3,536,1.9 B,Tanoto,Sukanto,Sukanto Tanoto,1949-12-25,60,Male,Indonesia,Singapore,Singapore,,['Diversified'],,,False,Increased
+2010,3,536,1.9 B,Timchenko,Gennady,Gennady Timchenko,1952-11-09,57,Male,Russia,Switzerland,Geneva,,['Energy'],,,False,Returned to List
+2010,3,536,1.9 B,Ueltschi,Albert,Albert Ueltschi,1917-05-15,92,Male,United States,United States,Vero Beach,Service,['Service'],,,False,Increased
+2010,3,556,1.8 B,Anderson,John,John Anderson,1917-09-12,92,Male,United States,,,,['Investments'],,,False,Remained Even
+2010,3,556,1.8 B,Aristrain,Jose Maria,Jose Maria Aristrain,1962-11-02,47,Male,Spain,Spain,Madrid,Metals & Mining,['Metals & Mining'],,,False,Increased
+2010,3,556,1.8 B,Auchi,Nadhmi,Nadhmi Auchi,1937-06-11,72,Male,United Kingdom,United Kingdom,London,,['Real Estate'],,,False,Remained Even
+2010,3,556,1.8 B,Bass,Edward,Edward Bass,1945-01-01,65,Male,United States,United States,Fort Worth,Energy,['Energy                        '],,,False,Increased
+2010,3,556,1.8 B,Buck,Peter,Peter Buck,1930-12-18,79,Male,United States,United States,Danbury,Food and Beverage,['Food and Beverage'],Doctor's Associates (Subway),Co-Founder,False,Increased
+2010,3,556,1.8 B,Caudwell,John,John Caudwell,1952-10-01,57,Male,United Kingdom,United Kingdom,Stoke-on-Trent,,['Telecom'],,,False,Increased
+2010,3,556,1.8 B,Davis,Jim,Jim Davis & family,1943-05-17,66,Male,United States,United States,Newton,Manufacturing,['Manufacturing'],New Balance,Chairman,False,Increased
+2010,3,556,1.8 B,DeLuca,Fred,Fred DeLuca,1947-10-03,62,Male,United States,United States,Fort Lauderdale,Food and Beverage,['Food and Beverage'],Doctor's Associates (Subway),President and Co-Founder,False,Increased
+2010,3,556,1.8 B,Han,Chang-Woo,Han Chang-Woo & family,1931-02-15,79,Male,Japan,Japan,Kyoto,,['Gaming'],,,False,Increased
+2010,3,556,1.8 B,Hearst,William Randolph,"William Randolph Hearst, III.",1949-09-01,60,Male,United States,United States,San Francisco,Media,['Media                         '],,,False,Increased
+2010,3,556,1.8 B,Howard,Alan,Alan Howard,1963-09-01,46,Male,United Kingdom,United Kingdom,London,,['Investments'],,,False,
+2010,3,556,1.8 B,Jones,Jerral,Jerry Jones,1942-10-13,67,Male,United States,United States,Dallas,Sports,['Sports                        '],Dallas Cowboys,President and General Manager,False,Increased
+2010,3,556,1.8 B,Li,Shufu,Li Shufu,1963-06-01,47,Male,China,China,Hangzhou,,['Automotive'],,,False,
+2010,3,556,1.8 B,Li,Sze Lim,Li Sze Lim,1957-01-01,53,Male,Hong Kong,China,Guangzhou,,['Real Estate'],,,False,Increased
+2010,3,556,1.8 B,Molchanov,Andrei,Andrei Molchanov,1971-09-24,38,Male,Russia,Russia,Moscow,Construction & Engineering,['Construction & Engineering'],,,True,Returned to List
+2010,3,556,1.8 B,Moroun,Manuel,Manuel Moroun & family,1927-06-01,82,Male,United States,United States,Grosse Pointe Shores,,['Logistics'],,,False,Increased
+2010,3,556,1.8 B,Or,Wai Sheun,Or Wai Sheun,1951-06-01,58,Male,Hong Kong,Hong Kong,Hong Kong,,['Real Estate'],,,False,Increased
+2010,3,556,1.8 B,Rokke,Kjell Inge,Kjell Inge Rokke,1958-10-25,51,Male,Norway,Norway,Norway,,['Logistics'],,,False,Increased
+2010,3,556,1.8 B,Ross,Wilbur,"Wilbur Ross, Jr.",1937-11-28,72,Male,United States,United States,Palm Beach,Investments,['Investments                   '],,,False,Increased
+2010,3,556,1.8 B,Schoeller,Monika,Monika Schoeller,1939-01-01,71,Female,Germany,Germany,Stuttgart,,['Media'],,,False,Increased
+2010,3,556,1.8 B,Smith,Frederick,Frederick Smith,1944-08-11,65,Male,United States,United States,Memphis,Logistics,['Logistics'],FedEx,Chairman and CEO,False,Increased
+2010,3,556,1.8 B,Stroher,Sylvia,Sylvia Stroher,1954-05-30,55,Female,Germany,Germany,Darmstadt,,['Fashion and Retail'],,,False,Remained Even
+2010,3,556,1.8 B,Tada,Katsumi,Katsumi Tada,1945-07-12,64,Male,Japan,Japan,Tokyo,,['Real Estate'],,,False,Increased
+2010,3,556,1.8 B,Turner,Robert E,Ted Turner,1938-11-19,71,Male,United States,United States,Atlanta,Media,['Media                         '],,,False,Decreased
+2010,3,556,1.8 B,von Holtzbrinck,Stefan,Stefan von Holtzbrinck,1963-05-15,46,Male,Germany,Germany,Stuttgart,,['Media'],,,False,Increased
+2010,3,556,1.8 B,Zhang,Li,Zhang Li,1953-01-01,57,Male,China,China,Guangzhou,,['Real Estate'],,,False,Increased
+2010,3,582,1.7 B,Arsel,Semahat,Semahat Sevim Arsel,1928-09-08,81,Female,Turkey,Turkey,Istanbul,,['Diversified'],,,False,Returned to List
+2010,3,582,1.7 B,Boholyubov,Henadiy,Henadiy Boholyubov,1962-01-01,48,Male,Ukraine,Ukraine,Dneptopetrovsk,,['Diversified'],,,False,Increased
+2010,3,582,1.7 B,Botin,Emilio,Emilio Botin,1934-10-01,75,Male,Spain,,,Finance,['Finance'],,,False,Increased
+2010,3,582,1.7 B,Cargill,Austen,"Austen Cargill, II.",1951-03-01,59,Male,United States,United States,Livingston,Food and Beverage,['Food and Beverage'],,,False,Increased
+2010,3,582,1.7 B,Cargill,James,"James Cargill, II.",1949-04-01,60,Male,United States,United States,Birchwood,Food and Beverage,['Food and Beverage'],,,False,Increased
+2010,3,582,1.7 B,Cargill,Mary Janet,Mary Janet Cargill,1924-01-01,86,Female,United States,United States,Minneapolis,,['Service'],,,False,Increased
+2010,3,582,1.7 B,Cheung,Yan,Yan Cheung,1957-02-01,53,Female,China,China,Dongguan,,['Manufacturing'],,,False,Returned to List
+2010,3,582,1.7 B,Doerr,L. John,John Doerr,1951-06-29,58,Male,United States,United States,Woodside,Technology,['Technology                    '],Kleiner Perkins Caufield & Byers,Partner,False,Increased
+2010,3,582,1.7 B,Englander,Israel,Israel Englander,1948-09-01,61,Male,United States,United States,New York,Investments,['Investments                   '],"Millennium Management, L.L.C.",Founder,False,Increased
+2010,3,582,1.7 B,Hector,Hans-Werner,Hans-Werner Hector,1940-01-17,70,Male,Germany,Germany,Weinheim,,['Technology'],,,False,Increased
+2010,3,582,1.7 B,Kalyani,Baba,Baba Kalyani,1949-01-07,61,Male,India,India,Pune,,['Construction & Engineering'],,,False,Returned to List
+2010,3,582,1.7 B,Liebmann,Marianne,Marianne Liebmann,1953-07-01,56,Female,United States,United States,Bozeman,Food and Beverage,['Food and Beverage'],,,False,Increased
+2010,3,582,1.7 B,Lindner,Carl,Carl Lindner Jr & family,1919-04-22,90,Male,United States,United States,Cincinnati,,['Sports'],,,False,Increased
+2010,3,582,1.7 B,Liu,Ming Chung,Liu Ming Chung,1963-01-01,47,Male,Brazil,Hong Kong,Hong Kong,,['Manufacturing'],,,False,Returned to List
+2010,3,582,1.7 B,Loh,Friedhelm,Friedhelm Loh,1946-08-15,63,Male,Germany,Germany,Haiger,,['Manufacturing'],,,False,Increased
+2010,3,582,1.7 B,Mathile,Clayton,Clayton Mathile,1941-01-11,69,Male,United States,United States,Brookville,Food and Beverage,['Food and Beverage'],,,False,Increased
+2010,3,582,1.7 B,Munger,Charles,Charles Munger,1924-01-01,86,Male,United States,United States,Los Angeles,,['Investments'],,,False,Increased
+2010,3,582,1.7 B,Oberwelland,Axel,Axel Oberwelland,1967-01-01,43,Male,Germany,Germany,Berlin,,['Food and Beverage'],,,False,Remained Even
+2010,3,582,1.7 B,Samueli,Henry,Henry Samueli,1954-09-20,55,Male,United States,United States,Newport Beach,Technology,['Technology                    '],Broadcom,Chief Technology Officer and Chairman,False,Increased
+2010,3,582,1.7 B,Schorling,Melker,Melker Schorling,1947-05-15,62,Male,Sweden,Sweden,Stockholm,,['Investments'],,,False,Returned to List
+2010,3,582,1.7 B,Siebel,Thomas,Thomas Siebel,1952-11-22,57,Male,United States,United States,Woodside,Technology,['Technology                    '],,,False,Increased
+2010,3,582,1.7 B,Solow,Sheldon,Sheldon Solow,1928-07-20,81,Male,United States,United States,New York,Real Estate,['Real Estate                   '],,,False,Decreased
+2010,3,582,1.7 B,Spangler,Clemmie,"Clemmie Spangler, Jr.",1932-04-05,77,Male,United States,United States,Charlotte,Investments,['Investments                   '],,,False,Returned to List
+2010,3,582,1.7 B,Speyer,Jerry,Jerry Speyer,1940-06-23,69,Male,United States,United States,New York,Real Estate,['Real Estate                   '],,,False,Increased
+2010,3,582,1.7 B,Stryker,Jon,Jon Stryker,1958-05-03,51,Male,United States,United States,Kalamazoo,Health care,['Health care'],,,False,Increased
+2010,3,582,1.7 B,Tan,Lucio,Lucio Tan & family,1934-07-17,75,Male,Philippines,Philippines,Manila,,['Diversified'],,,False,Increased
+2010,3,582,1.7 B,Tsai,Cheng-da,Tsai Cheng-da,,0,Male,Taiwan,Taiwan,Taipei,,['Finance'],,,False,
+2010,3,582,1.7 B,Tsai,Hong-tu,Tsai Hong-tu,1952-08-01,57,Male,Taiwan,Taiwan,Taipei,,['Finance'],,,False,Returned to List
+2010,3,582,1.7 B,Tsai,T.Y.,T.Y. Tsai,,0,Male,Taiwan,Taiwan,Taipei,,['Finance'],,,False,
+2010,3,582,1.7 B,Viessmann,Martin,Martin Viessmann,1953-10-10,56,Male,Germany,Germany,Allendorf,,['Manufacturing'],,,False,Increased
+2010,3,582,1.7 B,White,Dean,Dean White,1923-05-25,86,Male,United States,United States,Crown Point,Service,['Service'],,,False,Remained Even
+2010,3,582,1.7 B,Zhang,Guiping,Zhang Guiping & family,1951-08-21,58,Male,China,China,Nanjing,,['Real Estate'],,,False,Increased
+2010,3,582,1.7 B,Zhang,Zhixiang,Zhang Zhixiang,1967-01-01,43,Male,China,China,Beijing,Metals & Mining,['Metals & Mining'],,,True,Increased
+2010,3,582,1.7 B,Zhou,Furen,Zhou Furen,1957-08-28,52,Male,China,China,Haicheng,,['Diversified'],,,False,Increased
+2010,3,616,1.6 B,Abraham,S. Daniel,S. Daniel Abraham,1924-08-15,85,Male,United States,United States,Palm Beach,Food and Beverage,['Food and Beverage'],S. Daniel Abraham Center for Middle East Peace,Chairman,False,Increased
+2010,3,616,1.6 B,Alves de Queiroz Filho,Joao,Joao Alves de Queiroz Filho,1953-01-01,57,Male,Brazil,Brazil,São Paulo,,['Manufacturing'],,,False,
+2010,3,616,1.6 B,Ananyev,Alexei,Alexei Ananyev,1964-08-24,45,Male,Russia,Russia,Moscow,,['Diversified'],,,False,Returned to List
+2010,3,616,1.6 B,Ananyev,Dmitry,Dmitry Ananyev,1969-02-19,41,Male,Russia,Russia,Moscow,,['Diversified'],,,False,Returned to List
+2010,3,616,1.6 B,Anisimov,Vasily,Vasily Anisimov,1951-09-19,58,Male,Russia,Russia,Moscow,,['Metals & Mining'],,,False,Returned to List
+2010,3,616,1.6 B,Balakin,Mikhail,Mikhail Balakin,1961-04-20,48,Male,Russia,Russia,Moscow,,['Construction & Engineering'],,,False,Returned to List
+2010,3,616,1.6 B,Catsimatidis,John,John Catsimatidis,1948-09-07,61,Male,United States,United States,New York,Energy,['Energy                        '],,,False,Decreased
+2010,3,616,1.6 B,Cheriton,David,David Cheriton,1952-01-01,58,Male,Canada,United States,Palo Alto,,['Technology'],,,False,Increased
+2010,3,616,1.6 B,Choi,Francis,Francis Choi,1947-09-18,62,Male,Hong Kong,Hong Kong,Hong Kong,,['Real Estate'],,,False,Returned to List
+2010,3,616,1.6 B,Chung,Mong-Joon,Chung Mong-Joon,1951-10-17,58,Male,South Korea,South Korea,Seoul,,['Manufacturing'],,,False,Increased
+2010,3,616,1.6 B,Desmond,Dermot,Dermot Desmond,1950-07-01,59,Male,Ireland,Ireland,Dublin,,['Finance'],,,False,Increased
+2010,3,616,1.6 B,Desmond,Richard,Richard Desmond,1951-12-08,58,Male,United Kingdom,United Kingdom,London,,['Media'],,,False,Increased
+2010,3,616,1.6 B,Fetisov,Gleb,Gleb Fetisov,1966-06-05,43,Male,Russia,Russia,Moscow,,['Telecom'],,,False,Returned to List
+2010,3,616,1.6 B,Gage,Barbara Carlson,Barbara Carlson Gage,1942-04-01,67,Female,United States,United States,Long Lake,Service,['Service'],,,False,Increased
+2010,3,616,1.6 B,Gerling,Rolf,Rolf Gerling,1954-12-15,55,Male,Germany,Switzerland,Zurich,,['Finance'],,,False,Increased
+2010,3,616,1.6 B,Gores,Alec,Alec Gores,1953-03-18,56,Male,United States,United States,Beverly Hills,Investments,['Investments                   '],,,False,Increased
+2010,3,616,1.6 B,Harbert,Marguerite,Marguerite Harbert,1923-05-24,86,Female,United States,United States,Birmingham,,['Energy'],,,False,Increased
+2010,3,616,1.6 B,Kao,Min,Min Kao,1949-01-10,61,Male,United States,United States,Leawood,Manufacturing,['Manufacturing'],Garmin Corporation,Chairman and CEO,False,Returned to List
+2010,3,616,1.6 B,Koc,Rahmi,Mustafa Rahmi Koc,1930-10-09,79,Male,Turkey,Turkey,Istanbul,,['Diversified'],,,False,Returned to List
+2010,3,616,1.6 B,Luo,Jye,Luo Jye & family,1926-01-01,84,Male,Taiwan,Taiwan,Ta-Tsun,,['Manufacturing'],,,False,
+2010,3,616,1.6 B,McCaw,Craig,Craig McCaw,1949-08-11,60,Male,United States,United States,Hunts Point,Media,['Media                         '],,,False,Increased
+2010,3,616,1.6 B,Morgridge,John,John Morgridge,1933-07-23,76,Male,United States,United States,Portola Valley,,['Technology'],,,False,Increased
+2010,3,616,1.6 B,Murthy,N.R. Narayana,N.R. Narayana Murthy & family,1946-08-20,63,Male,India,India,Bangalore,,['Technology'],,,False,Returned to List
+2010,3,616,1.6 B,Nelson,Marilyn Carlson,Marilyn Carlson Nelson,1939-04-01,70,Female,United States,United States,Long Lake,Service,['Service'],Carlson Companies Inc.,Chairman,False,Increased
+2010,3,616,1.6 B,Perlmutter,Isaac,Isaac Perlmutter,1942-12-01,67,Male,United States,United States,Palm Beach,Media,['Media                         '],Marvel Entertainment,Chief Executive Officer,False,
+2010,3,616,1.6 B,Pritzker,Thomas,Thomas Pritzker,1950-06-06,59,Male,United States,United States,Chicago,Investments,['Investments                   '],Hyatt Hotels,Executive Chairman,False,Increased
+2010,3,616,1.6 B,Rees-Jones,Trevor,Trevor Rees-Jones,1951-08-12,58,Male,United States,United States,Dallas,Energy,['Energy                        '],,,False,Increased
+2010,3,616,1.6 B,Riegel,Hans,Hans Riegel,1923-03-10,87,Male,Germany,Germany,Bonn,,['Food and Beverage'],,,False,Increased
+2010,3,616,1.6 B,Rizzuto,Leandro,Leandro Rizzuto,1938-04-01,71,Male,United States,United States,Sheridan,Manufacturing,['Manufacturing'],,,False,Increased
+2010,3,616,1.6 B,Shi,Yuzhu,Shi Yuzhu,1962-09-01,47,Male,China,China,Shanghai,,['Diversified'],,,False,Increased
+2010,3,616,1.6 B,Shin,Chang-Jae,Shin Chang-Jae,1953-10-31,56,Male,South Korea,South Korea,Seoul,,['Finance'],,,False,
+2010,3,616,1.6 B,Thapar,Gautam,Gautam Thapar,1960-12-07,49,Male,India,India,Delhi,,['Construction & Engineering'],,,False,Returned to List
+2010,3,616,1.6 B,Tisch,Wilma,Wilma Tisch,1927-06-25,82,Female,United States,United States,New York,Investments,['Investments                   '],,,False,Increased
+2010,3,616,1.6 B,Tsai,Ming-kai,Tsai Ming-kai,,0,Male,Taiwan,Taiwan,Hsinchu,,['Technology'],,,False,
+2010,3,616,1.6 B,von Opel,Georg,Georg von Opel,1966-05-04,43,Male,Germany,Switzerland,Zurichsee,,['Investments'],,,False,
+2010,3,616,1.6 B,Whittaker,John,John Whittaker,1942-03-14,68,Male,United Kingdom,United Kingdom,Isle of Man,,['Real Estate'],,,False,Increased
+2010,3,616,1.6 B,Wynn,Stephen,Steve Wynn,1942-01-27,68,Male,United States,United States,Las Vegas,Gaming,['Gaming'],Wynn Resorts,Chairman and CEO,False,Increased
+2010,3,616,1.6 B,Zhong,Sheng Jian,Zhong Sheng Jian,1958-03-03,,Male,Singapore,,,,['Real Estate'],,,False,Returned to List
+2010,3,616,1.6 B,Zuckerman,Mortimer,Mortimer Zuckerman,1937-06-04,72,Male,United States,United States,New York,Real Estate,['Real Estate                   '],Boston Properties,Chairman and CEO,False,Increased
+2010,3,655,1.5 B,Al Rajhi,Mohammed,Mohammed Al Rajhi & family,,,Male,Saudi Arabia,,,Finance,['Finance'],,,False,Increased
+2010,3,655,1.5 B,AlBukhary,Syed Mokhtar,Syed Mokhtar AlBukhary,1951-12-12,58,Male,Malaysia,Malaysia,Kuala Lumpur,,['Diversified'],,,False,Returned to List
+2010,3,655,1.5 B,Argyros,George,George Argyros,1937-02-04,73,Male,United States,United States,Newport Beach,Real Estate,['Real Estate                   '],Arnel & Affiliates,Chairman and CEO,False,Increased
+2010,3,655,1.5 B,Ashley,Michael,Michael Ashley,1960-01-01,50,Male,United Kingdom,United Kingdom,Hertfordshire,,['Fashion and Retail'],,,False,Increased
+2010,3,655,1.5 B,Azcarraga Jean,Emilio,Emilio Azcarraga Jean,1968-02-21,42,Male,Mexico,Mexico,Mexico City,,['Media'],,,False,Increased
+2010,3,655,1.5 B,Bacon,Louis,Louis Bacon,1958-07-01,51,Male,United States,United States,Long Island,Investments,['Investments                   '],,,False,Remained Even
+2010,3,655,1.5 B,Banuelos,Enrique,Enrique Banuelos,1966-01-01,44,Male,Spain,United Kingdom,London,,['Real Estate'],,,False,Increased
+2010,3,655,1.5 B,Bisciotti,Stephen,Stephen Bisciotti,1960-04-10,49,Male,United States,United States,Millersville,Sports,['Sports                        '],Baltimore Ravens,Owner,False,Increased
+2010,3,655,1.5 B,Bluhm,Neil,Neil Bluhm,1938-01-01,72,Male,United States,United States,Chicago,Real Estate,['Real Estate                   '],,,False,Remained Even
+2010,3,655,1.5 B,Brandes,Charles,Charles Brandes,1943-03-02,67,Male,United States,United States,San Diego,,['Investments'],,,False,Increased
+2010,3,655,1.5 B,Caltagirone,Francesco Gaetano,Francesco Gaetano Caltagirone,1943-03-21,66,Male,Italy,Italy,Rome,Construction & Engineering,['Construction & Engineering'],,,True,Increased
+2010,3,655,1.5 B,Cathy,S. Truett,S. Truett Cathy,1921-03-14,89,Male,United States,United States,Hampton,Food and Beverage,['Food and Beverage'],,,False,Returned to List
+2010,3,655,1.5 B,Connor,William,William Connor II,1949-12-19,60,Male,United States,Hong Kong SAR,Hong Kong,,['Logistics'],,,False,Increased
+2010,3,655,1.5 B,Cooke,Phoebe Hearst,Phoebe Hearst Cooke,1927-01-01,83,Female,United States,United States,San Francisco,Media,['Media                         '],,,False,Increased
+2010,3,655,1.5 B,Cooperman,Leon G.,Leon G. Cooperman,1943-04-25,66,Male,United States,United States,Short Hills,Investments,['Investments                   '],"Omega Advisors, Inc.",Founder,False,Increased
+2010,3,655,1.5 B,Coulter,James,James Coulter,1959-12-01,50,Male,United States,United States,San Francisco,Investments,['Investments                   '],,,False,Returned to List
+2010,3,655,1.5 B,de Azevedo,Belmiro,Belmiro de Azevedo,1938-03-17,71,Male,Portugal,Portugal,Oporto,,['Diversified'],,,False,Returned to List
+2010,3,655,1.5 B,Dinan,James,James Dinan,1959-05-22,50,Male,United States,United States,New York,Investments,['Investments                   '],York Capital Management,Founder,False,Increased
+2010,3,655,1.5 B,Fox,Lindsay,Lindsay Fox,1937-04-19,72,Male,Australia,Australia,Melbourne,,['Logistics'],,,False,Increased
+2010,3,655,1.5 B,Gottesman,David,David Gottesman,1926-04-26,83,Male,United States,United States,Rye,Investments,['Investments                   '],First Manhattan Co.,Chief Executive Officer,False,Decreased
+2010,3,655,1.5 B,Grether,Esther,Esther Grether & family,1936-01-01,74,Female,Switzerland,Switzerland,Basel,,['Fashion and Retail'],,,False,
+2010,3,655,1.5 B,Gupta,Desh Bandhu,Desh Bandhu Gupta,1938-02-08,72,Male,India,India,Mumbai,,['Health care'],,,False,
+2010,3,655,1.5 B,Harris,Joshua,Joshua Harris,1964-12-01,45,Male,United States,United States,New York,Investments,['Investments                   '],,,False,Returned to List
+2010,3,655,1.5 B,Hearst,Austin,Austin Hearst,1952-09-01,57,Male,United States,United States,New York,Media,['Media                         '],,,False,Increased
+2010,3,655,1.5 B,Hearst,David,"David Hearst, Jr.",1945-09-01,64,Male,United States,United States,Los Angeles,Media,['Media                         '],,,False,Increased
+2010,3,655,1.5 B,Hearst,George,"George Hearst, Jr.",1927-07-13,82,Male,United States,,,Media,['Media'],,,False,Increased
+2010,3,655,1.5 B,Heisley,Michael,"Michael Heisley, Sr.",1937-03-13,73,Male,United States,United States,Jupiter Island,Manufacturing,['Manufacturing'],,,False,Increased
+2010,3,655,1.5 B,Hubbard,Stanley Stub,Stanley Hubbard,1933-05-28,76,Male,United States,United States,St. Paul,Media,['Media                         '],"Hubbard Broadcasting, Inc.",Chairman and CEO,False,Increased
+2010,3,655,1.5 B,Ilitch,Michael,Michael & Marian Ilitch & family,1929-07-20,80,Male,United States,United States,Bingham Farms,Food and Beverage,['Food and Beverage'],,,False,Increased
+2010,3,655,1.5 B,Jamail,Joseph,"Joe Jamail, Jr.",1925-10-19,84,Male,United States,United States,Houston,Service,['Service'],,,False,Remained Even
+2010,3,655,1.5 B,Jarislowsky,Stephen,Stephen Jarislowsky,1925-09-09,84,Male,Canada,Canada,Montreal,,['Finance'],,,False,Increased
+2010,3,655,1.5 B,Kelley,Brad,Brad Kelley,1956-12-23,53,Male,United States,United States,Franklin,Real Estate,['Real Estate                   '],,,False,Remained Even
+2010,3,655,1.5 B,Kirk,Randal,Randal Kirk,1954-03-01,56,Male,United States,United States,Belspring,Health care,['Health care'],,,False,Remained Even
+2010,3,655,1.5 B,Kraft,Robert,Robert Kraft,1941-06-04,68,Male,United States,United States,Brookline,Sports,['Sports                        '],The Kraft Group,Chairman & CEO,False,Remained Even
+2010,3,655,1.5 B,Leviev,Lev,Lev Leviev,1956-01-01,54,Male,Israel,United Kingdom,London,,['Metals & Mining'],,,False,Remained Even
+2010,3,655,1.5 B,Lim,Peter,Peter Lim,1953-06-01,56,Male,Singapore,Singapore,Singapore,,['Investments'],,,False,Returned to List
+2010,3,655,1.5 B,Lindemann,George,George Lindemann & family,1936-03-26,73,Male,United States,United States,Palm Beach,Investments,['Investments                   '],,,False,Increased
+2010,3,655,1.5 B,Louis-Hansen,Niels Peter,Niels Peter Louis-Hansen,1947-10-25,62,Male,Denmark,Denmark,Humlebaek,,['Health care'],,,False,Increased
+2010,3,655,1.5 B,Lundberg,Fredrik,Fredrik Lundberg,1951-08-05,58,Male,Sweden,Sweden,Stockholm,,['Real Estate'],,,False,Decreased
+2010,3,655,1.5 B,Mamut,Alexander,Alexander Mamut,1960-01-29,49,Male,Russia,Russia,Moscow,,['Investments'],,,False,Returned to List
+2010,3,655,1.5 B,Mandel,Stephen,"Stephen Mandel, Jr.",1956-03-12,54,Male,United States,United States,Greenwich,Investments,['Investments                   '],Lone Pine Capital,Founder,False,Increased
+2010,3,655,1.5 B,Marcus,Bernard,Bernard Marcus,1929-05-12,80,Male,United States,United States,Atlanta,Fashion and Retail,['Fashion and Retail            '],Home Depot,"Co-founder, ex chairman of the board",False,Increased
+2010,3,655,1.5 B,McLane,Drayton,"Drayton McLane, Jr.",1936-07-22,73,Male,United States,United States,Temple,Fashion and Retail,['Fashion and Retail            '],,,False,Increased
+2010,3,655,1.5 B,Moritz,Michael,Michael Moritz,1954-09-12,55,Male,United States,United States,San Francisco,Technology,['Technology                    '],Sequoia Capital,Partner,False,Returned to List
+2010,3,655,1.5 B,Naughton,Martin,Martin Naughton,1939-05-01,70,Male,Ireland,Ireland,Maeth,,['Manufacturing'],,,False,
+2010,3,655,1.5 B,Nicholas,Henry,"Henry Nicholas, III.",1959-10-08,50,Male,United States,United States,Newport Coast,Technology,['Technology                    '],Broadcom,Cofounder,False,Increased
+2010,3,655,1.5 B,Olenicoff,Igor,Igor Olenicoff,1942-09-21,67,Male,United States,United States,Lighthouse Point,Real Estate,['Real Estate                   '],,,False,Increased
+2010,3,655,1.5 B,Patel,Pankaj,Pankaj Patel,1953-03-19,57,Male,India,India,Ahmedabad,,['Health care'],,,False,
+2010,3,655,1.5 B,Peery,Richard,Richard Peery,1938-10-01,69,Male,United States,United States,Palo Alto,Real Estate,['Real Estate                   '],,,False,Decreased
+2010,3,655,1.5 B,Raheja,Chandru,Chandru Raheja,1940-10-01,69,Male,India,India,Mumbai,,['Real Estate'],,,False,Increased
+2010,3,655,1.5 B,Reyes,J. Christopher,J. Christopher Reyes,1953-12-15,56,Male,United States,United States,Lake Forest,Food and Beverage,['Food and Beverage'],"Reyes Holdings, LLC",Co-Chairman,False,
+2010,3,655,1.5 B,Reyes,M. Jude,Jude Reyes,1955-09-15,54,Male,United States,United States,Kenilworth,Food and Beverage,['Food and Beverage'],"Reyes Holdings, LLC",Co-Chairman,False,
+2010,3,655,1.5 B,Roski,Edward,"Edward Roski, Jr.",1938-12-25,71,Male,United States,United States,Los Angeles,Real Estate,['Real Estate                   '],"Majestic Realty, Co.",President and Chairman,False,Decreased
+2010,3,655,1.5 B,Sawiris,Samih,Samih Sawiris,1957-01-01,53,Male,Egypt,Egypt,Cairo,Service,['Service'],,,False,Returned to List
+2010,3,655,1.5 B,Schusterman,Lynn,Lynn Schusterman,1939-01-21,71,Female,United States,United States,Tulsa,Energy,['Energy                        '],,,False,Increased
+2010,3,655,1.5 B,Shen,Guojun,Shen Guojun,1962-07-31,47,Male,China,China,Beijing,,['Fashion and Retail'],,,False,
+2010,3,655,1.5 B,Shin,Dong-Bin,Shin Dong-Bin,1955-02-14,55,Male,South Korea,South Korea,Seoul,,['Fashion and Retail'],,,False,Returned to List
+2010,3,655,1.5 B,Shin,Dong-Joo,Shin Dong-Joo,1954-01-28,56,Male,South Korea,Japan,Tokyo,,['Fashion and Retail'],,,False,Returned to List
+2010,3,655,1.5 B,Shriram,Kavitark Ram,Kavitark Ram Shriram,1957-01-20,53,Male,United States,United States,Menlo Park,Technology,['Technology                    '],Sherpalo Ventures,Managing Partner,False,Increased
+2010,3,655,1.5 B,Stryker,Pat,Pat Stryker,1956-04-06,53,Female,United States,United States,Fort Collins,Health care,['Health care'],,,False,Increased
+2010,3,655,1.5 B,Taubman,A. Alfred,Alfred Taubman,1924-01-31,86,Male,United States,United States,Bloomfield Hills,Real Estate,['Real Estate                   '],,,False,Increased
+2010,3,655,1.5 B,Tschira,Klaus,Klaus Tschira,1940-12-07,69,Male,Germany,Germany,Heidelberg,,['Technology'],,,False,Remained Even
+2010,3,655,1.5 B,Warren,Kelcy,Kelcy Warren,1955-11-09,54,Male,United States,United States,Dallas,Energy,['Energy                        '],,,False,
+2010,3,655,1.5 B,Wilhelmsen,Arne,Arne Wilhelmsen & family,1930-06-01,79,Male,Norway,Norway,Oslo,,['Logistics'],,,False,Increased
+2010,3,655,1.5 B,Zhang,Zhidong,Zhang Zhidong,1972-01-01,38,Male,China,China,Shenzhen,,['Technology'],,,False,
+2010,3,655,1.5 B,Zorlu,Ahmet Nazif,Ahmet Nazif Zorlu,1944-08-28,65,Male,Turkey,Turkey,Istanbul,,['Diversified'],,,False,Increased
+2010,3,721,1.4 B,Arrillaga,John,John Arrillaga,1937-09-01,72,Male,United States,United States,Portola Valley,Real Estate,['Real Estate                   '],,,False,Decreased
+2010,3,721,1.4 B,Baron,Ron,Ron Baron,1943-05-23,66,Male,United States,United States,New York,Investments,['Investments                   '],,,False,Increased
+2010,3,721,1.4 B,Bauer,Heinz,Heinz Bauer,1939-10-28,70,Male,Germany,Germany,Hamburg,,['Media'],,,False,Increased
+2010,3,721,1.4 B,Chandra,Ramesh,Ramesh Chandra,1939-05-16,70,Male,India,India,New Delhi,,['Real Estate'],,,False,Returned to List
+2010,3,721,1.4 B,Coombs,Mark,Mark Coombs,1961-01-01,49,Male,United Kingdom,United Kingdom,London,,['Finance'],,,False,Returned to List
+2010,3,721,1.4 B,Czarnecki,Leszek,Leszek Czarnecki,1962-01-01,48,Male,Poland,Poland,Wroclaw,,['Finance'],,,False,Returned to List
+2010,3,721,1.4 B,Desai,Bharat,Bharat Desai & family,1952-11-20,57,Male,United States,United States,Fisher Island,Technology,['Technology                    '],Syntel,Chairman and Co-founder,False,Increased
+2010,3,721,1.4 B,Edwards,N. Murray,N. Murray Edwards,1959-12-10,50,Male,Canada,Canada,Calgary,,['Energy'],,,False,Returned to List
+2010,3,721,1.4 B,Fang,Wei,Fang Wei,1973-09-04,36,Male,China,China,Fushun,,['Manufacturing'],,,False,
+2010,3,721,1.4 B,Federmann,Michael,Michael Federmann & family,1943-09-09,66,Male,Israel,Israel,Tel Aviv,Technology,['Technology'],,,True,Increased
+2010,3,721,1.4 B,Filo,David,David Filo,1966-04-15,43,Male,United States,United States,Palo Alto,Technology,['Technology                    '],Yahoo,Chief Yahoo (director),False,Increased
+2010,3,721,1.4 B,Fisher,Kenneth,Ken Fisher,1950-11-29,59,Male,United States,United States,Woodside,Investments,['Investments                   '],,,False,Increased
+2010,3,721,1.4 B,Friedkin,Thomas,Thomas Friedkin,1935-08-29,74,Male,United States,United States,Houston,Automotive,['Automotive'],,,False,Decreased
+2010,3,721,1.4 B,Fukutake,Soichiro,Soichiro Fukutake,1945-12-14,64,Male,Japan,Japan,Okayama,,['Service'],,,False,Remained Even
+2010,3,721,1.4 B,Gaur,Jaiprakash,Jaiprakash Gaur,1931-01-31,79,Male,India,India,Delhi,,,,,False,Returned to List
+2010,3,721,1.4 B,Golisano,B. Thomas,Tom Golisano,1941-11-14,68,Male,United States,United States,Naples,Service,['Service'],,,False,Increased
+2010,3,721,1.4 B,Hariri,Aymin,Ayman Hariri,1978-05-16,31,Male,Saudi Arabia,Saudi Arabia,Riyadh,,['Construction & Engineering'],,,False,Increased
+2010,3,721,1.4 B,Hariri,Fahd,Fahd Hariri,1980-12-29,29,Male,Lebanon,France,Paris,,['Construction & Engineering'],,,False,Increased
+2010,3,721,1.4 B,Irsay,James,James Irsay,1959-06-13,50,Male,United States,United States,Carmel,Sports,['Sports                        '],Indianapolis Colts,CEO,False,Increased
+2010,3,721,1.4 B,Katz,Daryl,Daryl Katz,1961-09-01,48,Male,Canada,Canada,Edmonton,,['Fashion and Retail'],,,False,Decreased
+2010,3,721,1.4 B,Kim,James,James Kim & family,1936-01-08,74,Male,United States,United States,Bryn Mawr,,['Technology'],,,False,Returned to List
+2010,3,721,1.4 B,Kirac,Suna,Suna Kirac,1941-06-03,68,Female,Turkey,Turkey,Istanbul,,['Diversified'],,,False,Returned to List
+2010,3,721,1.4 B,Lasry,Marc,Marc Lasry,1960-09-23,49,Male,United States,United States,New York,Investments,['Investments                   '],Avenue Capital Group,Founder,False,Increased
+2010,3,721,1.4 B,Lee,Myung-Hee,Lee Myung-Hee,1943-09-05,66,Female,South Korea,South Korea,Seoul,,['Fashion and Retail'],,,False,Increased
+2010,3,721,1.4 B,Lui,Che Woo,Lui Che Woo,1930-01-01,80,Male,Hong Kong,Hong Kong,Hong Kong,,['Gaming'],,,False,Returned to List
+2010,3,721,1.4 B,Mann,Alfred,Alfred Mann,1925-11-06,84,Male,United States,United States,Las Vegas,,['Health care'],,,False,Remained Even
+2010,3,721,1.4 B,McNair,Robert,Robert McNair,1937-01-01,73,Male,United States,United States,Houston,Sports,['Sports                        '],,,False,Increased
+2010,3,721,1.4 B,Mori,Minoru,Minoru Mori,1934-08-24,75,Male,Japan,,,Real Estate,['Real Estate'],,,False,Increased
+2010,3,721,1.4 B,Nelson,Jonathan,Jonathan Nelson,1956-05-18,53,Male,United States,United States,Providence,Investments,['Investments                   '],Providence Equity Partners,Chief executive officer,False,
+2010,3,721,1.4 B,Nesis,Alexander,Alexander Nesis,1962-12-19,47,Male,Russia,,St. Petersburg,,['Investments'],,,False,
+2010,3,721,1.4 B,Nilekani,Nandan,Nandan Nilekani & family,1955-06-02,54,Male,India,India,Bangalore,,['Technology'],,,False,Returned to List
+2010,3,721,1.4 B,Perot,Henry Ross,"Henry Ross Perot, Jr.",1958-11-07,51,Male,United States,United States,Dallas,Technology,['Technology                    '],,,False,Decreased
+2010,3,721,1.4 B,Pessina,Stefano,Stefano Pessina,1941-06-04,68,Male,Italy,Monaco,Monte Carlo,,['Health care'],,,False,Decreased
+2010,3,721,1.4 B,Peterffy,Thomas,Thomas Peterffy,1944-09-01,65,Male,United States,United States,Greenwich,Investments,['Investments                   '],,,False,
+2010,3,721,1.4 B,Price,Michael,Michael Price,1952-07-03,57,Male,United States,United States,Far Hills,Investments,['Investments                   '],MFP Investors Inc.,President,False,Increased
+2010,3,721,1.4 B,Pritzker,Anthony,Anthony Pritzker,1961-01-07,49,Male,United States,United States,Los Angeles,Service,['Service'],,,False,Increased
+2010,3,721,1.4 B,Pritzker,Jay Robert (J.B.),Jay Robert (J.B.) Pritzker,1965-01-19,45,Male,United States,United States,Chicago,Investments,['Investments                   '],,,False,Increased
+2010,3,721,1.4 B,Pritzker,Penny,Penny Pritzker,1959-05-02,50,Female,United States,United States,Chicago,Investments,['Investments                   '],,,False,Increased
+2010,3,721,1.4 B,Rahimkulov,Megdet,Megdet Rahimkulov,1945-10-16,64,Male,Russia,Russia,Moscow,,['Investments'],,,False,Returned to List
+2010,3,721,1.4 B,Rovt,Alexander,Alexander Rovt,1952-07-23,57,Male,United States,United States,New York,Manufacturing,['Manufacturing'],,,False,Increased
+2010,3,721,1.4 B,Ryan,Patrick,Patrick Ryan,1937-05-15,72,Male,United States,United States,Winnetka,Finance,['Finance'],Ryan Specialty Group,Chairman and CEO,False,Increased
+2010,3,721,1.4 B,Sapir,Tamir,Tamir Sapir,1947-08-25,62,Male,United States,United States,New York,,['Real Estate'],,,False,Remained Even
+2010,3,721,1.4 B,Shen,Wenrong,Shen Wenrong,1946-02-13,64,Male,China,China,Zhangjiagang,,['Metals & Mining'],,,False,Decreased
+2010,3,721,1.4 B,Skoch,Andrei,Andrei Skoch,1966-01-30,44,Male,Russia,Russia,Moscow,,['Metals & Mining'],,,False,Returned to List
+2010,3,721,1.4 B,Sohmen,Helmut,Helmut Sohmen,1939-12-10,70,Male,Austria,Hong Kong,Hong Kong,,['Logistics'],,,False,Increased
+2010,3,721,1.4 B,Sonnenberg,Ralph,Ralph Sonnenberg,1934-05-15,75,Male,Netherlands,Switzerland,Meggen,,['Manufacturing'],,,False,Returned to List
+2010,3,721,1.4 B,Straumann,Thomas,Thomas Straumann,1963-07-22,46,Male,Switzerland,,,Health care,['Health care'],,,False,Returned to List
+2010,3,721,1.4 B,Tanaka,Yoshikazu,Yoshikazu Tanaka,1977-02-18,33,Male,Japan,Japan,Tokyo,,['Technology'],,,False,
+2010,3,721,1.4 B,Tariko,Roustam,Roustam Tariko,1962-03-17,47,Male,Russia,Russia,Moscow,,['Finance'],,,False,Increased
+2010,3,721,1.4 B,Wadhwani,Romesh T.,Romesh T. Wadhwani,1947-08-25,62,Male,United States,United States,Palo Alto,Technology,['Technology                    '],Symphony Technology Group,Founder and Chairman,False,
+2010,3,721,1.4 B,Yazici,Kamil,Kamil Yazici,1929-01-06,80,Male,Turkey,Turkey,Istanbul,,['Food and Beverage'],,,False,Increased
+2010,3,721,1.4 B,Zhu,Gongshan,Zhu Gongshan,1958-01-01,53,Male,China,China,Xuzhou,,['Energy'],,,False,
+2010,3,773,1.3 B,Ansin,Edmund,Edmund Ansin,1936-03-09,74,Male,United States,United States,Miami Beach,Media,['Media                         '],"Sunbeam Television, Corp.",President,False,Increased
+2010,3,773,1.3 B,Basaran,Mehmet Rustu,Mehmet Rustu Basaran,1947-02-21,0,Male,Turkey,Turkey,Istanbul,,['Finance'],,,False,
+2010,3,773,1.3 B,Benioff,Marc,Marc Benioff,1964-09-25,45,Male,United States,United States,San Francisco,Technology,['Technology                    '],Salesforce.com,Chairman and CEO,False,Returned to List
+2010,3,773,1.3 B,Berg,Carl,Carl Berg,1937-06-26,72,Male,United States,United States,Atherton,,['Real Estate'],,,False,Remained Even
+2010,3,773,1.3 B,Blank,Arthur,Arthur Blank,1942-09-27,67,Male,United States,United States,Atlanta,Sports,['Sports                        '],Atlanta Falcons,Chairman,False,Increased
+2010,3,773,1.3 B,Braman,Norman,Norman Braman,1932-08-22,77,Male,United States,United States,Miami,Automotive,['Automotive'],,,False,Increased
+2010,3,773,1.3 B,Charney,Leon,Leon Charney,1941-07-01,68,Male,United States,United States,New York,Real Estate,['Real Estate                   '],,,False,Decreased
+2010,3,773,1.3 B,Chilton,Richard,Richard Chilton Jr,1958-06-10,51,Male,United States,United States,Darien,Investments,['Investments                   '],"Chilton Investment Company, LLC",Founder,False,Returned to List
+2010,3,773,1.3 B,Chu,Mang Yee,Chu Mang Yee & family,1960-01-01,50,Male,China,China,Guangzhou,,['Real Estate'],,,False,Returned to List
+2010,3,773,1.3 B,Chung,Eui-Sun,Chung Eui-Sun,1970-10-18,39,Male,South Korea,South Korea,Seoul,,['Automotive'],,,False,
+2010,3,773,1.3 B,DeBartolo,Edward,"Edward DeBartolo, Jr.",1946-11-06,63,Male,United States,United States,Tampa,Real Estate,['Real Estate                   '],,,False,Returned to List
+2010,3,773,1.3 B,Dommermuth,Ralph,Ralph Dommermuth,1963-11-19,46,Male,Germany,Germany,Montabaur,,['Technology'],,,False,Returned to List
+2010,3,773,1.3 B,Dubin,Glenn,Glenn Dubin,1957-04-13,52,Male,United States,United States,New York,Investments,['Investments                   '],Highbridge Capital Management,Founder,False,Increased
+2010,3,773,1.3 B,Eczacibasi,Bulent,Bulent Eczacibasi,1949-10-25,60,Male,Turkey,Turkey,Istanbul,,['Health care'],,,False,Returned to List
+2010,3,773,1.3 B,Ford,Gerald J.,Gerald J. Ford,1944-08-04,65,Male,United States,United States,Dallas,Investments,['Investments                   '],Ford Financial Fund,Managing Member,False,Remained Even
+2010,3,773,1.3 B,Goenka,Rama Prasad,Rama Prasad Goenka,1930-03-01,80,Male,India,India,Kolkata,,['Diversified'],,,False,
+2010,3,773,1.3 B,Goldsbury,Christopher,Christopher Goldsbury,1943-01-01,67,Male,United States,United States,San Antonio,Food and Beverage,['Food and Beverage'],Silver Ventures,Chief Executive Officer,False,Increased
+2010,3,773,1.3 B,Gopalakrishnan,Senapathy,Senapathy Gopalakrishnan & family,1955-04-05,54,Male,India,India,Bangalore,,['Technology'],,,False,Returned to List
+2010,3,773,1.3 B,Harvey,Gerald,Gerald Harvey,1939-09-18,70,Male,Australia,Australia,Sydney,,['Fashion and Retail'],,,False,Returned to List
+2010,3,773,1.3 B,Hayne,Richard,Richard Hayne,1947-09-01,62,Male,United States,United States,Philadelphia,Fashion and Retail,['Fashion and Retail'],Urban Outfitters Inc.,"Chairman, President & Chief Executive Officer",False,Returned to List
+2010,3,773,1.3 B,Herlin,Antti,Antti Herlin,1956-11-14,53,Male,Finland,Finland,Kirkkonummi,,['Manufacturing'],,,False,
+2010,3,773,1.3 B,Huang,Wei,Huang Wei,1959-09-30,50,Male,China,China,Hangzhou,,['Real Estate'],,,False,Increased
+2010,3,773,1.3 B,Jinnai,Ryoichi,Ryoichi Jinnai,1926-08-15,83,Male,Japan,Japan,Hokkaido,Finance and Investments,['Finance and Investments'],,,True,Decreased
+2010,3,773,1.3 B,Kantor,Vyacheslav,Vyacheslav Kantor,1953-09-08,56,Male,Russia,Switzerland,Geneva,,['Manufacturing'],,,False,Returned to List
+2010,3,773,1.3 B,Kondrashev,Pyotr,Pyotr Kondrashev,1949-07-16,60,Male,Russia,Russia,Solikamsk,,['Manufacturing'],,,False,Returned to List
+2010,3,773,1.3 B,Kvetnoi,Lev,Lev Kvetnoi,1965-08-27,44,Male,Russia,Russia,Moscow,,['Investments'],,,False,Increased
+2010,3,773,1.3 B,Li,Richard,Richard Li,1966-11-08,43,Male,Hong Kong,Hong Kong,Hong Kong,,['Telecom'],,,False,Increased
+2010,3,773,1.3 B,Lin,Xiucheng,Lin Xiucheng & family,1955-10-10,54,Male,China,China,Xiamen,,['Technology'],,,False,
+2010,3,773,1.3 B,Lomakin,Anatoly,Anatoly Lomakin,1952-06-30,57,Male,Russia,Russia,Moscow,,['Metals & Mining'],,,False,
+2010,3,773,1.3 B,Mansueto,Joseph,Joe Mansueto,1956-09-03,53,Male,United States,United States,Chicago,Media,['Media                         '],Morningstar,Chairman and CEO,False,Increased
+2010,3,773,1.3 B,Marriott,John,"Bill Marriott, Jr.",1932-03-25,77,Male,United States,United States,Potomac,Service,['Service'],,,False,Returned to List
+2010,3,773,1.3 B,Marriott,Richard,Richard Marriott,1939-01-09,71,Male,United States,United States,Potomac,Service,['Service'],,,False,Returned to List
+2010,3,773,1.3 B,McCombs,Billy Joe,Billy Joe (Red) McCombs,1927-10-19,82,Male,United States,United States,San Antonio,Media,['Media                         '],,,False,Decreased
+2010,3,773,1.3 B,Michelson,Gary,Gary Michelson,1949-01-14,61,Male,United States,United States,Los Angeles,Health care,['Health care'],,,False,Remained Even
+2010,3,773,1.3 B,Morrison,Kenneth,Kenneth Morrison,1931-10-20,78,Male,United Kingdom,United Kingdom,Bradford,,['Fashion and Retail'],,,False,Increased
+2010,3,773,1.3 B,Ozilhan,Tuncay,Tuncay Ozilhan,1947-07-09,62,Male,Turkey,Turkey,Istanbul,,['Food and Beverage'],,,False,Increased
+2010,3,773,1.3 B,Penske,Roger,Roger Penske,1937-02-20,73,Male,United States,United States,Birmingham,,['Automotive'],,,False,Returned to List
+2010,3,773,1.3 B,Pritzker,Daniel,Daniel Pritzker,1959-01-01,51,Male,United States,United States,Marin County,Service,['Service'],,,False,Increased
+2010,3,773,1.3 B,Pritzker,James,James Pritzker,1951-08-13,58,Male,United States,United States,Chicago,Service,['Service'],Tawani Enterprises,CEO,False,Increased
+2010,3,773,1.3 B,Pritzker,Jean (Gigi),Jean (Gigi) Pritzker,1962-01-01,48,Female,United States,United States,Chicago,Service,['Service'],,,False,Increased
+2010,3,773,1.3 B,Pritzker,John,John Pritzker,1953-01-01,57,Male,United States,United States,San Francisco,Investments,['Investments                   '],,,False,Increased
+2010,3,773,1.3 B,Pritzker,Karen,Karen Pritzker,1958-01-07,52,Female,United States,United States,Branford,Service,['Service'],,,False,Increased
+2010,3,773,1.3 B,Pritzker,Linda,Linda Pritzker,1954-01-01,56,Female,United States,United States,St. Ignatius,Service,['Service'],,,False,Increased
+2010,3,773,1.3 B,Qi,Jinxing,Qi Jinxing,1962-03-28,47,Male,China,China,Hangzhou,,['Real Estate'],,,False,
+2010,3,773,1.3 B,Riddell,Clayton,Clayton Riddell,1937-07-13,72,Male,Canada,Canada,Calgary,,['Energy'],,,False,Returned to List
+2010,3,773,1.3 B,Shifrin,Eduard,Eduard Shifrin,1960-07-12,49,Male,United Kingdom,United Kingdom,London,,,,,False,Remained Even
+2010,3,773,1.3 B,Shnaider,Alexander,Alexander Shnaider,1968-08-03,41,Male,Canada,Canada,Toronto,,,,,False,Remained Even
+2010,3,773,1.3 B,Sperling,John,John Sperling,1921-01-09,89,Male,United States,United States,Phoenix,Service,['Service'],,,False,Decreased
+2010,3,773,1.3 B,Sun,Guangxin,Sun Guangxin,1962-12-01,47,Male,China,China,Urumchi,,['Diversified'],,,False,Increased
+2010,3,773,1.3 B,Tong,Jinquan,Tong Jinquan,1954-11-01,55,Male,China,China,Shanghai,,['Real Estate'],,,False,
+2010,3,773,1.3 B,Unger,Peter,Peter Unger,1944-08-20,65,Male,Germany,Germany,Weiden,,['Automotive'],,,False,Increased
+2010,3,773,1.3 B,van den Ende,Joop,Joop van den Ende,1942-02-23,68,Male,Netherlands,Netherlands,Amsterdam,,['Media'],,,False,Returned to List
+2010,3,773,1.3 B,Wang,Jiufang,Wang Jiufang,1963-12-11,46,Male,China,China,Ningbo,Real Estate,['Real Estate'],,,True,
+2010,3,773,1.3 B,Whitman,Margaret,Meg Whitman,1956-08-04,53,Female,United States,United States,Atherton,Technology,['Technology                    '],Hewlett-Packard,CEO,False,Increased
+2010,3,773,1.3 B,Yang,Jerry,Jerry Yang,1968-11-06,41,Male,United States,United States,Los Altos Hills,Technology,['Technology                    '],,,False,Increased
+2010,3,828,1.2 B,Abello,Juan,Juan Abello,1941-12-16,68,Male,Spain,Spain,Madrid,,['Investments'],,,False,Returned to List
+2010,3,828,1.2 B,Alcocer,Alberto,Alberto Alcocer,1942-12-07,67,Male,Spain,,,Investments,['Investments'],,,False,Increased
+2010,3,828,1.2 B,Bakala,Zdenek,Zdenek Bakala,1961-01-01,49,Male,Czech Republic,Switzerland,Geneva,,['Energy'],,,False,
+2010,3,828,1.2 B,Chao,Teng-Hsiung,Chao Teng-Hsiung,1944-01-01,66,Male,Taiwan,Taiwan,Taipei,,['Real Estate'],,,False,
+2010,3,828,1.2 B,Chen,Jinxia,Chen Jinxia,1968-03-28,41,Female,China,China,Shanghai,,['Investments'],,,False,
+2010,3,828,1.2 B,Chen,Tianqiao,Chen Tianqiao,1973-01-01,37,Male,China,China,Shanghai,,['Technology'],,,False,
+2010,3,828,1.2 B,Clark,Alfred James,Alfred James Clark,1927-12-02,82,Male,United States,United States,Vero Beach,Construction & Engineering,['Construction & Engineering'],,,False,Remained Even
+2010,3,828,1.2 B,Cortina,Alberto,Alberto Cortina,1946-01-20,64,Male,Spain,Spain,Madrid,,['Investments'],,,False,Increased
+2010,3,828,1.2 B,Coutu,Jean,Jean Coutu,1927-05-29,82,Male,Canada,Canada,Quebec,,['Fashion and Retail'],,,False,Returned to List
+2010,3,828,1.2 B,Davis,Ray,Ray Davis,1941-12-01,67,Male,United States,United States,Dallas,Energy,['Energy                        '],,,False,
+2010,3,828,1.2 B,Diller,Barry,Barry Diller,1942-02-02,68,Male,United States,United States,New York,Media,['Media                         '],,,False,Increased
+2010,3,828,1.2 B,Dorfman,Lloyd,Lloyd Dorfman,1952-08-25,57,Male,United Kingdom,United Kingdom,London,,,,,False,Returned to List
+2010,3,828,1.2 B,Du,Shuanghua,Du Shuanghua,1965-01-01,45,Male,China,China,Hengshui,,,,,False,Increased
+2010,3,828,1.2 B,Duffield,David,David Duffield,1940-09-21,69,Male,United States,United States,Blackhawk,Technology,['Technology                    '],Workday,Chairman and co-CEO,False,Increased
+2010,3,828,1.2 B,Eczacibasi,Faruk,Faruk Eczacibasi,1954-06-15,56,Male,Turkey,Turkey,Istanbul,,['Health care'],,,False,Returned to List
+2010,3,828,1.2 B,Funai,Tetsuro,Tetsuro Funai,1927-01-24,83,Male,Japan,Japan,Osaka,Manufacturing,['Manufacturing'],,,True,Returned to List
+2010,3,828,1.2 B,Gao,Dekang,Gao Dekang & family,1952-02-01,58,Male,China,China,Shanghai,,['Fashion and Retail'],,,False,Returned to List
+2010,3,828,1.2 B,Garfinkel,Jayme,Jayme Garfinkel & family,1946-11-01,63,Male,Brazil,Brazil,Sao Paulo,,['Finance'],,,False,Returned to List
+2010,3,828,1.2 B,He,Jinming,He Jinming & family,1952-05-03,57,Male,China,China,Shenzhen,Fashion & Retail,['Fashion & Retail'],,,True,
+2010,3,828,1.2 B,Hernandez Ramirez,Roberto,Roberto Hernandez Ramirez,1942-03-24,67,Male,Mexico,Mexico,Mexico City,,['Finance'],,,False,Remained Even
+2010,3,828,1.2 B,Herz,Ingeburg,Ingeburg Herz,1922-01-01,90,Female,Germany,Germany,Hamburg,,['Fashion and Retail'],,,False,Remained Even
+2010,3,828,1.2 B,Huang,Maoru,Huang Maoru & family,1965-07-01,45,Male,Belize,China,Shenzhen,Fashion & Retail,['Fashion & Retail'],,,True,Returned to List
+2010,3,828,1.2 B,Hunt,Johnelle,Johnelle Hunt,1932-01-04,78,Female,United States,United States,Fayetteville,Logistics,['Logistics'],,,False,Returned to List
+2010,3,828,1.2 B,Iorikh,Vladimir,Vladimir Iorich,1958-09-09,51,Male,Germany,Switzerland,Zug,,['Metals & Mining'],,,False,Returned to List
+2010,3,828,1.2 B,Jacobs,Irwin,Irwin Jacobs,1933-10-18,76,Male,United States,United States,La Jolla,Technology,['Technology                    '],Qualcomm,Cofounder & Chairman Emeritus,False,Decreased
+2010,3,828,1.2 B,Jain,Anand,Anand Jain,1957-01-14,53,Male,India,India,Mumbai,,,,,False,Returned to List
+2010,3,828,1.2 B,Kesaev,Igor,Igor Kesaev,1966-10-30,43,Male,Russia,Russia,Moscow,,['Fashion and Retail'],,,False,Returned to List
+2010,3,828,1.2 B,Khachaturov,Danil,Danil Khachaturov,1971-10-30,38,Male,Russia,Russia,Moscow,,['Finance'],,,False,Returned to List
+2010,3,828,1.2 B,Kozitsyn,Andrei,Andrei Kozitsyn,1960-06-09,49,Male,Russia,Russia,Yekaterinburg,,['Metals & Mining'],,,False,Returned to List
+2010,3,828,1.2 B,Lee,Thomas,Thomas Lee,1944-09-01,65,Male,United States,United States,New York,Investments,['Investments                   '],,,False,Decreased
+2010,3,828,1.2 B,Lin,Li,Lin Li,1963-05-01,46,Male,China,China,Shenzhen,,['Investments'],,,False,Returned to List
+2010,3,828,1.2 B,Low Tuck,Kwong,Low Tuck Kwong,1948-04-17,61,Male,Indonesia,Indonesia,Indonesia,,['Energy'],,,False,
+2010,3,828,1.2 B,Ma,Jack,Jack Ma,1964-09-10,45,Male,China,China,Hangzhou,,['Technology'],,,False,Returned to List
+2010,3,828,1.2 B,Mitchell,Malone,Malone Mitchell,1961-07-01,48,Male,United States,United States,Oklahoma City,,['Energy'],,,False,
+2010,3,828,1.2 B,Oberoi,Vikas,Vikas Oberoi,1970-09-08,39,Male,India,India,Mumbai,,['Real Estate'],,,False,Returned to List
+2010,3,828,1.2 B,Rakhimov,Ural,Ural Rakhimov,1961-12-13,48,Male,Russia,Russia,Ufa,,,,,False,Returned to List
+2010,3,828,1.2 B,Rowan,Marc,Marc Rowan,1962-01-01,48,Male,United States,United States,New York,Investments,['Investments                   '],,,False,Returned to List
+2010,3,828,1.2 B,Safra,Lily,Lily Safra,1938-01-01,72,Female,Monaco,United Kingdom,London,,['Finance'],,,False,Increased
+2010,3,828,1.2 B,Saul,Bernard,"Bernard Saul, II.",1932-03-30,77,Male,United States,United States,Chevy Chase,Investments,['Investments                   '],Saul Centers Inc.,Chairman and CEO,False,Returned to List
+2010,3,828,1.2 B,Scaife,Richard,Richard Scaife,1932-07-03,77,Male,United States,United States,Pittsburgh,Investments,['Investments                   '],,,False,Increased
+2010,3,828,1.2 B,Secunda,Thomas,Thomas Secunda,1954-06-01,55,Male,United States,United States,Croton-on-Hudson,Media,['Media'],,,False,Increased
+2010,3,828,1.2 B,Shvidler,Evgeny (Eugene),Evgeny (Eugene) Shvidler,1964-03-23,45,Male,United States,United Kingdom,London,Energy,['Energy                        '],,,False,Increased
+2010,3,828,1.2 B,Sperling,Peter,Peter Sperling,1959-11-22,50,Male,United States,United States,Phoenix,Service,['Service'],,,False,Decreased
+2010,3,828,1.2 B,Tan,Vincent,Vincent Tan,,0,Male,Malaysia,Malaysia,Kuala Lumpur,,['Diversified'],,,False,
+2010,3,828,1.2 B,Tara,Mehmet Sinan,Mehmet Sinan Tara,1958-05-24,51,Male,Turkey,Turkey,Istanbul,,['Construction & Engineering'],,,False,Returned to List
+2010,3,828,1.2 B,Thiel,Peter,Peter Thiel,1967-10-11,42,Male,United States,United States,San Francisco,Investments,['Investments                   '],Founders Fund,Partner,False,Returned to List
+2010,3,828,1.2 B,von Holtzbrinck,Dieter,Dieter von Holtzbrinck,1941-09-29,68,Male,Germany,Germany,Stuttgart,,,,,False,Increased
+2010,3,828,1.2 B,Wagner,Todd,Todd Wagner,1960-08-02,49,Male,United States,United States,Dallas,Media,['Media                         '],,,False,Decreased
+2010,3,828,1.2 B,Weber,Charlotte Colket,Charlotte Colket Weber,1942-11-19,67,Female,United States,United States,Hobe Sound,Food and Beverage,['Food and Beverage'],Campbell Soup,Director,False,Increased
+2010,3,828,1.2 B,Ye,Chenghai,Ye Chenghai,1943-08-15,66,Male,Hong Kong,Hong Kong,Hong Kong,,['Health care'],,,False,
+2010,3,828,1.2 B,Zhang,Cheng Fei,Zhang Cheng Fei,1967-10-01,40,Male,China,China,Dongguan,Manufacturing,['Manufacturing'],,,True,Returned to List
+2010,3,828,1.2 B,Zhevago,Kostyantin,Kostyantin Zhevago,1974-01-07,36,Male,Ukraine,Ukraine,Kiev,Metals & Mining,['Metals & Mining'],,,True,Returned to List
+2010,3,880,1.1 B,Adams,Kenneth,"Kenneth Adams, Jr.",1923-01-01,87,Male,United States,United States,Houston,Sports,['Sports                        '],,,False,Remained Even
+2010,3,880,1.1 B,Agalarov,Aras,Aras Agalarov,1955-11-08,54,Male,Russia,Russia,Moscow,,['Fashion and Retail'],,,False,Returned to List
+2010,3,880,1.1 B,Al Futtaim,Abdulla,Abdulla Al Futtaim,,0,Male,United Arab Emirates,United Arab Emirates,Dubai,,['Automotive'],,,False,Decreased
+2010,3,880,1.1 B,Altushkin,Igor,Igor Altushkin,1970-09-10,39,Male,Russia,Russia,Yekaterinburg,,['Metals & Mining'],,,False,Returned to List
+2010,3,880,1.1 B,Bajaj,Rahul,Rahul Bajaj,1938-06-10,71,Male,India,India,Pune,,['Automotive'],,,False,Returned to List
+2010,3,880,1.1 B,Barrack,Thomas,Thomas Barrack,1947-04-28,62,Male,United States,United States,Los Angeles,,['Investments'],,,False,Increased
+2010,3,880,1.1 B,Bollore,Vincent,Vincent Bollore,1952-04-01,57,Male,France,France,Paris,,['Investments'],,,False,Returned to List
+2010,3,880,1.1 B,Bozano,Julio,Julio Bozano,1936-02-01,74,Male,Brazil,Brazil,Rio de Janeiro,,['Finance'],,,False,Remained Even
+2010,3,880,1.1 B,Brown,John,John Brown,1934-09-15,75,Male,United States,United States,Portage,Health care,['Health care'],,,False,Returned to List
+2010,3,880,1.1 B,Case,Stephen,Steve Case,1958-08-21,51,Male,United States,United States,McLean,Technology,['Technology                    '],,,False,Returned to List
+2010,3,880,1.1 B,Chan,Laiwa,Chan Laiwa & family,1941-01-01,69,Female,China,China,Beijing,Billionaire,['Billionaire'],,Philanthropist,False,
+2010,3,880,1.1 B,Chang,Yung Fa,Chang Yung Fa & family,1927-10-06,83,Male,Taiwan,Taiwan,Taipei,,['Logistics'],,,False,Returned to List
+2010,3,880,1.1 B,Chey,Tae-Won,Chey Tae-Won,1960-12-03,49,Male,South Korea,South Korea,Seoul,,['Diversified'],,,False,Returned to List
+2010,3,880,1.1 B,Dzhaparidze,Alexander,Alexander Dzhaparidze,1955-07-20,54,Male,Russia,Russia,Moscow,,['Energy'],,,False,Returned to List
+2010,3,880,1.1 B,Fisher,John,John Fisher,1961-06-01,48,Male,United States,United States,San Francisco,Fashion and Retail,['Fashion and Retail            '],"Pisces, Inc.",President,False,Decreased
+2010,3,880,1.1 B,Fisher,Robert,Robert Fisher,1953-08-01,56,Male,United States,United States,San Francisco,Service,['Service'],Gap,Director,False,Increased
+2010,3,880,1.1 B,Forstmann,Theodore,Ted Forstmann,1940-02-13,70,Male,United States,,,Investments,['Investments                   '],,,False,Increased
+2010,3,880,1.1 B,Gerry,Alan,Alan Gerry,1929-12-24,81,Male,United States,United States,Liberty,Media,['Media                         '],,,False,Remained Even
+2010,3,880,1.1 B,Goenka,Vinod,Vinod Goenka,1959-02-07,51,Male,India,India,Mumbai,,,,,False,
+2010,3,880,1.1 B,Gubay,Albert,Albert Gubay,1928-04-09,81,Male,United Kingdom,United Kingdom,"Stanton, Isle of Man",,,,,False,Remained Even
+2010,3,880,1.1 B,Gurbanoglu,Mubariz,Mubariz Gurbanoglu,1968-03-22,42,Male,Turkey,Turkey,Istanbul,,['Logistics'],,,False,Remained Even
+2010,3,880,1.1 B,He,Zhusheng,He Zhusheng & family,1947-07-01,62,Male,China,China,Haicheng,,,,,False,
+2010,3,880,1.1 B,Hintze,Michael,Michael Hintze,1954-01-01,56,Male,Australia,United Kingdom,London,,['Finance'],,,False,
+2010,3,880,1.1 B,James,Hamilton,Hamilton James,1951-08-03,58,Male,United States,United States,New York,,['Investments'],,,False,Returned to List
+2010,3,880,1.1 B,Ke,Xiping,Ke Xiping & wife,1960-06-07,49,Male,China,China,Xiamen,,,,,False,
+2010,3,880,1.1 B,Khosla,Vinod,Vinod Khosla,1955-01-28,55,Male,United States,United States,Portola Valley,Technology,['Technology                    '],Khosla Ventures,Partner,False,Remained Even
+2010,3,880,1.1 B,Knaster,Alexander,Alexander Knaster,1959-02-19,51,Male,United States,United Kingdom,London,Investments,['Investments                   '],,,False,Returned to List
+2010,3,880,1.1 B,Koo,Bon-Moo,Koo Bon-Moo,1945-02-10,65,Male,South Korea,South Korea,Seoul,,['Diversified'],,,False,Returned to List
+2010,3,880,1.1 B,Kulibaev,Timur,Timur Kulibaev,1966-09-10,43,Male,Kazakhstan,Kazakhstan,Almaty,,['Finance'],,,False,Returned to List
+2010,3,880,1.1 B,Kulibaeva,Dinara,Dinara Kulibaeva,1967-08-19,42,Female,Kazakhstan,Kazakhstan,Almaty,,['Finance'],,,False,Returned to List
+2010,3,880,1.1 B,Ladreit de Lacharriere,Marc,Marc Ladreit de Lacharriere,1940-11-06,69,Male,France,France,Paris,,['Finance'],,,False,Returned to List
+2010,3,880,1.1 B,Lei,Jufang,Lei Jufang,1953-01-03,57,Female,China,China,Lanzhou,,['Health care'],,,False,
+2010,3,880,1.1 B,Macaulay,William,William Macaulay,1945-09-02,64,Male,United States,United States,Greenwich,Energy,['Energy                        '],,,False,Increased
+2010,3,880,1.1 B,Magness,Gary,Gary Magness,1954-02-26,56,Male,United States,United States,Denver,Media,['Media                         '],,,False,Returned to List
+2010,3,880,1.1 B,Moncrief,William,William Moncrief Jr,1920-03-27,89,Male,United States,United States,Fort Worth,,['Energy'],,,False,Remained Even
+2010,3,880,1.1 B,Niculae,Ioan,Ioan Niculae,1954-07-19,55,Male,Romania,,Zimnicea,,,,,False,
+2010,3,880,1.1 B,Ozokur,Ahsen,Ahsen Ozokur,1950-08-14,0,Female,Turkey,Turkey,Istanbul,,['Food and Beverage'],,,False,Returned to List
+2010,3,880,1.1 B,Peltz,Nelson,Nelson Peltz,1942-06-01,67,Male,United States,United States,Bedford,Investments,['Investments                   '],Trian Fund Management,Founder,False,Remained Even
+2010,3,880,1.1 B,Pickens,T. Boone,T. Boone Pickens,1928-05-22,81,Male,United States,United States,Dallas,Energy,['Energy                        '],,,False,Decreased
+2010,3,880,1.1 B,Ponomarenko,Alexander,Alexander Ponomarenko,1964-10-27,45,Male,Russia,Russia,Moscow,,['Logistics'],,,False,Returned to List
+2010,3,880,1.1 B,Sainsbury,David,David Sainsbury,1940-10-24,69,Male,United Kingdom,United Kingdom,London,,['Fashion and Retail'],,,False,Increased
+2010,3,880,1.1 B,Sandell,Thomas,Thomas Sandell,1961-02-01,49,Male,Sweden,United States,New York,,['Investments'],,,False,Increased
+2010,3,880,1.1 B,Sedykh,Anatoly,Anatoly Sedykh,1964-11-28,45,Male,Russia,Russia,Moscow,,['Metals & Mining'],,,False,Returned to List
+2010,3,880,1.1 B,Shorenstein,Walter,Walter Shorenstein & family,1915-02-23,95,Male,United States,United States,San Francisco,,['Real Estate'],,,False,Increased
+2010,3,880,1.1 B,Simon,Herbert,Herbert Simon,1934-10-23,75,Male,United States,United States,Indianapolis,Real Estate,['Real Estate                   '],Simon Property Group,"Chairman Emeritus of the Board of Simon Property Group, Inc.",False,Returned to List
+2010,3,880,1.1 B,Skorobogatko,Alexander,Alexander Skorobogatko,1967-09-25,42,Male,Russia,Russia,Moscow,,['Logistics'],,,False,Returned to List
+2010,3,880,1.1 B,Snyder,Daniel,Dan Snyder,1964-11-23,45,Male,United States,United States,Potomac,Sports,['Sports                        '],,,False,Increased
+2010,3,880,1.1 B,Spanos,Alexander,Alexander Spanos & family,1923-09-28,86,Male,United States,United States,Stockton,,['Sports'],,,False,Increased
+2010,3,880,1.1 B,Steinbrenner,George,George Steinbrenner III,1930-07-04,79,Male,United States,United States,Tampa,,['Sports'],,,False,Decreased
+2010,3,880,1.1 B,Subkhanberdin,Nurzhan,Nurzhan Subkhanberdin,1965-11-29,44,Male,Kazakhstan,Kazakhstan,Alma-Ata,,['Finance'],,,False,Returned to List
+2010,3,880,1.1 B,Swieca,Henry,Henry Swieca,1957-05-09,52,Male,United States,United States,New York,Investments,['Investments                   '],Talpion Fund Management,Founder,False,Increased
+2010,3,880,1.1 B,Troutt,Kenny,Kenny Troutt,1948-01-08,62,Male,United States,United States,Dallas,Telecom,['Telecom'],,,False,Increased
+2010,3,880,1.1 B,van Beuren,Hope Hill,Hope Hill van Beuren & family,1934-03-14,76,Female,United States,United States,Middletown,,['Food and Beverage'],,,False,Remained Even
+2010,3,880,1.1 B,Wang,Wenjing,Wang Wenjing,1964-12-05,45,Male,China,China,Beijing,,['Technology'],,,False,
+2010,3,880,1.1 B,Wong,Allan,Allan Wong & family,,0,Male,Hong Kong,Hong Kong,Hong Kong,,['Manufacturing'],,,False,
+2010,3,880,1.1 B,Yao,Juhuo,Yao Juhuo & family,1931-01-01,79,Male,China,,,Energy,['Energy'],,,True,
+2010,3,880,1.1 B,Zhang,Hongwei,Zhang Hongwei,1954-12-26,55,Male,China,China,Beijing,,['Diversified'],,,False,
+2010,3,937,1.0 B,An,Kang,An Kang,1949-01-01,61,Male,China,China,Xinxiang,,['Health care'],,,False,
+2010,3,937,1.0 B,Babis,Andrej,Andrej Babis,1954-09-02,55,Male,Czech Republic,Czech Republic,Prague,,['Food and Beverage'],,,False,
+2010,3,937,1.0 B,Bailey,Thomas,Thomas Bailey,1937-01-01,73,Male,United States,United States,Aspen,,['Finance'],,,False,Returned to List
+2010,3,937,1.0 B,Balwa,Shahid,Shahid Balwa,1974-01-04,36,Male,India,India,Mumbai,,,,,False,
+2010,3,937,1.0 B,Bangur,Benu Gopal,Benu Gopal Bangur,1931-06-01,78,Male,India,India,Kolkata,,,,,False,
+2010,3,937,1.0 B,Bowlen,Patrick,Patrick Bowlen & family,1944-02-18,66,,United States,United States,Denver,,,,,False,
+2010,3,937,1.0 B,Burrell,Gary,Gary Burrell,1937-08-24,72,Male,United States,United States,Spring Hill,Manufacturing,['Manufacturing'],Garmin Corporation,Chairman Emeritus,False,Returned to List
+2010,3,937,1.0 B,Calik,Ahmet,Ahmet Calik,1958-03-01,51,Male,Turkey,Turkey,Istanbul,,['Diversified'],,,False,Remained Even
+2010,3,937,1.0 B,Chandler,Christopher,Christopher Chandler,1960-01-01,50,Male,New Zealand,New Zealand,Dubai,,['Investments'],,,False,Remained Even
+2010,3,937,1.0 B,Ciner,Turgay,Turgay Ciner,1956-03-01,54,Male,Turkey,Turkey,Istanbul,,['Diversified'],,,False,Returned to List
+2010,3,937,1.0 B,Cook,Scott,Scott Cook,1952-07-26,57,Male,United States,United States,Woodside,Technology,['Technology                    '],,,False,Remained Even
+2010,3,937,1.0 B,Dogan,Aydin,Aydin Dogan,1936-04-15,73,Male,Turkey,Turkey,Istanbul,,['Media'],,,False,Returned to List
+2010,3,937,1.0 B,Dyson,James,James Dyson,1947-05-02,62,Male,United Kingdom,United Kingdom,Gloucestershire,,['Manufacturing'],,,False,Remained Even
+2010,3,937,1.0 B,Edson,John,John Edson,1932-05-08,77,Male,United States,United States,Seattle,,['Manufacturing'],,,False,Remained Even
+2010,3,937,1.0 B,Fregin,Douglas,Douglas Fregin,1961-01-01,49,Male,Canada,Canada,Waterloo,,,,,False,Returned to List
+2010,3,937,1.0 B,Fu,Guangming,Fu Guangming & family,1953-10-02,56,Male,China,China,Nanping,,['Food and Beverage'],,,False,
+2010,3,937,1.0 B,Gabelli,Mario,Mario Gabelli,1942-03-31,67,Male,United States,United States,Greenwich,Investments,['Investments'],,,False,Returned to List
+2010,3,937,1.0 B,Guzman Loera,Joaquin,Joaquin Guzman Loera,1957-04-04,55,Male,Mexico,Mexico,Sinaloa State,,['Logistics'],,,False,Remained Even
+2010,3,937,1.0 B,Hall,Donald,Donald Hall,1928-07-09,81,Male,United States,United States,Mission Hills,,['Fashion and Retail'],,,False,Returned to List
+2010,3,937,1.0 B,Hamilton,Dorrance,Dorrance Hamilton & family,1928-08-16,81,Female,United States,United States,Wayne,Food and Beverage,['Food and Beverage'],,,False,Remained Even
+2010,3,937,1.0 B,Harp Helu,Alfredo,Alfredo Harp Helu & family,1944-03-11,66,Male,Mexico,Mexico,Mexico City,,['Finance'],,,False,Remained Even
+2010,3,937,1.0 B,Huang,Wenzai,Huang Wen Tsai,1953-07-01,56,Male,China,China,Guangzhou,,['Real Estate'],,,False,
+2010,3,937,1.0 B,Huntsman,Jon,Jon Huntsman,1937-06-21,72,Male,United States,United States,Salt Lake City,Manufacturing,['Manufacturing'],,,True,Returned to List
+2010,3,937,1.0 B,Jhunjhunwala,Rakesh,Rakesh Jhunjhunwala,1960-07-05,49,Male,India,India,Mumbai,,['Investments'],,,False,Returned to List
+2010,3,937,1.0 B,Joseph,George,George Joseph,1921-09-11,88,Male,United States,United States,Los Angeles,Finance,['Finance'],,,False,Returned to List
+2010,3,937,1.0 B,Kahn,Morris,Morris Kahn,1930-01-01,80,Male,Israel,Israel,Beit Yanay,,['Technology'],,,False,Remained Even
+2010,3,937,1.0 B,Kellogg,William,William Kellogg,1943-07-08,66,Male,United States,United States,Oconomowoc,Fashion and Retail,['Fashion and Retail'],Kohl's,Director and Member of Executive Committee,False,Returned to List
+2010,3,937,1.0 B,Khalili,Nasser,Nasser Khalili,1945-12-18,64,Male,United Kingdom,United Kingdom,London,,['Investments'],,,False,Remained Even
+2010,3,937,1.0 B,Kimmel,Sidney,Sidney Kimmel,1928-01-16,82,Male,United States,United States,New York,Fashion and Retail,['Fashion and Retail            '],,,False,Returned to List
+2010,3,937,1.0 B,Kosogov,Andrei,Andrei Kosogov,1961-03-15,49,Male,Russia,Russia,Moscow,,['Energy'],,,False,Returned to List
+2010,3,937,1.0 B,Krasny,Michael,Michael Krasny,1953-08-08,56,Male,United States,United States,Highland Park,,['Technology'],,,False,Decreased
+2010,3,937,1.0 B,Langone,Kenneth,Kenneth Langone,1935-09-16,74,Male,United States,United States,Sands Point,Investments,['Investments                   '],,,False,Returned to List
+2010,3,937,1.0 B,Lee-Chin,Michael,Michael Lee-Chin,1951-01-03,59,Male,Canada,Canada,Burlington,Finance and Investments,['Finance and Investments'],,,True,Remained Even
+2010,3,937,1.0 B,Lerner,Nancy,Nancy Lerner,1960-05-11,49,Female,United States,United States,Cleveland,Finance & Investments,['Finance and Investments'],,,False,Returned to List
+2010,3,937,1.0 B,Lerner,Norma,Norma Lerner,1936-03-28,73,Female,United States,United States,Cleveland,Finance & Investments,['Finance and Investments'],,,False,Returned to List
+2010,3,937,1.0 B,Lerner,Randolph,Randolph Lerner,1962-02-21,48,Male,United States,United States,Cleveland,Finance & Investments,['Finance and Investments'],,,False,Returned to List
+2010,3,937,1.0 B,Lew,Solomon,Solomon Lew,1945-03-22,64,Male,Australia,Australia,Toorak,,['Fashion and Retail'],,,False,
+2010,3,937,1.0 B,Lewis,Peter,Peter Lewis,1933-11-11,76,Male,United States,United States,Coconut Grove,Logistics,['Logistics'],,,False,Returned to List
+2010,3,937,1.0 B,Li,Zhaohui,Li Zhaohui,1981-03-08,29,Male,China,China,Wenxi,,,,,False,
+2010,3,937,1.0 B,Lurie,Jeffrey,Jeffrey Lurie,1951-09-08,58,Male,United States,United States,Wynnewood,Sports,['Sports'],,,False,Remained Even
+2010,3,937,1.0 B,Magerko,Margaret,Maggie Magerko,1965-12-07,44,Female,United States,United States,Belle Vernon,Service & Retail,['Service'],,,False,Decreased
+2010,3,937,1.0 B,Mallya,Vijay,Vijay Mallya,1955-12-18,54,Male,India,India,Bangalore,,['Food and Beverage'],,,False,Returned to List
+2010,3,937,1.0 B,Mansha,Mian Muhammad,Mian Mohammad Mansha,1947-12-01,62,,Pakistan,Pakistan,Lahore,,,,,False,
+2010,3,937,1.0 B,McClendon,Aubrey,Aubrey McClendon,1959-07-14,50,Male,United States,United States,Oklahoma City,Energy,['Energy'],,,False,Returned to List
+2010,3,937,1.0 B,Mhaiskar,Virendra,Virendra Mhaiskar,1971-10-08,38,Male,India,India,Mumbai,,['Construction & Engineering'],,,False,
+2010,3,937,1.0 B,Moreno,Arturo,Arturo Moreno,1946-08-14,63,Male,United States,United States,Phoenix,Sports,['Sports'],,,False,Returned to List
+2010,3,937,1.0 B,Okada,Kazuo,Kazuo Okada & family,1942-10-03,67,Male,Japan,Japan,Tokyo,,['Gaming'],,,False,Returned to List
+2010,3,937,1.0 B,Piramal,Ajay,Ajay Piramal,1955-08-03,54,Male,India,India,Mumbai,,['Health care'],,,False,
+2010,3,937,1.0 B,Pritzker,Nicholas,Nicholas Pritzker II,1944-01-01,66,Male,United States,United States,Chicago,,['Service'],,,False,Returned to List
+2010,3,937,1.0 B,Reddy,G.V. Krishna,G.V. Krishna Reddy,1937-03-22,72,Male,India,India,Hyderabad,,,,,False,Returned to List
+2010,3,937,1.0 B,Reddy,K. Anji,K. Anji Reddy,1941-09-17,68,Male,India,India,Hyderabad,,['Health care'],,,False,
+2010,3,937,1.0 B,Rich,Marc,Marc Rich,1934-12-18,75,Male,United States,Switzerland,Meggen,,['Investments'],,,False,Decreased
+2010,3,937,1.0 B,Rowling,Joanne (J.K.),J.K. Rowling,1965-07-31,44,Female,United Kingdom,,,Celebrity,['Celebrity'],,Author,False,Remained Even
+2010,3,937,1.0 B,Sabanci Dincer,Suzan,Suzan Sabanci Dincer,1965-01-01,45,Female,Turkey,Turkey,Istanbul,,['Diversified'],,,False,
+2010,3,937,1.0 B,Sabanci,Sevket,Sevket Sabanci,1936-01-01,74,Male,Turkey,Turkey,Istanbul,,['Diversified'],,,False,Returned to List
+2010,3,937,1.0 B,Sahenk,Deniz,Deniz Sahenk,1945-07-06,0,Female,Turkey,Turkey,Istanbul,,['Finance'],,,False,Returned to List
+2010,3,937,1.0 B,Scaglia,Silvio,Silvio Scaglia,1958-10-14,51,Male,Italy,Italy,Milan,,,,,False,Returned to List
+2010,3,937,1.0 B,Schar,Dwight,Dwight Schar,1942-02-08,68,Male,United States,United States,Palm Beach,Sports,['Sports'],,,True,
+2010,3,937,1.0 B,Schonfeld,Steven,Steven Schonfeld,1959-07-03,50,Male,United States,United States,Old Westbury,Finance and Investments,['Finance and Investments'],,,True,
+2010,3,937,1.0 B,Shimamura,Nobutoshi,Nobutoshi Shimamura & family,1926-03-08,84,Male,Japan,Japan,,,['Fashion and Retail'],,,False,
+2010,3,937,1.0 B,Solowow,Michal,Michal Solowow,1962-07-11,47,Male,Poland,Poland,Kielce,,['Investments'],,,False,Returned to List
+2010,3,937,1.0 B,Tanjung,Chairul,Chairul Tanjung,1962-06-18,47,Male,Indonesia,,Jakarta,,['Diversified'],,,False,
+2010,3,937,1.0 B,Teel,Joyce Raley,Joyce Raley Teel,1931-02-01,79,Female,United States,United States,Sacramento,,['Service'],,,False,Returned to List
+2010,3,937,1.0 B,Tiong,Hiew King,Tiong Hiew King,1935-03-01,75,Male,Malaysia,Malaysia,Sibu,,['Diversified'],,,False,Returned to List
+2010,3,937,1.0 B,Tiriac,Ion,Ion Tiriac,1939-05-09,70,Male,Romania,Romania,Bucharest,Finance and Investments,['Finance and Investments'],,,True,Returned to List
+2010,3,937,1.0 B,Topbas,Mustafa Latif,Mustafa Latif Topbas,1944-03-20,66,Male,Turkey,Turkey,Istanbul,,['Fashion and Retail'],,,False,
+2010,3,937,1.0 B,Vargi,Murat,Murat Vargi,1947-11-14,61,Male,Turkey,Turkey,Istanbul,,['Telecom'],,,False,Decreased
+2010,3,937,1.0 B,Wadhawan,Rakesh,Rakesh Wadhawan & family,1952-10-14,57,Male,India,India,Mumbai,,,,,False,Returned to List
+2010,3,937,1.0 B,Wei,Ing-Chou,Wei Ing-Chou,1953-01-01,57,Male,Taiwan,China,Tianjin,,['Food and Beverage'],,,False,
+2010,3,937,1.0 B,Wei,Yin-Chun,Wei Yin-Chun,1957-01-01,53,Male,Taiwan,Taiwan,Taipei,,['Food and Beverage'],,,False,
+2010,3,937,1.0 B,Wei,Yin-Heng,Wei Yin-Heng,1959-01-01,51,Male,Taiwan,China,Shanghai,,['Food and Beverage'],,,False,
+2010,3,937,1.0 B,Wei,Ying-chiao,Wei Ying-chiao,1955-01-01,55,Male,Taiwan,China,Taipei,,['Food and Beverage'],,,False,
+2010,3,937,1.0 B,Wyly,Samuel,Samuel Wyly,1934-10-04,74,Male,United States,United States,Dallas,,['Investments'],,,False,Returned to List
+2010,3,937,1.0 B,Xian,Yang,Xian Yang,1973-11-01,36,Male,China,China,Panzhihua,,['Energy'],,,False,Returned to List
+2010,3,937,1.0 B,Zegar,Charles,Zegar Charles,1948-02-01,62,Male,United States,United States,New York,,['Media'],,,False,

@@ -1,0 +1,9 @@
+year,month,rank,net_worth,last_name,first_name,full_name,birth_date,age,gender,country_of_citizenship,country_of_residence,city_of_residence,business_category,business_industries,organization_name,position_in_organization,self_made,wealth_status
+2000,7,,1.0 B,Cutrale,Jose,Jose Luis Cutrale,1946-09-17,,Male,Brazil,Brazil,Sao Paulo,Food and Beverage,['Food and Beverage'],,,True,
+2000,7,,1.9 B,Ebner,Martin,Martin Ebner,1945-08-01,54,Male,Switzerland,Switzerland,Wilen,Finance and Investments,['Finance and Investments'],,,False,
+2000,7,,4.5 B,Henkel,,Christoph Henkel,1958-02-11,,,Germany,United Kingdom,London,Fashion & Retail,['Fashion & Retail'],,,False,
+2000,7,,2.9 B,Vik,Alexander,Alexander Vik,1955-02-19,45,Male,Norway,Monaco,Monaco,Finance and Investments,['Finance and Investments'],,Investor,False,
+2000,7,,1.2 B,Noda,Masahiro,Masahiro Noda,1938-08-24,61,Male,Japan,Japan,Tokyo,Technology,['Technology'],,,True,
+2000,7,,1.2 B,Kozuki,Kagemasa,Kagemasa Kozuki,1940-11-12,59,Male,Japan,Japan,Tokyo,Technology,['Technology'],,,True,
+2000,7,,2.1 B,Kampf,Serge,Serge Kampf,1934-01-01,66,Male,France,,,,,,,True,
+2000,7,0,1.4 B,Wada,Shigefumi,Shigefumi Wada,1952-08-30,47,Male,Japan,Japan,"Nakano, Tokyo",,,,,True,
