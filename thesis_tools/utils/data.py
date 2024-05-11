@@ -1,10 +1,9 @@
 # Module to read data from files and directories
-
 import pandas as pd
 
 def read_billionaires_data(
     folder_directory: str='../Data/billionaire_data/',
-    only_years: List[str]=None,
+    only_years: list[str]=None,
     raw: bool=False
 ) -> pd.DataFrame:
     if only_years is None:
@@ -24,27 +23,6 @@ def read_billionaires_data(
     
     # Net worth is denoted with a number and then the letter B, convert it to a number
     df['net_worth'] = df['net_worth'].str.replace('B', '').astype(float)
-
-    # Cluster nationalities into regions
-    'Thailand', 'Lebanon', 'India', 'Germany', 'Colombia',
-    'Switzerland', 'Brazil', 'Hong Kong', 'France', 'Norway', 'Japan',
-    'United States', 'Saudi Arabia', 'United Kingdom', 'Sweden',
-    'Mexico', 'Italy', 'Spain', 'Kuwait', 'Venezuela', 'Greece',
-    'South Africa', 'Canada', 'Israel', 'Turkey', 'Malaysia', 'Taiwan',
-    'Australia', 'Ireland', 'United Arab Emirates', 'Denmark',
-    'Russia', 'Argentina', 'South Korea', 'Chile', 'Philippines',
-    'Portugal', 'Belgium', 'Egypt', 'Singapore', 'Netherlands',
-    'China', 'Austria', nan, 'Ukraine', 'Indonesia', 'Kazakhstan',
-    'Poland', 'Monaco', 'Czech Republic', 'New Zealand', 'Cyprus',
-    'Iceland', 'Oman', 'Romania', 'Nigeria', 'Belize', 'Finland',
-    'Pakistan', 'Georgia', 'Morocco', 'Peru', 'St. Kitts and Nevis',
-    'Swaziland', 'Angola', 'Guernsey', 'Vietnam', 'Nepal', 'Algeria',
-    'Macau', 'Uganda', 'Tanzania', 'Lithuania', 'Liechtenstein',
-    'Guatemala', 'Qatar', 'Slovakia', 'Zimbabwe', 'Hungary', 'Czechia',
-    'Eswatini (Swaziland)', 'Macao', 'Armenia', 'Bulgaria', 'Barbados',
-    'Uruguay', 'Estonia', 'Bangladesh', 'Panama'
-
-    df['region'] = np.nan
 
     countries_by_region = {
         'North America': 
@@ -78,6 +56,9 @@ def read_billionaires_data(
                 return region
         return "Rest of World"
     
-    df['Region'] = df['Country'].apply(find_region)
+    df['region'] = df['country_of_citizenship'].apply(find_region)
+
+    # Only retain the columns we need
+    df = df[['year', 'rank', 'net_worth', 'full_name', 'country_of_citizenship', 'region']]
 
     return df
