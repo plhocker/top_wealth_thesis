@@ -1,4 +1,5 @@
 # Module to read data from files and directories
+import numpy as np
 import pandas as pd
 
 def read_billionaires_data(
@@ -60,5 +61,7 @@ def read_billionaires_data(
 
     # Only retain the columns we need
     df = df[['year', 'rank', 'net_worth', 'full_name', 'country_of_citizenship', 'region']]
+
+    df['log_net_worth'] = np.log(df['net_worth'])
 
     return df
