@@ -3,8 +3,10 @@ import numpy as np
 import pandas as pd
 
 def read_billionaires_data(
-    folder_directory: str='../Data/billionaire_data/',
+    folder_directory: str='../Data/billionaire_data/forbes/',
     only_years: list[str]=None,
+    only_regions: list[str]=None,
+    self_made: bool=None,
     raw: bool=False
 ) -> pd.DataFrame:
     if only_years is None:
@@ -18,6 +20,8 @@ def read_billionaires_data(
 
     df['year'] = pd.to_datetime(df['year'], format='%Y')
     if raw:
+        # Warn that the filters do not work with raw data
+        print('Warning: Filters do not work with raw data, returning raw data.')
         return df
     
     # Preprocessing
@@ -60,8 +64,14 @@ def read_billionaires_data(
     df['region'] = df['country_of_citizenship'].apply(find_region)
 
     # Only retain the columns we need
-    df = df[['year', 'rank', 'net_worth', 'full_name', 'country_of_citizenship', 'region']]
+    df = df[['year', 'rank', 'net_worth', 'full_name', 'self_made', 'country_of_citizenship', 'region']]
 
     df['log_net_worth'] = np.log(df['net_worth'])
+
+    if only_regions is not None:
+        df = df[df['region'].isin(only_regions)]
+    
+    if self_made is not None:
+        df = df[df['self_made'] == self_made]
 
     return df
