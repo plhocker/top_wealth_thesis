@@ -5,3 +5,5 @@ seaborn
 scipy
 evt
 statsmodels
+jinja2 # For latex rendering
+scikit-learn

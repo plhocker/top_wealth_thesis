@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 
 def read_billionaires_data(
-    folder_directory: str='../Data/billionaire_data/forbes/',
+    folder_directory: str='../../Data/billionaire_data/forbes/',
     only_years: list[str]=None,
     only_regions: list[str]=None,
     self_made: bool=None,
@@ -73,5 +73,72 @@ def read_billionaires_data(
     
     if self_made is not None:
         df = df[df['self_made'] == self_made]
+
+    return df
+
+def read_bloomberg_data(
+    folder_directory: str='../../Data/billionaire_data/bloomberg/500_richest_people_2021.csv',
+    only_regions: list[str]=None,
+    raw: bool=False
+) -> pd.DataFrame:
+    df = pd.read_csv(folder_directory, sep=';')
+
+    if raw:
+        # Warn that the filters do not work with raw data
+        print('Warning: Filters do not work with raw data, returning raw data.')
+        return df
+
+    # Preprocessing
+    # net worth is written as $X.XXB, convert it to a number
+    # Drop rows where Total Net Worth is nan
+    # Drop rows where Total Net Worth is not of this format
+    df = df.dropna(subset=['Total Net Worth'])
+
+    df['net_worth'] = df['Total Net Worth'].str.replace('$', '').str.replace('B', '').astype(float)
+    df['rank'] = df['Rank']
+    df['full_name'] = df['Name']
+
+    countries_by_region = {
+        'North America': 
+            ['United States', 'Canada'],
+        'Europe': 
+            ['Germany', 'United Kingdom', 'Ireland', 'Cyprus', 'Czech Republic', 'Czechia', 'Denmark', 'Austria',
+            'Belgium', 'Spain', 'France', 'Greece', 'Italy', 'Netherlands', 'Norway', 'Poland', 'Portugal', 
+            'Sweden', 'Switzerland', 'Liechtenstein', 'Lithuania', 'Monaco', 'Estonia', 'Finland', 'Slovakia', 
+            'Romania', 'Hungary', 'Bulgaria', 'Guernsey', 'Iceland'],
+        'China': 
+            ['China', 'Hong Kong', 'Macau', 'Macao'],
+        'East Asia': 
+            ['Thailand', 'Malaysia', 'Singapore', 'Taiwan', 'Philippines', 'Indonesia', 'South Korea', 'Japan',
+            'Australia', 'Vietnam', 'New Zealand'],
+        'India': 
+            ['India'],
+        'Central Eurasia': 
+            ['Russia', 'Kazakhstan', 'Ukraine', 'Armenia', 'Georgia'],
+        'South America': 
+            ['Brazil', 'Chile', 'Argentina', 'Peru', 'Venezuela', 'Colombia', 'Uruguay', 'Guatemala',
+            'Panama', 'Barbados', 'Belize', 'Mexico'],
+        'Middle East': 
+            ['Turkey', 'Egypt', 'Israel', 'Saudi Arabia', 'United Arab Emirates', 'Kuwait', 'Qatar', 'Oman',
+            'Lebanon'],
+    }
+
+    # Function to find the region for a given country
+    def find_region(country):
+        for region, countries in countries_by_region.items():
+            if country in countries:
+                return region
+        return "Rest of World"
+    
+    df['region'] = df['Country'].apply(find_region)
+    df['country'] = df['Country']
+
+    # Only retain the columns we need
+    df = df[['rank', 'net_worth', 'full_name', 'country', 'region']]
+
+    if only_regions is not None:
+        df = df[df['region'].isin(only_regions)]
+
+    df['log_net_worth'] = np.log(df['net_worth'])
 
     return df
