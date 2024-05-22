@@ -25,6 +25,8 @@ def read_billionaires_data(
         return df
     
     # Preprocessing
+    # If the citizenship is not available, find for the same full_name a row where the citizenship is available
+    df['country_of_citizenship'] = df['country_of_citizenship'].fillna(df.groupby('full_name')['country_of_citizenship'].transform('first'))
     
     # Net worth is denoted with a number and then the letter B, convert it to a number
     df['net_worth'] = df['net_worth'].str.replace('B', '').astype(float)
@@ -54,6 +56,44 @@ def read_billionaires_data(
             'Lebanon'],
     }
 
+    countries_by_sub_region = {
+        'U.S.':
+            ['United States'],
+        'Canada':
+            ['Canada'],
+        'Germany':
+            ['Germany'],
+        'British Islands':
+            ['United Kingdom', 'Ireland'],
+        'Scandinavia':
+            ['Denmark', 'Norway', 'Sweden', 'Finland'],
+        'France':
+            ['France', 'Monaco'],
+        'Alps':
+            ['Switzerland', 'Liechtenstein', 'Austria'],
+        'Italy':
+            ['Italy'],
+        'China': 
+            ['China', 'Hong Kong'],
+        'Southeast Asia':
+            ['Thailand', 'Malaysia', 'Singapore'],
+        'Asian Islands':
+            ['Taiwan', 'Philippines', 'Indonesia'],
+        'South Korea':
+            ['South Korea'],
+        'Japan':
+            ['Japan'],
+        'Australia':
+            ['Australia'],
+        'India': 
+            ['India'],
+        'Russia':
+            ['Russia'],
+        'Brazil':
+            ['Brazil'],
+        'Israel + Turkey':
+            ['Israel', 'Turkey']
+    }
     # Function to find the region for a given country
     def find_region(country):
         for region, countries in countries_by_region.items():
@@ -61,10 +101,18 @@ def read_billionaires_data(
                 return region
         return "Rest of World"
     
+    # Function to find the sub-region for a given country
+    def find_sub_region(country):
+        for region, countries in countries_by_sub_region.items():
+            if country in countries:
+                return region
+        return "Not a sub-region"
+    
     df['region'] = df['country_of_citizenship'].apply(find_region)
+    df['sub_region'] = df['country_of_citizenship'].apply(find_sub_region)
 
     # Only retain the columns we need
-    df = df[['year', 'rank', 'net_worth', 'full_name', 'self_made', 'country_of_citizenship', 'region']]
+    df = df[['year', 'rank', 'net_worth', 'full_name', 'self_made', 'country_of_citizenship', 'region', 'sub_region']]
 
     df['log_net_worth'] = np.log(df['net_worth'])
 
@@ -142,3 +190,37 @@ def read_bloomberg_data(
     df['log_net_worth'] = np.log(df['net_worth'])
 
     return df
+
+def read_population_data(
+    folder_directory: str='../../Data/population/World_Population_Live_Dataset.csv',
+    raw: bool=False
+) -> pd.DataFrame:
+    df = pd.read_csv(folder_directory)
+    
+    if raw:
+        return df
+
+    # Set the 'CCA3' column as the index for easier manipulation
+    df.set_index('Name', inplace=True)
+
+    # Select the population columns
+    population_columns = ['2022', '2020', '2015', '2010', '2000', '1990', '1980', '1970']
+
+    # Ensure the columns are treated as strings before interpolation
+    df[population_columns] = df[population_columns].astype(float)
+
+    # Reindex the DataFrame to include all years from 1970 to 2022
+    all_years = list(map(str, range(1970, 2024)))
+    df_population = df[population_columns].T  # Transpose for easier interpolation
+    df_population = df_population.reindex(all_years)  # Add all years
+    df_population = df_population.T  # Transpose back
+
+    # Interpolate the missing values
+    df_population = df_population.interpolate(method='linear', axis=1)
+
+    df_population = 1000 * df_population  # Convert to millions
+
+    # Add a World row
+    df_population.loc['World'] = df_population.sum()
+
+    return df_population

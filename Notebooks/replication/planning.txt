@@ -1,0 +1,23 @@
+What needs to be replicated?
+    
+- Figure 2:
+    - Population weighted (nbillionaires) count of R2 and R3 statistics
+    - Pool across all observation years (2001 - 2021), subregions
+    - Full sample, N>=64, and N>=64 less the top and bottom 5% (trimmed)
+
+- Table 5:  
+    - Mean billionaire wealth predictions
+    - Data, Pareto, Weibull
+    - Alpha hat
+    - Only 2018
+
+- Table 1:
+    - Summary statistics by (sub-)region
+    - R2 and R3 stats, and some simple stats
+
+- Table 2:
+    - Regression of R2 and R3 on a constant
+    - WLS
+
+- Table 4:
+    - Weird Weibull regression
