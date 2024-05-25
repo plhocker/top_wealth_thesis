@@ -1,9 +1,11 @@
 import numpy as np
 import pandas as pd
 from statsmodels.nonparametric.kde import KDEUnivariate
+from scipy.stats import ks_2samp
 
 from thesis_tools.statistical_tests.test_statistics import *
 from thesis_tools.utils.data import *
+from thesis_tools.models.frequentist import Distribution, Pareto, Exponential, Gompertz, Weibull, GeneralisedPareto
 
 def sample_measurement_errors(
     n_samples: int,
@@ -147,3 +149,75 @@ def R_stat_pareto_test(
     p_value_two_sided = 2 * min(p_value_left, p_value_right)
 
     return test_stat, p_value_left, p_value_right, p_value_two_sided, R_stats_empirical
+
+def Kolmogorov_Smirnov_H_0_test(
+    data: np.ndarray,
+    H_0_distribution: Distribution,
+    n_samples_empirical_distribution: int=1e6,
+    round_decimals_non_log: int=None,
+    measurement_error: str=None
+) -> (float, float, float, float):
+    """
+    Perform a Kolmogorov-Smirnov test to test a given null hypothesis.
+    The null hypothesis is that the data comes from a given distribution.
+    Parameters
+    ----------
+    data : np.ndarray
+        The data to test the null hypothesis for.
+    H_0 : str
+        The null hypothesis to test.
+        Options are 'exponential', 'lognormal', 'pareto', 'weibull', 'normal', 'uniform'.
+    Returns
+    -------
+    float
+        The test statistic.
+    float
+        The p-value.
+    float
+        The location of the statistic.
+    float
+        The sign of the statistic.
+    """
+    
+    # Sample a very large number of samples from the null hypothesis distribution
+    H_0_samples = H_0_distribution.sample(n_samples_empirical_distribution)
+
+    # Round if needed
+    if round_decimals_non_log is not None:
+        H_0_samples = np.round(H_0_samples, round_decimals_non_log)
+    
+    # Add measurement error if needed
+    if measurement_error != 'None':
+        measurement_errors = sample_measurement_errors(n_samples_empirical_distribution, measurement_error)
+        # Add measurement error to the samples -> only works for non-log data
+        H_0_samples = H_0_samples * measurement_errors 
+
+    # Perform the Kolmogorov-Smirnov test
+    test_stat, p_value, statistic_location, statistic_sign = Kolmogorov_Smirnov_two_sample_test(data, H_0_samples)
+
+def Kolmogorov_Smirnov_two_sample_test(
+    data1: np.ndarray,
+    data2: np.ndarray
+) -> (float, float, float, int):
+    """
+    Perform a two-sample Kolmogorov-Smirnov test.
+    The null hypothesis is that the two samples are drawn from the same distribution.
+    Parameters
+    ----------
+    data1 : np.ndarray
+        The first sample.
+    data2 : np.ndarray
+        The second sample.
+    Returns
+    -------
+    float
+        The test statistic.
+    float
+        The p-value.
+    float
+        The location of the statistic.
+    int
+        The sign of the statistic.
+    """
+    test_stat, p_value, statistic_location, statistic_sign = ks_2samp(data1, data2, alternative='two-sided', method='auto')
+    return test_stat, p_value, statistic_location, statistic_sign
