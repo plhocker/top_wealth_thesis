@@ -3,8 +3,12 @@ from abc import ABC, abstractmethod
 
 # Imports
 import numpy as np
+import pandas as pd
 import scipy.special
 from scipy.optimize import minimize
+from evt.dataset import Dataset
+from evt.estimators.hill import Hill
+from evt.methods.peaks_over_threshold import PeaksOverThreshold
 
 class Distribution(ABC):
     @abstractmethod
@@ -862,7 +866,7 @@ class GeneralisedPareto(Distribution):
         self,
         gamma: float=None, 
         sigma: float=None,
-        mu: float=0.0
+        mu: float=1.0
     ):
         self.gamma = gamma
         self.sigma = sigma
@@ -908,7 +912,7 @@ class GeneralisedPareto(Distribution):
             return 0
         
         return (1/sigma) * (1 + gamma*(x-mu)/sigma)**(-1/gamma-1)
-    
+
     def log_pdf(
         self,
         x: float,
@@ -938,17 +942,28 @@ class GeneralisedPareto(Distribution):
             print('Sigma parameter not set, using parameter stored in the class: sigma=', self.sigma)
             sigma = self.sigma
 
+        # Ensure sigma is positive to avoid division by zero or log of zero
+        if sigma <= 0:
+            return -1e10
+
         # special case for gamma = 0
         if gamma == 0:
             return -np.log(sigma) - x/sigma
-        
+
         # Check if x is in the support of the distribution
         if gamma > 0 and x < mu:
             return -1e10
         if gamma < 0 and (x < mu or x > mu - sigma / gamma):
             return -1e10
-        
-        return -np.log(sigma) - (1+1/gamma)*np.log(1 + gamma*(x-mu)/sigma)
+
+        try:
+            term = 1 + gamma * (x - mu) / sigma
+            if term <= 0:
+                return -1e10
+            return max(-np.log(sigma) - (1 + 1/gamma) * np.log(term), -1e10)
+        except (ValueError, ZeroDivisionError, FloatingPointError):
+            return -1e10
+
     
     def cdf(
         self,
@@ -1091,9 +1106,9 @@ class GeneralisedPareto(Distribution):
         data: np.ndarray,
         given_gamma: float=None,
         given_sigma: float=None,
-        given_mu: float=0.0,
+        given_mu: float=1.0,
         set_class_parameters: bool=True
-    ) -> (float, float):
+    ) -> (float, float, float):
         """
         Fit the Generalised Pareto distribution to the data.
         The method of moments is used to estimate the parameters of the distribution.
@@ -1103,7 +1118,7 @@ class GeneralisedPareto(Distribution):
             The data to fit the distribution to.
         """
         if given_gamma is not None:
-            print('Gamma parameter set to:', self.gamma, 'using given_gamma.')
+            print('Gamma parameter set to:', given_gamma, 'using given_gamma.')
             gamma_bounds = (given_gamma, given_gamma)
             initial_gamma = given_gamma
         else:
@@ -1111,8 +1126,9 @@ class GeneralisedPareto(Distribution):
             initial_gamma = 0.4
         
         if given_sigma is not None:
-            print('Sigma parameter set to:', self.sigma, 'using given_sigma.')
+            print('Sigma parameter set to:', given_sigma, 'using given_sigma.')
             sigma_bounds = (given_sigma, given_sigma)
+            initial_sigma = given_sigma
         else:
             sigma_bounds = (0, None)
             initial_sigma = 1
@@ -1135,6 +1151,91 @@ class GeneralisedPareto(Distribution):
         
         return result[0], result[1], given_mu
     
+    def fit_hill(
+        self,
+        data: np.ndarray,
+        given_gamma: float=None,
+        given_sigma: float=None,
+        given_mu: float=1.0,
+        set_class_parameters: bool=True
+    ) -> (float, float, float):
+        """
+        Fit the Generalised Pareto distribution to the data.
+        The method of moments is used to estimate the parameters of the distribution.
+        Parameters
+        ----------
+        data : np.ndarray
+            The data to fit the distribution to.
+        """
+        if given_gamma is not None:
+            print('Gamma parameter set to:', given_gamma, 'using given_gamma.')
+            print('Caution: hill estimator is not used when given_gamma is set.')
+            initial_gamma = given_gamma
+            gamma_bounds = (initial_gamma, initial_gamma)
+        else:
+            series = pd.Series(
+                data,
+                name='values'
+            )
+            series.index.name = 'index'
+            dataset = Dataset(series)
+            peaks_over_threshold = PeaksOverThreshold(dataset=dataset, threshold=0.9999)
+            hill_estimator = Hill(peaks_over_threshold=peaks_over_threshold)
+            estimates = []
+            for i in range(1, len(data)-1):
+                estimate, = hill_estimator.estimate(i)
+                gamma_hat, temp1, temp2 = estimate
+                estimates.append(gamma_hat)
+
+            def find_stable_region(array, window_size):
+                if len(array) < window_size:
+                    raise ValueError("Window size must be smaller than or equal to the length of the array")
+
+                variances = []
+                for i in range(len(array) - window_size + 1):
+                    window = array[i:i + window_size]
+                    variance = np.var(window)
+                    variances.append(variance)
+                
+                min_variance_index = np.argmin(variances)
+                stable_region = array[min_variance_index:min_variance_index + window_size]
+                median_value = np.median(stable_region)
+                
+                return stable_region, min_variance_index, min(variances), median_value
+
+            stable_region, min_variance_index, min_variance, median_stable_gamma = find_stable_region(
+                estimates, 
+                min(20, int(len(estimates)/2))
+            )
+            initial_gamma = median_stable_gamma
+            gamma_bounds = (initial_gamma, initial_gamma)
+
+        if given_sigma is not None:
+            print('Sigma parameter set to:', given_sigma, 'using given_sigma.')
+            initial_sigma = given_sigma
+            sigma_bounds = (initial_sigma, initial_sigma)
+        else:
+            sigma_bounds = (0, None)
+            initial_sigma = 1
+
+        def objective_function(x):
+            return -self.log_likelihood(data, gamma=x[0], sigma=x[1], mu=given_mu)
+
+        # Maximise the log likelihood
+        result = minimize(
+            lambda x: objective_function(x), 
+            x0=[initial_gamma, initial_sigma], 
+            bounds=[gamma_bounds, sigma_bounds],
+            method='L-BFGS-B'
+        ).x
+
+        if set_class_parameters:
+            self.gamma = result[0]
+            self.sigma = result[1]
+            self.mu = given_mu
+
+        return result[0], result[1], given_mu
+
     def sample(
         self,
         n_samples: int
@@ -1164,7 +1265,7 @@ class GeneralisedPareto(Distribution):
         float
             The mean of the Generalised Pareto distribution.
         """
-        if self.gamma < 0:
+        if self.gamma < 1:
             return self.mu + self.sigma / (1 - self.gamma)
         else:
             print('Mean is not defined for gamma >= 1.')

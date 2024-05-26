@@ -3,7 +3,8 @@ numpy
 matplotlib
 seaborn
 scipy
-evt
+evt # Mainly used for the Hill estimator
 statsmodels
 jinja2 # For latex rendering
 scikit-learn
+bambi # For Bayesian regression

@@ -1,5 +1,7 @@
 import numpy as np
 
+from thesis_tools.models.frequentist import *
+from thesis_tools.statistical_tests.tests import *
 
 def R_stat(
     data: np.ndarray,
@@ -40,3 +42,7 @@ def R_stat(
     # k = order
     # R_k = mu_k / (k! * mu^k)
     return mu_k / (np.math.factorial(order) * mu**order)
+
+
+
+# DO NOT CODE IN THIS MODULE ANYMORE - LEGACY CODE
