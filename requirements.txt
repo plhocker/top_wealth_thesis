@@ -8,3 +8,9 @@ statsmodels
 jinja2 # For latex rendering
 scikit-learn
 bambi # For Bayesian regression
+nutpie # For faster sampling in Bayesian regression
+numba # For faster computation
+jax # GPU backend for even faster sampling
+jaxlib # Support library for jax
+ipywidgets # Jupyter notebook widgets
+requests # For SSL certificates
