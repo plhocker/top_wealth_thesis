@@ -656,6 +656,9 @@ class Gompertz(Distribution):
         return 0, np.inf
      
 class Weibull(Distribution):
+    """
+    Note: this is the truncated Weibull distribution, specifically truncated below at 1.
+    """
     def __init__(
         self, 
         gamma: float=None,
@@ -681,6 +684,9 @@ class Weibull(Distribution):
         float
             The probability density function of the Weibull distribution.
         """
+        if x < 1:
+            return 0
+
         if alpha is None:
             print('Alpha parameter not set, using parameter stored in the class: alpha=', self.alpha)
             alpha = self.alpha
@@ -715,6 +721,9 @@ class Weibull(Distribution):
         if gamma is None:
             print('Gamma parameter not set, using parameter stored in the class: gamma=', self.gamma)
             gamma = self.gamma
+
+        if x < 1:
+            return 0
 
         # return 1 - np.exp(-((1 + x)**(gamma + 1) - 1) / (alpha * (gamma + 1))) This is the formula from the paper, it seems incorrect
         return 1 - np.exp((1 - x ** gamma) / (alpha * gamma)) # my corrected formula
