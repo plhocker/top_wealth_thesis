@@ -354,3 +354,201 @@ class Multivariate_Weibull(ABM):
 
         return grouped_df
     
+class Multivariate_GeneralisedPareto(ABM):
+    def __init__(
+        self, 
+        data: pd.DataFrame,
+        dependent_variable: str='net_worth',
+        group_variable: str='sub_region',
+        hyperprior_gamma_alpha: float=33, # estimated from the data
+        hyperprior_gamma_beta: float=30, # estimated from the data
+        hyperprior_sigma_alpha: float=1.0, # arbitrary
+        hyperprior_sigma_beta: float=1.0 # arbitrary
+    ):
+        """ Multivariate Generalised Pareto model for cross-sectional data. """
+
+        # Assert that the hyperpriors are positive
+        assert hyperprior_gamma_alpha > 0, "hyperprior_gamma_alpha must be positive."
+        assert hyperprior_gamma_beta > 0, "hyperprior_gamma_beta must be positive."
+        assert hyperprior_sigma_alpha > 0, "hyperprior_sigma_alpha must be positive."
+        assert hyperprior_sigma_beta > 0, "hyperprior_sigma_beta must be positive."
+
+        # Set-up the data
+        df = copy.deepcopy(data)
+        df = df[[dependent_variable, group_variable]]
+        df.columns = ['dependent', 'group']
+        df['group_TE'] = df['group'].astype('category').cat.codes
+        self.df = df
+
+        # Set-up the groups
+        groups = df['group_TE'].values
+        n_groups = df['group_TE'].nunique()
+        y_obs = df['dependent'].values
+        self.TE_to_group = dict(zip(df['group_TE'], df['group']))
+
+        # Set-up the model
+        model = pm.Model()
+        with model:
+            # Priors
+            mu = 1 # threshold fixed at 1
+            gamma_false_loc = pm.Gamma(
+                'gamma_false_loc', 
+                alpha=hyperprior_gamma_alpha, 
+                beta=hyperprior_gamma_beta, 
+                shape=n_groups
+            )
+            gamma = pm.Deterministic('gamma', gamma_false_loc - 0.5) # From Example 2.8, Dombry, Padoan and Rizelli (2023)
+            sigma = pm.Gamma(
+                'sigma',
+                alpha=hyperprior_sigma_alpha,
+                beta=hyperprior_sigma_beta,
+                shape=n_groups
+            )
+
+            gamma_obs = gamma[groups]
+            sigma_obs = sigma[groups]
+
+            # Functions for the custom distribution
+            def gpd_logp(value, mu, gamma, sigma):
+                if gamma == 0:
+                    return -np.log(sigma) - (value - mu) / sigma
+                else:
+                    return -np.log(sigma) - (1 + 1 / gamma) * np.log(1 + gamma * (value - mu) / sigma)
+
+            def gpd_random(mu, gamma, sigma, rng=None, size=None):
+                # generate uniforms
+                u = rng.uniform(size=size)
+                # if gamma == 0:
+                #     return mu - sigma * np.log(1-u)
+                # else:
+                # Just hope that the gamma is not zero TODO: see if there is a way to fix this
+                return mu + sigma * ((1 / (1 - u)**gamma - 1)) / gamma
+
+            y = pm.CustomDist('y', mu, gamma_obs, sigma_obs, logp=gpd_logp, random=gpd_random, observed=y_obs)
+
+        self.model = model
+        self.trace = None
+    
+    def fit(
+        self, 
+        draws: int=1000, 
+        tune: int=1000, 
+        chains: int=4, 
+        cores: int=4,
+        nuts_sampler: str='pymc' # Cannot use nutpie here for some reason
+    ):
+        """ Fit the model. """
+        with self.model:
+            trace = pm.sample(
+                draws=draws,
+                tune=tune,
+                chains=chains,
+                cores=cores,
+                nuts_sampler=nuts_sampler
+            )
+        self.trace = trace
+
+    def prior_predictive(
+        self,
+        n_dependent_samples: int=1000
+    ) -> dict:
+        with self.model:
+            prior_trace = pm.sample_prior_predictive()
+
+        gamma_samples = prior_trace.prior['gamma'].to_dataframe()
+        gamma_samples = gamma_samples.groupby('gamma_dim_0')['gamma'].apply(list).to_dict()
+
+        sigma_samples = prior_trace.prior['sigma'].to_dataframe()
+        sigma_samples = sigma_samples.groupby('sigma_dim_0')['sigma'].apply(list).to_dict()
+
+        # reindex the dictionary to group names
+        gamma_samples = {self.TE_to_group[k]: v for k, v in gamma_samples.items()}
+        sigma_samples = {self.TE_to_group[k]: v for k, v in sigma_samples.items()}
+
+        # sample from the prior predictive for the dependent variable
+        y_pred = {}
+        for group in gamma_samples.keys():
+            group_samples = []
+            for i in range(n_dependent_samples):
+                # take a random element from the alpha samples
+                gamma = np.random.choice(gamma_samples[group])
+                sigma = np.random.choice(sigma_samples[group])
+                group_samples.append(GeneralisedPareto(gamma=gamma, sigma=sigma).sample(1)[0])
+            y_pred[group] = group_samples
+        
+        return_dict = {}
+        return_dict['gamma'] = gamma_samples
+        return_dict['sigma'] = sigma_samples
+        return_dict['y'] = y_pred
+
+        return return_dict
+
+    def posterior_predictive(
+        self,
+        n_dependent_samples: int=1000
+    ) -> dict:
+        gamma_samples = self.trace.posterior['gamma'].to_dataframe()
+        gamma_samples = gamma_samples.groupby('gamma_dim_0')['gamma'].apply(list).to_dict()
+
+        sigma_samples = self.trace.posterior['sigma'].to_dataframe()
+        sigma_samples = sigma_samples.groupby('sigma_dim_0')['sigma'].apply(list).to_dict()
+
+        # reindex the dictionary to group names
+        gamma_samples = {self.TE_to_group[k]: v for k, v in gamma_samples.items()}
+        sigma_samples = {self.TE_to_group[k]: v for k, v in sigma_samples.items()}
+
+        # sample from the posterior predictive for the dependent variable
+        y_pred = {}
+        for group in gamma_samples.keys():
+            group_samples = []
+            for i in range(n_dependent_samples):
+                # take a random element from the alpha samples
+                gamma = np.random.choice(gamma_samples[group])
+                sigma = np.random.choice(sigma_samples[group])
+                group_samples.append(GeneralisedPareto(gamma=gamma, sigma=sigma).sample(1)[0])
+            y_pred[group] = group_samples
+
+        return_dict = {}
+        return_dict['gamma'] = gamma_samples
+        return_dict['sigma'] = sigma_samples
+        return_dict['y'] = y_pred
+
+        return return_dict
+
+    def get_trace(self):
+        return self.trace
+
+    def get_prior_summary(self):
+        with self.model:
+            prior = pm.sample_prior_predictive()
+        
+        df = az.summary(prior, var_names=['gamma', 'sigma'], round_to=2)
+
+        # Extract the prefix and index from each row
+        prefix_index_tuples = [(idx.split('[')[0], int(idx.split('[')[1][:-1])) for idx in df.index]
+
+        # Create a new DataFrame with the original prefix and country name as index
+        df['prefix'] = [prefix for prefix, _ in prefix_index_tuples]
+        df['group'] = [self.TE_to_group[i] for _, i in prefix_index_tuples]
+
+        # Group by the original prefix
+        df.set_index('group', inplace=True, drop=True)
+        grouped_df = df.groupby('prefix')
+
+        return grouped_df
+
+    def get_posterior_summary(self):
+        df = az.summary(self.trace, var_names=['gamma', 'sigma'], round_to=2)
+
+        # Extract the prefix and index from each row
+        prefix_index_tuples = [(idx.split('[')[0], int(idx.split('[')[1][:-1])) for idx in df.index]
+
+        # Create a new DataFrame with the original prefix and country name as index
+        df['prefix'] = [prefix for prefix, _ in prefix_index_tuples]
+        df['group'] = [self.TE_to_group[i] for _, i in prefix_index_tuples]
+
+        # Group by the original prefix
+        df.set_index('group', inplace=True, drop=True)
+        grouped_df = df.groupby('prefix')
+
+        return grouped_df
