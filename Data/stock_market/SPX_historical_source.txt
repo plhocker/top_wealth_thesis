@@ -1,0 +1,1 @@
+https://finance.yahoo.com/quote/%5ESPX/history/?frequency=1mo&period1=-1325583000&period2=1717240246

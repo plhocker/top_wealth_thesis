@@ -201,7 +201,7 @@ class Multivariate_Weibull(ABM):
 
         # Set-up the model
         model = pm.Model()
-        with model: # TODO: CHECK THIS MODEL SPECIFICATION, ESTIMATED PARAMETERS DO NOT MATCH MLE
+        with model: 
             alpha_pymc = pm.Gamma(
                 'alpha_pymc', 
                 alpha=hyperprior_gamma_alpha, 
@@ -362,8 +362,8 @@ class Multivariate_GeneralisedPareto(ABM):
         group_variable: str='sub_region',
         hyperprior_gamma_alpha: float=33, # estimated from the data
         hyperprior_gamma_beta: float=30, # estimated from the data
-        hyperprior_sigma_alpha: float=1.0, # arbitrary
-        hyperprior_sigma_beta: float=1.0 # arbitrary
+        hyperprior_sigma_alpha: float=8, # estimated from the data
+        hyperprior_sigma_beta: float=6 # estimated from the data
     ):
         """ Multivariate Generalised Pareto model for cross-sectional data. """
 
@@ -435,7 +435,7 @@ class Multivariate_GeneralisedPareto(ABM):
         tune: int=1000, 
         chains: int=4, 
         cores: int=4,
-        nuts_sampler: str='pymc' # Cannot use nutpie here for some reason
+        nuts_sampler: str='pymc' # Cannot use nutpie here for some reason, it breaks after 
     ):
         """ Fit the model. """
         with self.model:
