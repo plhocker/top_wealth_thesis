@@ -1,1 +1,1 @@
-https://finance.yahoo.com/quote/%5E990100-USD-STRD/history/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAIYI1NcjlUOJPHJRthQ83wrFGkI3_coFcXDJNa770IKO497POFyCbmHIXEyZkWdaxnDW0YVBxRkcXNHNOM8mLrQDuN-4hM5yAHc_w5-7e3hdNJ8aB9HI9p20ROaVug4LDzMQuQ904dZ8UpbfVSe85SC4LyyKavw7FZve7DfCAE3D&period1=852076800&period2=1717200000&frequency=1mo
+https://finance.yahoo.com/quote/%5E990100-USD-STRD/history?period1=63244800&period2=1717200000&interval=1wk&filter=history&frequency=1wk&includeAdjustedClose=true

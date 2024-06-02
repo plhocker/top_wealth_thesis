@@ -7,7 +7,8 @@ def read_billionaires_data(
     only_years: list[str]=None,
     only_regions: list[str]=None,
     self_made: bool=None,
-    raw: bool=False
+    raw: bool=False,
+    year_and_month_int: bool=False
 ) -> pd.DataFrame:
     if only_years is None:
         file_path = folder_directory + 'all_billionaires_1997_2023.csv'
@@ -112,7 +113,12 @@ def read_billionaires_data(
     df['sub_region'] = df['country_of_citizenship'].apply(find_sub_region)
 
     # Only retain the columns we need
-    df = df[['year', 'rank', 'net_worth', 'full_name', 'self_made', 'country_of_citizenship', 'region', 'sub_region']]
+    if year_and_month_int:
+        df['year_int'] = df['year'].dt.year
+        df['month_int'] = df['year'].dt.month
+        df = df[['year_int', 'month_int', 'rank', 'net_worth', 'full_name', 'self_made', 'country_of_citizenship', 'region', 'sub_region']]
+    else:
+        df = df[['year', 'rank', 'net_worth', 'full_name', 'self_made', 'country_of_citizenship', 'region', 'sub_region']]
 
     df['log_net_worth'] = np.log(df['net_worth'])
 
@@ -224,3 +230,77 @@ def read_population_data(
     df_population.loc['World'] = df_population.sum()
 
     return df_population
+
+def read_gdp_data(
+    folder_directory: str='../../Data/gdp_data/GDP_per_capita_data.csv',
+    raw: bool=False
+) -> pd.DataFrame:
+    df = pd.read_csv(folder_directory)
+
+    if raw:
+        return df
+
+    df.set_index('Country Code', inplace=True)
+    # drop columns that are not needed
+    df.drop(['Country Name', 'Indicator Name', 'Indicator Code', 'Unnamed: 68'], axis=1, inplace=True)
+    df = df.T
+
+    # linearly interpolate missing values
+    df = df.interpolate(method='linear', axis=0)
+
+    return df
+
+def read_stock_market_data(
+    folder_directory_1: str='../../Data/stock_market/MSCI_World_historical.csv',
+    folder_directory_2: str='../../Data/stock_market/SPX_historical.csv',
+    raw: bool=False
+) -> pd.DataFrame:
+    df_1 = pd.read_csv('../../Data/stock_market/MSCI_World_historical.csv')
+    df_2 = pd.read_csv('../../Data/stock_market/SPX_historical.csv')
+
+    if raw:
+        return df_1, df_2
+
+    df_1['Date'] = pd.to_datetime(df_1['Date'])
+    df_2['Date'] = pd.to_datetime(df_2['Date'])
+    df_1.set_index('Date', inplace=True)
+    df_2.set_index('Date', inplace=True)
+    df_1 = df_1.resample('ME').last()
+    df_2 = df_2.resample('ME').last()
+
+    df = pd.merge(df_1, df_2, left_index=True, right_index=True, how='inner', suffixes=('_MSCI', '_SPX'))
+
+    df = df[['Adj Close_MSCI', 'Adj Close_SPX']]
+    df.columns = ['Adj_Close_MSCI', 'Adj_Close_SPX']
+
+    return df
+
+def read_iso_codes(
+    folder_directory: str='../../Data/regions/iso_codes_mapping.csv',
+    raw: bool=False
+) -> pd.DataFrame:
+    df = pd.read_csv(folder_directory)
+
+    if raw:
+        return df
+
+    df = df.set_index('name')
+
+    df = df[['alpha-2', 'alpha-3']]
+    df.columns = ['ISO2', 'ISO3']
+
+    return df
+
+def read_panel_data(
+    folder_directory: str='../../Data/panel_data/panel_data.csv',
+    raw: bool=False
+) -> pd.DataFrame:
+    df = pd.read_csv(folder_directory)
+
+    if raw:
+        return df
+
+    df['year'] = pd.to_datetime(df['year'], format='%Y')
+    df.set_index(['year', 'country'], inplace=True)
+
+    return df
