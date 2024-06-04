@@ -1,6 +1,71 @@
 # Module to read data from files and directories
 import numpy as np
 import pandas as pd
+import copy
+
+countries_by_region = {
+    'North America': 
+        ['United States', 'Canada'],
+    'Europe': 
+        ['Germany', 'United Kingdom', 'Ireland', 'Cyprus', 'Czech Republic', 'Czechia', 'Denmark', 'Austria',
+        'Belgium', 'Spain', 'France', 'Greece', 'Italy', 'Netherlands', 'Norway', 'Poland', 'Portugal', 
+        'Sweden', 'Switzerland', 'Liechtenstein', 'Lithuania', 'Monaco', 'Estonia', 'Finland', 'Slovakia', 
+        'Romania', 'Hungary', 'Bulgaria', 'Guernsey', 'Iceland'],
+    'China': 
+        ['China', 'Hong Kong', 'Macau', 'Macao'],
+    'East Asia': 
+        ['Thailand', 'Malaysia', 'Singapore', 'Taiwan', 'Philippines', 'Indonesia', 'South Korea', 'Japan',
+        'Australia', 'Vietnam', 'New Zealand'],
+    'India': 
+        ['India'],
+    'Central Eurasia': 
+        ['Russia', 'Kazakhstan', 'Ukraine', 'Armenia', 'Georgia'],
+    'South America': 
+        ['Brazil', 'Chile', 'Argentina', 'Peru', 'Venezuela', 'Colombia', 'Uruguay', 'Guatemala',
+        'Panama', 'Barbados', 'Belize', 'Mexico'],
+    'Middle East': 
+        ['Turkey', 'Egypt', 'Israel', 'Saudi Arabia', 'United Arab Emirates', 'Kuwait', 'Qatar', 'Oman',
+        'Lebanon'],
+}
+
+countries_by_sub_region = {
+    'U.S.':
+        ['United States'],
+    'Canada':
+        ['Canada'],
+    'Germany':
+        ['Germany'],
+    'British Islands':
+        ['United Kingdom', 'Ireland'],
+    'Scandinavia':
+        ['Denmark', 'Norway', 'Sweden', 'Finland'],
+    'France':
+        ['France', 'Monaco'],
+    'Alps':
+        ['Switzerland', 'Liechtenstein', 'Austria'],
+    'Italy':
+        ['Italy'],
+    'China': 
+        ['China', 'Hong Kong'],
+    'Southeast Asia':
+        ['Thailand', 'Malaysia', 'Singapore'],
+    'Asian Islands':
+        ['Taiwan', 'Philippines', 'Indonesia'],
+    'South Korea':
+        ['South Korea'],
+    'Japan':
+        ['Japan'],
+    'Australia':
+        ['Australia'],
+    'India': 
+        ['India'],
+    'Russia':
+        ['Russia'],
+    'Brazil':
+        ['Brazil'],
+    'Israel + Turkey':
+        ['Israel', 'Turkey']
+}
 
 def read_billionaires_data(
     folder_directory: str='../../Data/billionaire_data/forbes/',
@@ -32,69 +97,6 @@ def read_billionaires_data(
     # Net worth is denoted with a number and then the letter B, convert it to a number
     df['net_worth'] = df['net_worth'].str.replace('B', '').astype(float)
 
-    countries_by_region = {
-        'North America': 
-            ['United States', 'Canada'],
-        'Europe': 
-            ['Germany', 'United Kingdom', 'Ireland', 'Cyprus', 'Czech Republic', 'Czechia', 'Denmark', 'Austria',
-            'Belgium', 'Spain', 'France', 'Greece', 'Italy', 'Netherlands', 'Norway', 'Poland', 'Portugal', 
-            'Sweden', 'Switzerland', 'Liechtenstein', 'Lithuania', 'Monaco', 'Estonia', 'Finland', 'Slovakia', 
-            'Romania', 'Hungary', 'Bulgaria', 'Guernsey', 'Iceland'],
-        'China': 
-            ['China', 'Hong Kong', 'Macau', 'Macao'],
-        'East Asia': 
-            ['Thailand', 'Malaysia', 'Singapore', 'Taiwan', 'Philippines', 'Indonesia', 'South Korea', 'Japan',
-            'Australia', 'Vietnam', 'New Zealand'],
-        'India': 
-            ['India'],
-        'Central Eurasia': 
-            ['Russia', 'Kazakhstan', 'Ukraine', 'Armenia', 'Georgia'],
-        'South America': 
-            ['Brazil', 'Chile', 'Argentina', 'Peru', 'Venezuela', 'Colombia', 'Uruguay', 'Guatemala',
-            'Panama', 'Barbados', 'Belize', 'Mexico'],
-        'Middle East': 
-            ['Turkey', 'Egypt', 'Israel', 'Saudi Arabia', 'United Arab Emirates', 'Kuwait', 'Qatar', 'Oman',
-            'Lebanon'],
-    }
-
-    countries_by_sub_region = {
-        'U.S.':
-            ['United States'],
-        'Canada':
-            ['Canada'],
-        'Germany':
-            ['Germany'],
-        'British Islands':
-            ['United Kingdom', 'Ireland'],
-        'Scandinavia':
-            ['Denmark', 'Norway', 'Sweden', 'Finland'],
-        'France':
-            ['France', 'Monaco'],
-        'Alps':
-            ['Switzerland', 'Liechtenstein', 'Austria'],
-        'Italy':
-            ['Italy'],
-        'China': 
-            ['China', 'Hong Kong'],
-        'Southeast Asia':
-            ['Thailand', 'Malaysia', 'Singapore'],
-        'Asian Islands':
-            ['Taiwan', 'Philippines', 'Indonesia'],
-        'South Korea':
-            ['South Korea'],
-        'Japan':
-            ['Japan'],
-        'Australia':
-            ['Australia'],
-        'India': 
-            ['India'],
-        'Russia':
-            ['Russia'],
-        'Brazil':
-            ['Brazil'],
-        'Israel + Turkey':
-            ['Israel', 'Turkey']
-    }
     # Function to find the region for a given country
     def find_region(country):
         for region, countries in countries_by_region.items():
@@ -151,31 +153,6 @@ def read_bloomberg_data(
     df['net_worth'] = df['Total Net Worth'].str.replace('$', '').str.replace('B', '').astype(float)
     df['rank'] = df['Rank']
     df['full_name'] = df['Name']
-
-    countries_by_region = {
-        'North America': 
-            ['United States', 'Canada'],
-        'Europe': 
-            ['Germany', 'United Kingdom', 'Ireland', 'Cyprus', 'Czech Republic', 'Czechia', 'Denmark', 'Austria',
-            'Belgium', 'Spain', 'France', 'Greece', 'Italy', 'Netherlands', 'Norway', 'Poland', 'Portugal', 
-            'Sweden', 'Switzerland', 'Liechtenstein', 'Lithuania', 'Monaco', 'Estonia', 'Finland', 'Slovakia', 
-            'Romania', 'Hungary', 'Bulgaria', 'Guernsey', 'Iceland'],
-        'China': 
-            ['China', 'Hong Kong', 'Macau', 'Macao'],
-        'East Asia': 
-            ['Thailand', 'Malaysia', 'Singapore', 'Taiwan', 'Philippines', 'Indonesia', 'South Korea', 'Japan',
-            'Australia', 'Vietnam', 'New Zealand'],
-        'India': 
-            ['India'],
-        'Central Eurasia': 
-            ['Russia', 'Kazakhstan', 'Ukraine', 'Armenia', 'Georgia'],
-        'South America': 
-            ['Brazil', 'Chile', 'Argentina', 'Peru', 'Venezuela', 'Colombia', 'Uruguay', 'Guatemala',
-            'Panama', 'Barbados', 'Belize', 'Mexico'],
-        'Middle East': 
-            ['Turkey', 'Egypt', 'Israel', 'Saudi Arabia', 'United Arab Emirates', 'Kuwait', 'Qatar', 'Oman',
-            'Lebanon'],
-    }
 
     # Function to find the region for a given country
     def find_region(country):
@@ -292,15 +269,161 @@ def read_iso_codes(
     return df
 
 def read_panel_data(
-    folder_directory: str='../../Data/panel_data/panel_data.csv',
-    raw: bool=False
+    AGGREGATE_TYPE: str='sub_region',
+    observations_threshold: int=10
 ) -> pd.DataFrame:
-    df = pd.read_csv(folder_directory)
+    # Assert that AGGREGATE_TYPE is either 'sub_region', 'region' or 'country_of_citizenship'
+    assert AGGREGATE_TYPE in ['sub_region', 'region', 'country_of_citizenship']
 
-    if raw:
-        return df
+    billionaire_df = read_billionaires_data(year_and_month_int=True)
+    # drop region = 'Rest of World'
+    billionaire_df = billionaire_df[billionaire_df['region'] != 'Rest of World']
+    # drop sub_region = '"Not a sub-region"
+    billionaire_df = billionaire_df[billionaire_df['sub_region'] != 'Not a sub-region']
 
-    df['year'] = pd.to_datetime(df['year'], format='%Y')
-    df.set_index(['year', 'country'], inplace=True)
+    iso_codes = read_iso_codes()
+    df = pd.merge(billionaire_df, iso_codes, left_on='country_of_citizenship', right_on='name', how='left')
+
+    # use year int and month int to get the year and month and make a date column that sets as date the last day of the month
+    df['date'] = pd.to_datetime(df['year_int'].astype(str) + '-' + df['month_int'].astype(str) + '-01') + pd.offsets.MonthEnd(0)
+
+    stock_market_data = read_stock_market_data()
+
+    # merge stock market data on dates
+    df = pd.merge(df, stock_market_data, left_on='date', right_on='Date', how='left')
+
+    population_data = read_population_data()
+    population_data.reset_index(inplace=True)
+    population_data = pd.merge(population_data, iso_codes, left_on='Name', right_on='name', how='left')
+    population_data.set_index('ISO3', inplace=True)
+    population_data.drop(columns=['Name', 'ISO2'], inplace=True)
+    population_data.columns = population_data.columns.astype(int)
+
+    # add population data
+    # for each row, find ISO 3 and year, and find the corresponding population
+    df['country_population'] = df.apply(lambda x: population_data.loc[x['ISO3'], x['year_int']], axis=1)
+
+    gdp_data = read_gdp_data()
+    gdp_data['TWN'] = 20000 # average over the interesting period
+    gdp_data['GGY'] = 30000 # average over the interesting period
+    gdp_data['PRK'] = gdp_data['KOR'] # North Korea is not in the data, so we use South Korea's GDP - there seems to be some confusion in the codes
+    # TODO: find data on Taiwan, Guernsey
+
+    # find gdp per capita based on year int and ISO3
+    df['gdp_per_capita'] = df.apply(lambda x: gdp_data.loc[str(x['year_int']), x['ISO3']], axis=1)
+
+    # ISO_3 codes by region
+    ISO_3_by_region = {}
+    for region, countries in countries_by_region.items():
+        # the country name is in the iso_codes dataframe index
+        ISO_3_by_region[region] = iso_codes.loc[countries, 'ISO3'].values
+
+    # ISO_3 codes by sub region
+    ISO_3_by_sub_region = {}
+    for sub_region, countries in countries_by_sub_region.items():
+        # the country name is in the iso_codes dataframe index
+        ISO_3_by_sub_region[sub_region] = iso_codes.loc[countries, 'ISO3'].values
+
+        # make a population by region dataframe
+    population_by_region = {}
+    for region, ISO_3s in ISO_3_by_region.items():
+        population_by_year = {}
+        for year in population_data.columns:
+            population_by_year[year] = population_data.loc[ISO_3s, year].sum()
+        population_by_region[region] = population_by_year
+    population_by_region = pd.DataFrame(population_by_region)
+
+    # make a population by sub region dataframe
+    population_by_sub_region = {}
+    for sub_region, ISO_3s in ISO_3_by_sub_region.items():
+        population_by_year = {}
+        for year in population_data.columns:
+            population_by_year[year] = population_data.loc[ISO_3s, year].sum()
+        population_by_sub_region[sub_region] = population_by_year
+    population_by_sub_region = pd.DataFrame(population_by_sub_region)
+
+    # make a weighted gdp per capita by region dataframe
+    gdp_per_capita_by_region = {}
+    for region, ISO_3s in ISO_3_by_region.items():
+        gdp_per_capita_by_year = {}
+        for year in population_by_region.index:
+            year = int(year)
+            divisor = population_by_region.loc[year, region]
+            sum = (gdp_data.loc[str(year), ISO_3s] * population_data.loc[ISO_3s, year]).sum()
+            gdp_per_capita_by_year[year] = sum / divisor 
+        gdp_per_capita_by_region[region] = gdp_per_capita_by_year
+    gdp_per_capita_by_region = pd.DataFrame(gdp_per_capita_by_region)
+
+    # make a weighted gdp per capita by sub region dataframe
+    gdp_per_capita_by_sub_region = {}
+    for sub_region, ISO_3s in ISO_3_by_sub_region.items():
+        gdp_per_capita_by_year = {}
+        for year in population_by_sub_region.index:
+            year = int(year)
+            divisor = population_by_sub_region.loc[year, sub_region]
+            sum = (gdp_data.loc[str(year), ISO_3s] * population_data.loc[ISO_3s, year]).sum()
+            gdp_per_capita_by_year[year] = sum / divisor 
+        gdp_per_capita_by_sub_region[sub_region] = gdp_per_capita_by_year
+    gdp_per_capita_by_sub_region = pd.DataFrame(gdp_per_capita_by_sub_region)
+
+    df['region_gdp_per_capita'] = df.apply(lambda x: gdp_per_capita_by_region.loc[x['year_int'], x['region']], axis=1)
+    df['sub_region_gdp_per_capita'] = df.apply(lambda x: gdp_per_capita_by_sub_region.loc[x['year_int'], x['sub_region']], axis=1)
+    panel_df = copy.deepcopy(df)
+
+    panel_df = panel_df[['year_int', 'country_of_citizenship', 'region', 'sub_region', 'gdp_per_capita', 'region_gdp_per_capita', 'sub_region_gdp_per_capita', 'Adj_Close_MSCI', 'Adj_Close_SPX', 'net_worth']]
+
+    data = {}
+    if AGGREGATE_TYPE == 'sub_region':
+        for sub_region in panel_df['sub_region'].unique():
+            for year in panel_df[panel_df['sub_region']==sub_region]['year_int'].unique():
+                data[(sub_region, year)] = panel_df[(panel_df['sub_region'] == sub_region) & (panel_df['year_int'] == year)]['net_worth']
+        panel_df = panel_df[['sub_region', 'year_int', 'sub_region_gdp_per_capita', 'Adj_Close_MSCI', 'Adj_Close_SPX']]
+    elif AGGREGATE_TYPE == 'region':
+        for region in panel_df['region'].unique():
+            for year in panel_df[panel_df['region']==region]['year_int'].unique():
+                data[(region, year)] = panel_df[(panel_df['region'] == region) & (panel_df['year_int'] == year)]['net_worth']
+        panel_df = panel_df[['region', 'year_int', 'region_gdp_per_capita', 'Adj_Close_MSCI', 'Adj_Close_SPX']]
+    elif AGGREGATE_TYPE == 'country_of_citizenship':
+        for country in panel_df['country_of_citizenship'].unique():
+            for year in panel_df[panel_df['country_of_citizenship']==country]['year_int'].unique():
+                data[(country, year)] = panel_df[(panel_df['country_of_citizenship'] == country) & (panel_df['year_int'] == year)]['net_worth']
+        panel_df = panel_df[['country_of_citizenship', 'year_int', 'gdp_per_capita', 'Adj_Close_MSCI', 'Adj_Close_SPX']]
+
+    panel_df = panel_df.drop_duplicates()
+
+    panel_df['net_worth'] = panel_df.apply(lambda x: data[(x[AGGREGATE_TYPE], x['year_int'])].tolist(), axis=1)
+
+    panel_df['N_net_worth'] = panel_df['net_worth'].apply(len)
+
+    # remove rows with less than 10 observations
+    panel_df = panel_df[panel_df['N_net_worth'] >= observations_threshold]
+
+    for group in panel_df[AGGREGATE_TYPE].unique():
+        while True:
+            min_year = panel_df[panel_df[AGGREGATE_TYPE] == group]['year_int'].min()
+            max_year = panel_df[panel_df[AGGREGATE_TYPE] == group]['year_int'].max()
+            years = panel_df[panel_df[AGGREGATE_TYPE] == group]['year_int'].unique()
+            theo_years = range(min_year, max_year+1)
+            if set(theo_years) == set(years):
+                break
+            # remove the row with year_int == min_year and panel_df[AGGREGATE_TYPE] == group
+            panel_df = panel_df[~((panel_df['year_int'] == min_year) & (panel_df[AGGREGATE_TYPE] == group))]
+
+    panel_df.columns = ['group', 'year', 'gdp_pc', 'MSCI', 'SPX', 'net_worth', 'N_net_worth']
+    panel_df.sort_values(by='year', inplace=True)
+
+    grouped_df = panel_df.groupby('group')
+
+    # Define a function to calculate the log change
+    def calculate_log_change(group):
+        group['log_change_gdp_pc'] = np.log(group['gdp_pc']).diff()
+        group['log_change_MSCI'] = np.log(group['MSCI']).diff()
+        group['log_change_SPX'] = np.log(group['SPX']).diff()
+        return group
+
+    # Apply the function to each group
+    result = grouped_df.apply(calculate_log_change, include_groups=False)
+
+    df = result.reset_index()
 
     return df

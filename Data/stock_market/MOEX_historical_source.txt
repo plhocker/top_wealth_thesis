@@ -1,0 +1,1 @@
+https://uk.finance.yahoo.com/quote/IMOEX.ME/history?period1=1362441600&period2=1717459200&interval=1mo&filter=history&frequency=1mo&includeAdjustedClose=true

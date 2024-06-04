@@ -1,0 +1,1 @@
+https://finance.yahoo.com/quote/000001.SS/history?period1=867801600&period2=1717459200&interval=1mo&filter=history&frequency=1mo&includeAdjustedClose=true
