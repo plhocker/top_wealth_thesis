@@ -14,3 +14,4 @@ jax # GPU backend for even faster sampling
 jaxlib # Support library for jax
 ipywidgets # Jupyter notebook widgets
 requests # For SSL certificates
+dill # For pickling

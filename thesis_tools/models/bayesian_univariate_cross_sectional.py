@@ -50,7 +50,7 @@ class Pareto_One_Stage(ABM):
                 cores=cores,
                 nuts_sampler=nuts_sampler
             )
-        return self.trace
+        # return self.trace
 
     def prior_predictive(
         self, 
@@ -66,12 +66,14 @@ class Pareto_One_Stage(ABM):
 
     def posterior_predictive(
         self, 
-        var_names: list[str]=None
+        var_names: list[str]=None,
+        progressbar: bool=True
     ) -> np.ndarray:
         """ Generate posterior predictive samples """
         with self.model:
             posterior = pm.sample_posterior_predictive(
-                self.trace
+                self.trace,
+                progressbar=progressbar
             )
         # Flatten values
         return posterior.posterior_predictive['y'].values.flatten()
@@ -136,10 +138,11 @@ class Weibull_One_Stage(ABM):
 
     def fit(
         self, 
-        draws: int=1000,
-        tune: int=1000,
+        draws: int=2000,
+        tune: int=2000,
         chains: int=4,
         cores: int=4,
+        target_accept: float=0.975,
         nuts_sampler: str='nutpie'
     ):
         """ Fit the model """
@@ -150,6 +153,7 @@ class Weibull_One_Stage(ABM):
                 tune=tune,
                 chains=chains,
                 cores=cores,
+                target_accept=target_accept,
                 nuts_sampler=nuts_sampler
             )
         return self.trace
@@ -168,12 +172,14 @@ class Weibull_One_Stage(ABM):
 
     def posterior_predictive(
         self, 
-        var_names: list[str]=None
+        var_names: list[str]=None,
+        progressbar: bool=True
     ) -> np.ndarray:
         """ Generate posterior predictive samples """
         with self.model:
             posterior = pm.sample_posterior_predictive(
-                self.trace
+                self.trace,
+                progressbar=progressbar
             )
         # Flatten values
         return posterior.posterior_predictive['y'].values.flatten()
@@ -243,10 +249,11 @@ class GeneralisedPareto_One_Stage(ABM):
 
     def fit(
         self, 
-        draws: int=1000,
-        tune: int=1000,
+        draws: int=2000,
+        tune: int=2000,
         chains: int=4,
         cores: int=4,
+        target_accept: float=0.975,
         nuts_sampler: str='nutpie'
     ):
         """ Fit the model """
@@ -257,6 +264,7 @@ class GeneralisedPareto_One_Stage(ABM):
                 tune=tune,
                 chains=chains,
                 cores=cores,
+                target_accept=target_accept,
                 nuts_sampler=nuts_sampler
             )
         return self.trace
@@ -275,12 +283,14 @@ class GeneralisedPareto_One_Stage(ABM):
 
     def posterior_predictive(
         self, 
-        var_names: list[str]=None
+        var_names: list[str]=None,
+        progressbar: bool=True
     ) -> np.ndarray:
         """ Generate posterior predictive samples """
         with self.model:
             posterior = pm.sample_posterior_predictive(
-                self.trace
+                self.trace,
+                progressbar=progressbar
             )
         # Flatten values
         return posterior.posterior_predictive['y'].values.flatten()
@@ -329,6 +339,7 @@ class Pareto_Two_Stage(ABM):
         tune: int=1000,
         chains: int=4,
         cores: int=4,
+        target_accept: float=0.975,
         nuts_sampler: str='nutpie'
     ):
         """ Fit the model """
@@ -339,6 +350,7 @@ class Pareto_Two_Stage(ABM):
                 tune=tune,
                 chains=chains,
                 cores=cores,
+                target_accept=target_accept,
                 nuts_sampler=nuts_sampler
             )
         return self.trace
@@ -357,12 +369,14 @@ class Pareto_Two_Stage(ABM):
 
     def posterior_predictive(
         self, 
-        var_names: list[str]=None
+        var_names: list[str]=None,
+        progressbar: bool=True
     ) -> np.ndarray:
         """ Generate posterior predictive samples """
         with self.model:
             posterior = pm.sample_posterior_predictive(
-                self.trace
+                self.trace,
+                progressbar=progressbar
             )
         # Flatten values
         return posterior.posterior_predictive['y'].values.flatten()
@@ -415,10 +429,11 @@ class Weibull_Two_Stage(ABM):
 
     def fit(
         self, 
-        draws: int=1000,
-        tune: int=1000,
+        draws: int=2000,
+        tune: int=2000,
         chains: int=4,
         cores: int=4,
+        target_accept: float=0.975,
         nuts_sampler: str='nutpie'
     ):
         """ Fit the model """
@@ -447,12 +462,14 @@ class Weibull_Two_Stage(ABM):
     
     def posterior_predictive(
         self, 
-        var_names: list[str]=None
+        var_names: list[str]=None,
+        progressbar: bool=True
     ) -> np.ndarray:
         """ Generate posterior predictive samples """
         with self.model:
             posterior = pm.sample_posterior_predictive(
-                self.trace
+                self.trace,
+                progressbar=progressbar
             )
         # Flatten values
         return posterior.posterior_predictive['y'].values.flatten()
@@ -549,12 +566,14 @@ class GeneralisedPareto_Two_Stage(ABM):
 
     def posterior_predictive(
         self, 
-        var_names: list[str]=None
+        var_names: list[str]=None,
+        progressbar: bool=True
     ) -> np.ndarray:
         """ Generate posterior predictive samples """
         with self.model:
             posterior = pm.sample_posterior_predictive(
-                self.trace
+                self.trace,
+                progressbar=progressbar
             )
         # Flatten values
         return posterior.posterior_predictive['y'].values.flatten()
