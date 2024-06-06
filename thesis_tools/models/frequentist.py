@@ -695,7 +695,37 @@ class Weibull(Distribution):
             print('Gamma parameter not set, using parameter stored in the class: gamma=', self.gamma)
             gamma = self.gamma
 
-        return (1 / alpha) * x**(gamma - 1) * np.exp((1 - x**gamma) / (alpha * gamma)) # My corrected formula
+        return (1 / alpha) * x**(gamma - 1) * np.exp((1 - x**gamma) / (alpha * gamma)) # My corrected formula, derived by differentiating the CDF - verified by Wolfram Alpha
+
+    def log_pdf(
+        self,
+        x: float,
+        gamma: float=None,
+        alpha: float=None
+    ) -> float:
+        """
+        Calculate the log probability density function of the Weibull distribution.
+        Parameters
+        ----------
+        x : np.ndarray
+            The data to calculate the log probability density function for.
+        Returns
+        -------
+        float
+            The log probability density function of the Weibull distribution.
+        """
+        if x < 1:
+            return -np.inf
+
+        if alpha is None:
+            print('Alpha parameter not set, using parameter stored in the class: alpha=', self.alpha)
+            alpha = self.alpha
+        
+        if gamma is None:
+            print('Gamma parameter not set, using parameter stored in the class: gamma=', self.gamma)
+            gamma = self.gamma
+
+        return -np.log(alpha) + (gamma - 1) * np.log(x) + (1 - x**gamma) / (alpha * gamma)
 
     def cdf(
         self,
@@ -726,7 +756,7 @@ class Weibull(Distribution):
             return 0
 
         # return 1 - np.exp(-((1 + x)**(gamma + 1) - 1) / (alpha * (gamma + 1))) This is the formula from the paper, it seems incorrect
-        return 1 - np.exp((1 - x ** gamma) / (alpha * gamma)) # my corrected formula
+        return 1 - np.exp((1 - x ** gamma) / (alpha * gamma)) # my corrected formula - well verified 
 
     def inverse_cdf(
         self,

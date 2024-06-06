@@ -96,6 +96,8 @@ def read_billionaires_data(
     
     # Net worth is denoted with a number and then the letter B, convert it to a number
     df['net_worth'] = df['net_worth'].str.replace('B', '').astype(float)
+    # Drop rows where net worth is less than 1
+    df = df[df['net_worth'] >= 1]
 
     # Function to find the region for a given country
     def find_region(country):
@@ -227,30 +229,84 @@ def read_gdp_data(
 
     return df
 
-def read_stock_market_data(
-    folder_directory_1: str='../../Data/stock_market/MSCI_World_historical.csv',
-    folder_directory_2: str='../../Data/stock_market/SPX_historical.csv',
-    raw: bool=False
-) -> pd.DataFrame:
-    df_1 = pd.read_csv('../../Data/stock_market/MSCI_World_historical.csv')
-    df_2 = pd.read_csv('../../Data/stock_market/SPX_historical.csv')
+def read_stock_market_data() -> pd.DataFrame:
+    # CAC40 data
+    df_CAC40 = pd.read_csv('../../Data/stock_market/CAC40_historical.csv')
+    df_CAC40['Date'] = pd.to_datetime(df_CAC40['Date'])
+    df_CAC40.set_index('Date', inplace=True)
+    df_CAC40 = df_CAC40.resample('ME').last()
+    df_CAC40['CAC40'] = df_CAC40['Adj Close']
+    df_CAC40 = df_CAC40[['CAC40']]
 
-    if raw:
-        return df_1, df_2
+    # DAX data
+    df_DAX = pd.read_csv('../../Data/stock_market/DAX_historical.csv')
+    df_DAX['Date'] = pd.to_datetime(df_DAX['Date'])
+    df_DAX.set_index('Date', inplace=True)
+    df_DAX = df_DAX.resample('ME').last()
+    df_DAX['DAX'] = df_DAX['Adj Close']
+    df_DAX = df_DAX[['DAX']]
 
-    df_1['Date'] = pd.to_datetime(df_1['Date'])
-    df_2['Date'] = pd.to_datetime(df_2['Date'])
-    df_1.set_index('Date', inplace=True)
-    df_2.set_index('Date', inplace=True)
-    df_1 = df_1.resample('ME').last()
-    df_2 = df_2.resample('ME').last()
+    # FTSE100 data
+    df_FTSE100 = pd.read_csv('../../Data/stock_market/FTSE100_historical.csv')
+    df_FTSE100['Date'] = pd.to_datetime(df_FTSE100['Date'], format='%m/%d/%y')
+    df_FTSE100.set_index('Date', inplace=True)
+    df_FTSE100 = df_FTSE100.resample('ME').last()
+    df_FTSE100['FTSE100'] = df_FTSE100[' Close']
+    df_FTSE100 = df_FTSE100[['FTSE100']]
 
-    df = pd.merge(df_1, df_2, left_index=True, right_index=True, how='inner', suffixes=('_MSCI', '_SPX'))
+    # MOEX data
+    df_MOEX = pd.read_csv('../../Data/stock_market/MOEX_historical.csv')
+    df_MOEX['Date'] = pd.to_datetime(df_MOEX['Date'])
+    df_MOEX.set_index('Date', inplace=True)
+    df_MOEX = df_MOEX.resample('ME').last()
+    df_MOEX['MOEX'] = df_MOEX['Adj Close']
+    df_MOEX = df_MOEX[['MOEX']]
 
-    df = df[['Adj Close_MSCI', 'Adj Close_SPX']]
-    df.columns = ['Adj_Close_MSCI', 'Adj_Close_SPX']
+    # MSCI data
+    df_MSCI = pd.read_csv('../../Data/stock_market/MSCI_World_historical.csv')
+    df_MSCI['Date'] = pd.to_datetime(df_MSCI['Date'])
+    df_MSCI.set_index('Date', inplace=True)
+    df_MSCI = df_MSCI.resample('ME').last()
+    df_MSCI['MSCI'] = df_MSCI['Adj Close']
+    df_MSCI = df_MSCI[['MSCI']]
 
-    return df
+    # NIFTY data
+    df_NIFTY = pd.read_csv('../../Data/stock_market/NIFTY_historical.csv')
+    df_NIFTY['Date'] = pd.to_datetime(df_NIFTY['Date'])
+    df_NIFTY.set_index('Date', inplace=True)
+    df_NIFTY = df_NIFTY.resample('ME').last()
+    df_NIFTY['NIFTY'] = df_NIFTY['Adj Close']
+    df_NIFTY = df_NIFTY[['NIFTY']]
+
+    # OMX40 data
+    df_OMX40 = pd.read_csv('../../Data/stock_market/OMX40_historical.csv')
+    df_OMX40['Date'] = pd.to_datetime(df_OMX40['Date'])
+    df_OMX40.set_index('Date', inplace=True)
+    df_OMX40 = df_OMX40.resample('ME').last()
+    df_OMX40['OMX40'] = df_OMX40['Close/Last']
+    df_OMX40 = df_OMX40[['OMX40']]
+
+    # SPX data
+    df_SPX = pd.read_csv('../../Data/stock_market/SPX_historical.csv')
+    df_SPX['Date'] = pd.to_datetime(df_SPX['Date'])
+    df_SPX.set_index('Date', inplace=True)
+    df_SPX = df_SPX.resample('ME').last()
+    df_SPX['SPX'] = df_SPX['Adj Close']
+    df_SPX = df_SPX[['SPX']]
+
+    # SSE data
+    df_SSE = pd.read_csv('../../Data/stock_market/SSE_historical.csv')
+    df_SSE['Date'] = pd.to_datetime(df_SSE['Date'])
+    df_SSE.set_index('Date', inplace=True)
+    df_SSE = df_SSE.resample('ME').last()
+    df_SSE['SSE'] = df_SSE['Adj Close']
+    df_SSE = df_SSE[['SSE']]
+
+    # Merge all the dataframes
+    df_list = [df_CAC40, df_DAX, df_FTSE100, df_MOEX, df_MSCI, df_NIFTY, df_OMX40, df_SPX, df_SSE]
+    df_merged = pd.concat(df_list, axis=1)
+
+    return df_merged
 
 def read_iso_codes(
     folder_directory: str='../../Data/regions/iso_codes_mapping.csv',
@@ -288,6 +344,7 @@ def read_panel_data(
     df['date'] = pd.to_datetime(df['year_int'].astype(str) + '-' + df['month_int'].astype(str) + '-01') + pd.offsets.MonthEnd(0)
 
     stock_market_data = read_stock_market_data()
+    stock_indices = stock_market_data.columns.tolist()
 
     # merge stock market data on dates
     df = pd.merge(df, stock_market_data, left_on='date', right_on='Date', how='left')
@@ -324,7 +381,7 @@ def read_panel_data(
         # the country name is in the iso_codes dataframe index
         ISO_3_by_sub_region[sub_region] = iso_codes.loc[countries, 'ISO3'].values
 
-        # make a population by region dataframe
+    # make a population by region dataframe
     population_by_region = {}
     for region, ISO_3s in ISO_3_by_region.items():
         population_by_year = {}
@@ -370,24 +427,26 @@ def read_panel_data(
     df['sub_region_gdp_per_capita'] = df.apply(lambda x: gdp_per_capita_by_sub_region.loc[x['year_int'], x['sub_region']], axis=1)
     panel_df = copy.deepcopy(df)
 
-    panel_df = panel_df[['year_int', 'country_of_citizenship', 'region', 'sub_region', 'gdp_per_capita', 'region_gdp_per_capita', 'sub_region_gdp_per_capita', 'Adj_Close_MSCI', 'Adj_Close_SPX', 'net_worth']]
+    panel_df = panel_df[['year_int', 'country_of_citizenship', 'region', 'sub_region', 'gdp_per_capita', 'region_gdp_per_capita', 'sub_region_gdp_per_capita'] + stock_indices + ['net_worth']]
 
     data = {}
     if AGGREGATE_TYPE == 'sub_region':
         for sub_region in panel_df['sub_region'].unique():
             for year in panel_df[panel_df['sub_region']==sub_region]['year_int'].unique():
                 data[(sub_region, year)] = panel_df[(panel_df['sub_region'] == sub_region) & (panel_df['year_int'] == year)]['net_worth']
-        panel_df = panel_df[['sub_region', 'year_int', 'sub_region_gdp_per_capita', 'Adj_Close_MSCI', 'Adj_Close_SPX']]
+        panel_df = panel_df[['sub_region', 'year_int', 'sub_region_gdp_per_capita'] + stock_indices]
     elif AGGREGATE_TYPE == 'region':
         for region in panel_df['region'].unique():
             for year in panel_df[panel_df['region']==region]['year_int'].unique():
                 data[(region, year)] = panel_df[(panel_df['region'] == region) & (panel_df['year_int'] == year)]['net_worth']
-        panel_df = panel_df[['region', 'year_int', 'region_gdp_per_capita', 'Adj_Close_MSCI', 'Adj_Close_SPX']]
+        panel_df = panel_df[['region', 'year_int', 'region_gdp_per_capita'] + stock_indices]
     elif AGGREGATE_TYPE == 'country_of_citizenship':
         for country in panel_df['country_of_citizenship'].unique():
             for year in panel_df[panel_df['country_of_citizenship']==country]['year_int'].unique():
                 data[(country, year)] = panel_df[(panel_df['country_of_citizenship'] == country) & (panel_df['year_int'] == year)]['net_worth']
-        panel_df = panel_df[['country_of_citizenship', 'year_int', 'gdp_per_capita', 'Adj_Close_MSCI', 'Adj_Close_SPX']]
+        panel_df = panel_df[['country_of_citizenship', 'year_int', 'gdp_per_capita'] + stock_indices]
+    else:
+        raise ValueError('AGGREGATE_TYPE must be either "sub_region", "region" or "country_of_citizenship"')
 
     panel_df = panel_df.drop_duplicates()
 
@@ -409,7 +468,7 @@ def read_panel_data(
             # remove the row with year_int == min_year and panel_df[AGGREGATE_TYPE] == group
             panel_df = panel_df[~((panel_df['year_int'] == min_year) & (panel_df[AGGREGATE_TYPE] == group))]
 
-    panel_df.columns = ['group', 'year', 'gdp_pc', 'MSCI', 'SPX', 'net_worth', 'N_net_worth']
+    panel_df.columns = ['group', 'year', 'gdp_pc'] + stock_indices + ['net_worth', 'N_net_worth']
     panel_df.sort_values(by='year', inplace=True)
 
     grouped_df = panel_df.groupby('group')
@@ -417,13 +476,20 @@ def read_panel_data(
     # Define a function to calculate the log change
     def calculate_log_change(group):
         group['log_change_gdp_pc'] = np.log(group['gdp_pc']).diff()
-        group['log_change_MSCI'] = np.log(group['MSCI']).diff()
-        group['log_change_SPX'] = np.log(group['SPX']).diff()
+        for stock_index in stock_indices:
+            group[f'log_change_{stock_index}'] = np.log(group[stock_index]).diff()
         return group
 
     # Apply the function to each group
     result = grouped_df.apply(calculate_log_change, include_groups=False)
 
     df = result.reset_index()
+    df.drop(columns='level_1', inplace=True)
+
+    # Add a constant column
+    df['constant'] = 1
+
+    # Exclude the year 2023 TODO: complete the data for 2023, may not be possible
+    df = df[df['year'] != 2023]
 
     return df
