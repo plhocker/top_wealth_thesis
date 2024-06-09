@@ -5,11 +5,13 @@ import arviz as az
 import matplotlib.pyplot as plt
 
 from .abstract_bayesian import AbstractBayesianModel as ABM
+from .frequentist import Pareto, Weibull, GeneralisedPareto
 
 class Univariate_Pareto_TimeSeries(ABM):
     def __init__(
         self, 
         panel_df: pd.DataFrame,
+        train_until: int=None,
         y_column: str='net_worth',
         X_columns: list[str]=['constant', 'log_change_gdp_pc', 'log_change_MSCI'], 
         hyperprior_alpha: float=41, # Estimated from the data
@@ -24,16 +26,26 @@ class Univariate_Pareto_TimeSeries(ABM):
         self.hyperprior_alpha = hyperprior_alpha
         self.hyperprior_beta = hyperprior_beta
 
+        self.y_column = y_column
+        self.X_columns = X_columns
+
         self.trace = None
         self.df = panel_df.set_index('year')
+        if train_until is not None:
+            self.df_train = self.df.loc[:train_until]
+            self.df_test = self.df.loc[train_until+1:]
+        else:
+            self.df_train = self.df
+            self.df_test = None
+
         # Check how long the panel is
         MAX_LENGTH = 15
-        if len(self.df) > MAX_LENGTH:
+        if len(self.df_train) > MAX_LENGTH:
             print(f"Panel is too long, truncating to {MAX_LENGTH} years")
-            self.df = self.df.tail(MAX_LENGTH)
+            self.df_train = self.df_train.tail(MAX_LENGTH)
 
         # Check that there are at least len(X_columns)+2 observations
-        assert len(self.df) >= len(X_columns)+2, "Not enough observations in the panel"
+        assert len(self.df_train) >= len(X_columns)+2, "Not enough observations in the panel"
 
         self.model = pm.Model()
         with self.model:    
@@ -42,8 +54,8 @@ class Univariate_Pareto_TimeSeries(ABM):
                 beta_variance = pm.Gamma(f'beta_variance_{cov}', alpha=1, beta=1)
                 betas.append(pm.Normal(f'beta_{cov}', mu=0, sigma=beta_variance))
 
-            years = self.df.index.values
-            X = self.df[X_columns]
+            years = self.df_train.index.values
+            X = self.df_train[X_columns]
 
             initial_one_over_alpha = pm.Gamma(
                 f'one_over_alpha_{years[0]}', 
@@ -72,7 +84,7 @@ class Univariate_Pareto_TimeSeries(ABM):
                         f'y_{year}', 
                         alpha=one_over_alphas[year], 
                         m = 1.0,
-                        observed=self.df.loc[year][y_column])
+                        observed=self.df_train.loc[year][y_column])
                 )
 
     def fit(
@@ -104,21 +116,67 @@ class Univariate_Pareto_TimeSeries(ABM):
     ):
         """ Generate prior predictive samples """
         with self.model:
-            prior = pm.sample_prior_predictive(samples=samples)
-            return prior
+            prior_pm = pm.sample_prior_predictive(samples=samples)
+        prior = prior_pm['prior'].to_dataframe().reset_index(drop=True)
+        prior_pred = prior_pm['prior_predictive']
+        prior_df = pd.DataFrame()
+        for var in list(prior_pred.data_vars):
+            vals = prior_pred[var].values.flatten()
+            # select 10000 random samples from the prior
+            prior_df[var] = np.random.choice(vals, 10000)
+        merged_prior = pd.concat([prior, prior_df], axis=1)
+        return merged_prior
 
     def posterior_predictive(
         self
     ):
         """ Generate posterior predictive samples """
+        pm_trace = self.trace['posterior'].to_dataframe().reset_index(drop=True)
         with self.model:
-            posterior = pm.sample_posterior_predictive(self.trace)
-            return posterior
+            pm_post = pm.sample_posterior_predictive(self.trace)
+        post_pred = pm_post['posterior_predictive']
+        post_df = pd.DataFrame()
+        for var in list(post_pred.data_vars):
+            vals = post_pred[var].values.flatten()
+            # select 10000 random samples from the posterior
+            post_df[var] = np.random.choice(vals, 10000)
+        merged_post = pd.concat([pm_trace, post_df], axis=1)
+        return merged_post
+        
+    def predict(
+        self
+    ):
+        def predict_row(row, df_test, X_columns, year):
+            row[f'epsilon_{year}'] = np.random.normal(loc=0, scale=row['epsilon_alpha'])
+            cum_sum = 0
+            for X_column in X_columns:
+                cum_sum += row[f'beta_{X_column}'] * df_test.loc[year, X_column]
+            cum_sum += row[f'epsilon_{year}']
+            row[f'alpha_{year}'] = row[f'alpha_{year - 1}'] * np.exp(cum_sum)
+            row[f'y_{year}'] = Pareto(alpha=row[f'alpha_{year}'], x_m=1).sample(1)[0]
+            return row
 
+        trace_df = self.trace['posterior'].to_dataframe().reset_index(drop=True)
+
+        # Apply this to the trace_df
+        for year in self.df_test.index:
+            trace_df = trace_df.apply(
+                lambda row: predict_row(
+                    row=row, 
+                    df_test=self.df_test, 
+                    X_columns=self.X_columns,
+                    year=year
+                ),
+            axis=1)
+
+        return trace_df
+
+        
 class Univariate_Weibull_TimeSeries(ABM):
     def __init__(
         self,
         panel_df: pd.DataFrame,
+        train_until: int=None,
         y_column: str='net_worth',
         X_columns: list[str]=['constant', 'log_change_gdp_pc', 'log_change_MSCI'],
         hyperprior_gamma_alpha: float=1.7, # Estimated from the data
@@ -126,6 +184,10 @@ class Univariate_Weibull_TimeSeries(ABM):
         hyperprior_alpha_alpha: float=1.0,
         hyperprior_alpha_beta: float=1.0
     ):
+        """ Initialize the model """
+        self.y_column = y_column
+        self.X_columns = X_columns
+
         # Assert that the passed hyperpriors are positive
         assert hyperprior_gamma_alpha > 0, "hyperprior_gamma_alpha must be positive"
         assert hyperprior_gamma_beta > 0, "hyperprior_gamma_beta must be positive"
@@ -139,15 +201,21 @@ class Univariate_Weibull_TimeSeries(ABM):
 
         self.trace = None
         self.df = panel_df.set_index('year')
+        if train_until is not None:
+            self.df_train = self.df.loc[:train_until]
+            self.df_test = self.df.loc[train_until+1:]
+        else:
+            self.df_train = self.df
+            self.df_test = None
 
         # Check how long the panel is
         MAX_LENGTH = 15
-        if len(self.df) > MAX_LENGTH:
+        if len(self.df_train) > MAX_LENGTH:
             print(f"Panel is too long, truncating to {MAX_LENGTH} years")
-            self.df = self.df.tail(MAX_LENGTH)
+            self.df_train = self.df_train.tail(MAX_LENGTH)
 
         # Check that there are at least len(X_columns)+2 observations
-        assert len(self.df) >= len(X_columns)+2, "Not enough observations in the panel"
+        assert len(self.df_train) >= len(X_columns)+2, "Not enough observations in the panel"
 
         self.model = pm.Model()
 
@@ -157,8 +225,8 @@ class Univariate_Weibull_TimeSeries(ABM):
                 beta_variance = pm.Gamma(f'beta_variance_{cov}', alpha=1, beta=1)
                 betas.append(pm.Normal(f'beta_{cov}', mu=0, sigma=beta_variance))
 
-            years = self.df.index.values
-            X = self.df[X_columns]
+            years = self.df_train.index.values
+            X = self.df_train[X_columns]
 
             gamma = pm.InverseGamma(
                 'gamma', 
@@ -199,7 +267,7 @@ class Univariate_Weibull_TimeSeries(ABM):
                         alphas[year],
                         logp=weibull_logp,
                         random=weibull_random,
-                        observed=self.df.loc[year][y_column]
+                        observed=self.df_train.loc[year][y_column]
                     )
                 )
 
@@ -225,20 +293,73 @@ class Univariate_Weibull_TimeSeries(ABM):
     def get_trace(self):
         return self.trace
 
-    def prior_predictive(self):
+    def prior_predictive(
+        self,
+        samples: int=1000
+    ):
+        """ Generate prior predictive samples """
         with self.model:
-            prior = pm.sample_prior_predictive(samples=1000)
-            return prior
+            prior_pm = pm.sample_prior_predictive(samples=samples)
+        prior = prior_pm['prior'].to_dataframe().reset_index(drop=True)
+        prior_pred = prior_pm['prior_predictive']
+        prior_df = pd.DataFrame()
+        for var in list(prior_pred.data_vars):
+            vals = prior_pred[var].values.flatten()
+            # select 10000 random samples from the prior
+            prior_df[var] = np.random.choice(vals, 10000)
+        merged_prior = pd.concat([prior, prior_df], axis=1)
+        return merged_prior
 
-    def posterior_predictive(self):
+    def posterior_predictive(
+        self
+    ):
+        """ Generate posterior predictive samples """
+        pm_trace = self.trace['posterior'].to_dataframe().reset_index(drop=True)
         with self.model:
-            posterior = pm.sample_posterior_predictive(self.trace)
-            return posterior
+            pm_post = pm.sample_posterior_predictive(self.trace)
+        post_pred = pm_post['posterior_predictive']
+        post_df = pd.DataFrame()
+        for var in list(post_pred.data_vars):
+            vals = post_pred[var].values.flatten()
+            # select 10000 random samples from the posterior
+            post_df[var] = np.random.choice(vals, 10000)
+        merged_post = pd.concat([pm_trace, post_df], axis=1)
+        return merged_post
+
+    def predict(
+        self
+    ):
+        def predict_row(row, df_test, X_columns, year):
+            row[f'epsilon_{year}'] = np.random.normal(loc=0, scale=row['epsilon_sigma'])
+            cum_sum = 0
+            for X_column in X_columns:
+                cum_sum += row[f'beta_{X_column}'] * df_test.loc[year, X_column]
+            cum_sum += row[f'epsilon_{year}']
+            row[f'alpha_{year}'] = row[f'alpha_{year - 1}'] * np.exp(cum_sum)
+            row[f'y_{year}'] = Weibull(gamma=row['gamma'], alpha=row[f'alpha_{year}']).sample(1)[0]
+            return row
+
+        trace_df = self.trace['posterior'].to_dataframe().reset_index(drop=True)
+
+        # Apply this to the trace_df
+        for year in self.df_test.index:
+            trace_df = trace_df.apply(
+                lambda row: predict_row(
+                    row=row, 
+                    df_test=self.df_test, 
+                    X_columns=self.X_columns,
+                    year=year
+                ),
+            axis=1)
+
+        return trace_df
+        
 
 class Univariate_GeneralisedPareto_TimeSeries(ABM):
     def __init__(
         self,
         panel_df: pd.DataFrame,
+        train_until: int=None,
         y_column: str='net_worth',
         X_columns: list[str]=['constant', 'log_change_gdp_pc', 'log_change_MSCI'],
         hyperprior_gamma_alpha: float=33, # Estimated from the data
@@ -247,6 +368,8 @@ class Univariate_GeneralisedPareto_TimeSeries(ABM):
         hyperprior_sigma_beta: float=1 
     ):
         """ Initialize the model """
+        self.y_column = y_column
+        self.X_columns = X_columns
 
         # Assert that the passed hyperpriors are positive
         assert hyperprior_gamma_alpha > 0, "hyperprior_gamma_alpha must be positive"
@@ -261,15 +384,21 @@ class Univariate_GeneralisedPareto_TimeSeries(ABM):
 
         self.trace = None
         self.df = panel_df.set_index('year')
+        if train_until is not None:
+            self.df_train = self.df.loc[:train_until]
+            self.df_test = self.df.loc[train_until+1:]
+        else:
+            self.df_train = self.df
+            self.df_test = None
 
         # Check how long the panel is
         MAX_LENGTH = 15
-        if len(self.df) > MAX_LENGTH:
+        if len(self.df_train) > MAX_LENGTH:
             print(f"Panel is too long, truncating to {MAX_LENGTH} years")
-            self.df = self.df.tail(MAX_LENGTH)
+            self.df_train = self.df_train.tail(MAX_LENGTH)
 
         # Check that there are at least len(X_columns)+2 observations
-        assert len(self.df) >= len(X_columns)+2, "Not enough observations in the panel"
+        assert len(self.df_train) >= len(X_columns)+2, "Not enough observations in the panel"
 
         self.model = pm.Model()
 
@@ -279,8 +408,8 @@ class Univariate_GeneralisedPareto_TimeSeries(ABM):
                 beta_variance = pm.Gamma(f'beta_variance_{cov}', alpha=1, beta=1)
                 betas.append(pm.Normal(f'beta_{cov}', mu=0, sigma=beta_variance))
 
-            years = self.df.index.values
-            X = self.df[X_columns]
+            years = self.df_train.index.values
+            X = self.df_train[X_columns]
 
             initial_sigma = pm.Gamma(
                 f'sigma_{years[0]}', 
@@ -332,7 +461,7 @@ class Univariate_GeneralisedPareto_TimeSeries(ABM):
                         sigmas[year],
                         logp=gpd_logp,
                         random=gpd_random,
-                        observed=self.df.loc[year][y_column]
+                        observed=self.df_train.loc[year][y_column]
                     )
                 )
 
@@ -362,11 +491,59 @@ class Univariate_GeneralisedPareto_TimeSeries(ABM):
         self,
         samples: int=1000
     ):
+        """ Generate prior predictive samples """
         with self.model:
-            prior = pm.sample_prior_predictive(samples=samples)
-            return prior
+            prior_pm = pm.sample_prior_predictive(samples=samples)
+        prior = prior_pm['prior'].to_dataframe().reset_index(drop=True)
+        prior_pred = prior_pm['prior_predictive']
+        prior_df = pd.DataFrame()
+        for var in list(prior_pred.data_vars):
+            vals = prior_pred[var].values.flatten()
+            # select 10000 random samples from the prior
+            prior_df[var] = np.random.choice(vals, 10000)
+        merged_prior = pd.concat([prior, prior_df], axis=1)
+        return merged_prior
 
-    def posterior_predictive(self):
+    def posterior_predictive(
+        self
+    ):
+        """ Generate posterior predictive samples """
+        pm_trace = self.trace['posterior'].to_dataframe().reset_index(drop=True)
         with self.model:
-            posterior = pm.sample_posterior_predictive(self.trace)
-            return posterior
+            pm_post = pm.sample_posterior_predictive(self.trace)
+        post_pred = pm_post['posterior_predictive']
+        post_df = pd.DataFrame()
+        for var in list(post_pred.data_vars):
+            vals = post_pred[var].values.flatten()
+            # select 10000 random samples from the posterior
+            post_df[var] = np.random.choice(vals, 10000)
+        merged_post = pd.concat([pm_trace, post_df], axis=1)
+        return merged_post
+
+    def predict(
+        self
+    ):
+        def predict_row(row, df_test, X_columns, year):
+            row[f'epsilon_{year}'] = np.random.normal(loc=0, scale=row['epsilon_sigma'])
+            cum_sum = 0
+            for X_column in X_columns:
+                cum_sum += row[f'beta_{X_column}'] * df_test.loc[year, X_column]
+            cum_sum += row[f'epsilon_{year}']
+            row[f'sigma_{year}'] = row[f'sigma_{year - 1}'] * np.exp(cum_sum)
+            row[f'y_{year}'] = GeneralisedPareto(gamma=row['gamma'], sigma=row[f'sigma_{year}'], mu=1.0).sample(1)[0]
+            return row
+
+        trace_df = self.trace['posterior'].to_dataframe().reset_index(drop=True)
+
+        # Apply this to the trace_df
+        for year in self.df_test.index:
+            trace_df = trace_df.apply(
+                lambda row: predict_row(
+                    row=row, 
+                    df_test=self.df_test, 
+                    X_columns=self.X_columns,
+                    year=year
+                ),
+            axis=1)
+
+        return trace_df

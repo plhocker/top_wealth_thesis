@@ -42,7 +42,6 @@ class Pareto_One_Stage(ABM):
     ):
         """ Fit the model """
         with self.model:
-            # Sample
             self.trace = pm.sample(
                 draws=draws,
                 tune=tune,
@@ -50,7 +49,6 @@ class Pareto_One_Stage(ABM):
                 cores=cores,
                 nuts_sampler=nuts_sampler
             )
-        # return self.trace
 
     def prior_predictive(
         self, 
@@ -59,10 +57,13 @@ class Pareto_One_Stage(ABM):
     ):
         """ Generate prior predictive samples """
         with self.model:
-            prior = pm.sample_prior_predictive(
+            pm_prior = pm.sample_prior_predictive(
                 samples=samples
             )
-        return prior
+        prior = pm_prior['prior'].to_dataframe().reset_index(drop=True)
+        prior_pred = pm_prior['prior_predictive'].to_dataframe().reset_index(drop=True)
+        merged_prior = pd.concat([prior, prior_pred], axis=1)
+        return merged_prior
 
     def posterior_predictive(
         self, 
@@ -70,13 +71,15 @@ class Pareto_One_Stage(ABM):
         progressbar: bool=True
     ) -> np.ndarray:
         """ Generate posterior predictive samples """
+        pm_trace = self.trace['posterior'].to_dataframe().reset_index(drop=True)
         with self.model:
-            posterior = pm.sample_posterior_predictive(
+            pm_post = pm.sample_posterior_predictive(
                 self.trace,
                 progressbar=progressbar
             )
-        # Flatten values
-        return posterior.posterior_predictive['y'].values.flatten()
+        pm_post = pm_post['posterior_predictive'].to_dataframe().reset_index(drop=True)
+        merged_post = pd.concat([pm_trace, pm_post], axis=1)
+        return merged_post
 
     def parameter_estimates(
         self, 
@@ -147,7 +150,6 @@ class Weibull_One_Stage(ABM):
     ):
         """ Fit the model """
         with self.model:
-            # Sample
             self.trace = pm.sample(
                 draws=draws,
                 tune=tune,
@@ -156,7 +158,6 @@ class Weibull_One_Stage(ABM):
                 target_accept=target_accept,
                 nuts_sampler=nuts_sampler
             )
-        return self.trace
 
     def prior_predictive(
         self, 
@@ -165,10 +166,13 @@ class Weibull_One_Stage(ABM):
     ):
         """ Generate prior predictive samples """
         with self.model:
-            prior = pm.sample_prior_predictive(
+            pm_prior = pm.sample_prior_predictive(
                 samples=samples
             )
-        return prior
+        prior = pm_prior['prior'].to_dataframe().reset_index(drop=True)
+        prior_pred = pm_prior['prior_predictive'].to_dataframe().reset_index(drop=True)
+        merged_prior = pd.concat([prior, prior_pred], axis=1)
+        return merged_prior
 
     def posterior_predictive(
         self, 
@@ -176,13 +180,15 @@ class Weibull_One_Stage(ABM):
         progressbar: bool=True
     ) -> np.ndarray:
         """ Generate posterior predictive samples """
+        pm_trace = self.trace['posterior'].to_dataframe().reset_index(drop=True)
         with self.model:
-            posterior = pm.sample_posterior_predictive(
+            pm_post = pm.sample_posterior_predictive(
                 self.trace,
                 progressbar=progressbar
             )
-        # Flatten values
-        return posterior.posterior_predictive['y'].values.flatten()
+        pm_post = pm_post['posterior_predictive'].to_dataframe().reset_index(drop=True)
+        merged_post = pd.concat([pm_trace, pm_post], axis=1)
+        return merged_post
 
     def parameter_estimates(
         self, 
@@ -258,7 +264,6 @@ class GeneralisedPareto_One_Stage(ABM):
     ):
         """ Fit the model """
         with self.model:
-            # Sample
             self.trace = pm.sample(
                 draws=draws,
                 tune=tune,
@@ -267,7 +272,6 @@ class GeneralisedPareto_One_Stage(ABM):
                 target_accept=target_accept,
                 nuts_sampler=nuts_sampler
             )
-        return self.trace
 
     def prior_predictive(
         self, 
@@ -276,10 +280,13 @@ class GeneralisedPareto_One_Stage(ABM):
     ):
         """ Generate prior predictive samples """
         with self.model:
-            prior = pm.sample_prior_predictive(
+            pm_prior = pm.sample_prior_predictive(
                 samples=samples
             )
-        return prior
+        prior = pm_prior['prior'].to_dataframe().reset_index(drop=True)
+        prior_pred = pm_prior['prior_predictive'].to_dataframe().reset_index(drop=True)
+        merged_prior = pd.concat([prior, prior_pred], axis=1)
+        return merged_prior
 
     def posterior_predictive(
         self, 
@@ -287,13 +294,15 @@ class GeneralisedPareto_One_Stage(ABM):
         progressbar: bool=True
     ) -> np.ndarray:
         """ Generate posterior predictive samples """
+        pm_trace = self.trace['posterior'].to_dataframe().reset_index(drop=True)
         with self.model:
-            posterior = pm.sample_posterior_predictive(
+            pm_post = pm.sample_posterior_predictive(
                 self.trace,
                 progressbar=progressbar
             )
-        # Flatten values
-        return posterior.posterior_predictive['y'].values.flatten()
+        pm_post = pm_post['posterior_predictive'].to_dataframe().reset_index(drop=True)
+        merged_post = pd.concat([pm_trace, pm_post], axis=1)
+        return merged_post
 
     def parameter_estimates(
         self, 
@@ -344,7 +353,6 @@ class Pareto_Two_Stage(ABM):
     ):
         """ Fit the model """
         with self.model:
-            # Sample
             self.trace = pm.sample(
                 draws=draws,
                 tune=tune,
@@ -353,7 +361,6 @@ class Pareto_Two_Stage(ABM):
                 target_accept=target_accept,
                 nuts_sampler=nuts_sampler
             )
-        return self.trace
     
     def prior_predictive(
         self, 
