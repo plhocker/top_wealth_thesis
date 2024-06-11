@@ -89,8 +89,8 @@ class Univariate_Pareto_TimeSeries(ABM):
 
     def fit(
         self, 
-        draws: int=1000,
-        tune: int=1000,
+        draws: int=2000,
+        tune: int=2000,
         chains: int=4,
         cores: int=4,
         target_accept: float=0.975,
