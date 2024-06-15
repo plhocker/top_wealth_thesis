@@ -164,3 +164,7 @@ cython_debug/
 # Stored Models
 .Stored_Models
 Stored_Models/
+
+# Stored Results
+.Stored_Results
+Stored_Results/

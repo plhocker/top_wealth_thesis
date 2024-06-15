@@ -237,7 +237,7 @@ def Kolmogorov_Smirnov_H_0_test(
 def Kolmogorov_Smirnov_two_sample_test(
     data1: np.ndarray,
     data2: np.ndarray
-) -> (float, float, float, int):
+) -> (float, float):
     """
     Perform a two-sample Kolmogorov-Smirnov test.
     The null hypothesis is that the two samples are drawn from the same distribution.
@@ -307,7 +307,7 @@ def Anderson_Darling_statistic(
     integral = 0
     for i in range(1, n_points):
         integral += w(x_vals[i]) * (F_n(data_1, x_vals[i]) - F_n(data_2, x_vals[i]))**2 * (x_vals[i] - x_vals[i-1])
-    return len(data_1) * integral, integral
+    return len(data_1) * integral, integral # return the normalised test statistic as well
 
 def Anderson_Darling_H_0_test(
     data,

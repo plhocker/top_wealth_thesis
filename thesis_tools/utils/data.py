@@ -326,7 +326,8 @@ def read_iso_codes(
 
 def read_panel_data(
     AGGREGATE_TYPE: str='sub_region',
-    observations_threshold: int=10
+    observations_threshold: int=10,
+    exclude_2023: bool=True
 ) -> pd.DataFrame:
     # Assert that AGGREGATE_TYPE is either 'sub_region', 'region' or 'country_of_citizenship'
     assert AGGREGATE_TYPE in ['sub_region', 'region', 'country_of_citizenship']
@@ -490,6 +491,7 @@ def read_panel_data(
     df['constant'] = 1
 
     # Exclude the year 2023 TODO: complete the data for 2023, may not be possible
-    df = df[df['year'] != 2023]
+    if exclude_2023:
+        df = df[df['year'] != 2023]
 
     return df
