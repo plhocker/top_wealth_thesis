@@ -8,6 +8,37 @@ import pandas as pd
 import dill
 import os
 
+def train_or_retrieve_regularised_cross_sectional_model(
+    panel_df:pd.DataFrame, 
+    group:str, 
+    model_type:str, 
+    retrain_if_saved=False,
+    folder_path:str="../../Stored_Models/bayesian_univariate_time_series_no_covariates/"
+):
+    model_name = f"{group}_{model_type}"
+    model_path = folder_path + model_name + ".pkl"
+    if os.path.exists(model_path) and not retrain_if_saved:
+        with open(model_path, "rb") as f:
+            model = dill.load(f)
+    else:
+        data = copy.deepcopy(panel_df[panel_df['group'] == group])
+        if model_type == 'Pareto':
+            model = Univariate_Pareto_TimeSeries_NoCovariates(
+                panel_df=data
+            )
+        elif model_type == 'Weibull':
+            model = Univariate_Weibull_TimeSeries_NoCovariates(
+                panel_df=data
+            )
+        elif model_type == 'GeneralisedPareto':
+            model = Univariate_GeneralisedPareto_TimeSeries_NoCovariates(
+                panel_df=data
+            )
+        model.fit(nuts_sampler='nutpie', target_accept=0.99)
+        with open(model_path, "wb") as f:
+            dill.dump(model, f)
+    return model
+
 def train_or_retrieve_cross_sectional_model(
     panel_df:pd.DataFrame, 
     group:str, 
