@@ -39,6 +39,14 @@ class Distribution(ABC):
     def support(self):
         pass
 
+    @abstractmethod
+    def hazard_rate(self):
+        pass
+
+    @abstractmethod
+    def cumulative_hazard(self):
+        pass
+
 class Pareto(Distribution):
     def __init__(
         self, 
@@ -239,6 +247,64 @@ class Pareto(Distribution):
         """
         return self.x_m, np.inf
 
+    def hazard_rate(
+        self,
+        x: float,
+        given_x_m: float=None,
+        given_alpha: float=None
+    ) -> float:
+        """
+        Calculate the hazard rate of the Pareto distribution.
+        Parameters
+        ----------
+        x : float
+            The data to calculate the hazard rate for.
+        Returns
+        -------
+        float
+            The hazard rate of the Pareto distribution.
+        """
+        if given_alpha is None:
+            alpha = self.alpha
+        else:
+            alpha = given_alpha
+
+        if given_x_m is None:
+            x_m = self.x_m
+        else:
+            x_m = given_x_m
+
+        return self.pdf(x=x, x_m=x_m, alpha=alpha) / (1-self.cdf(x=x, x_m=x_m, alpha=alpha))
+
+    def cumulative_hazard(
+        self,
+        x: float,
+        given_x_m: float=None,
+        given_alpha: float=None
+    ) -> float:
+        """
+        Calculate the cumulative hazard of the Pareto distribution.
+        Parameters
+        ----------
+        x : float
+            The data to calculate the cumulative hazard for.
+        Returns
+        -------
+        float
+            The cumulative hazard of the Pareto distribution.
+        """
+        if given_alpha is None:
+            alpha = self.alpha
+        else:
+            alpha = given_alpha
+
+        if given_x_m is None:
+            x_m = self.x_m
+        else:
+            x_m = given_x_m
+
+        return -np.log(1-self.cdf(x=x, x_m=x_m, alpha=alpha))
+
 class Exponential(Distribution):
     def __init__(
         self, 
@@ -402,6 +468,52 @@ class Exponential(Distribution):
             The upper bound of the Exponential distribution.
         """
         return 0, np.inf
+
+    def hazard_rate(
+        self,
+        x: float,
+        given_alpha: float=None
+    ) -> float:
+        """
+        Calculate the hazard rate of the Exponential distribution.
+        Parameters
+        ----------
+        x : float
+            The data to calculate the hazard rate for.
+        Returns
+        -------
+        float
+            The hazard rate of the Exponential distribution.
+        """
+        if given_alpha is None:
+            alpha = self.alpha
+        else:
+            alpha = given_alpha
+
+        return self.pdf(x=x, alpha=alpha) / (1-self.cdf(x=x, alpha=alpha))
+
+    def cumulative_hazard(
+        self,
+        x: float,
+        given_alpha: float=None
+    ) -> float:
+        """
+        Calculate the cumulative hazard of the Exponential distribution.
+        Parameters
+        ----------
+        x : float
+            The data to calculate the cumulative hazard for.
+        Returns
+        -------
+        float
+            The cumulative hazard of the Exponential distribution.
+        """
+        if given_alpha is None:
+            alpha = self.alpha
+        else:
+            alpha = given_alpha
+
+        return -np.log(1-self.cdf(x=x, alpha=alpha))
     
 class Gompertz(Distribution):
     def __init__(
@@ -464,7 +576,7 @@ class Gompertz(Distribution):
             print('Gamma parameter not set, using parameter stored in the class: gamma=', self.gamma)
             gamma = self.gamma
 
-        return 1 - np.exp(-(np.exp(gamma * x) - 1) / (alpha * gamma))
+        return 1 - np.exp((1 - np.exp(gamma * x)) / (alpha * gamma))
 
     def inverse_cdf(
         self,
@@ -654,6 +766,64 @@ class Gompertz(Distribution):
             The upper bound of the Gompertz distribution.
         """
         return 0, np.inf
+
+    def hazard_rate(
+        self,
+        x: float,
+        given_gamma: float=None,
+        given_alpha: float=None
+    ) -> float:
+        """
+        Calculate the hazard rate of the Gompertz distribution.
+        Parameters
+        ----------
+        x : float
+            The data to calculate the hazard rate for.
+        Returns
+        -------
+        float
+            The hazard rate of the Gompertz distribution.
+        """
+        if given_alpha is None:
+            alpha = self.alpha
+        else:
+            alpha = given_alpha
+
+        if given_gamma is None:
+            gamma = self.gamma
+        else:
+            gamma = given_gamma
+
+        return self.pdf(x=x, alpha=alpha, gamma=gamma) / (1-self.cdf(x=x, alpha=alpha, gamma=gamma))
+
+    def cumulative_hazard(
+        self,
+        x: float,
+        given_gamma: float=None,
+        given_alpha: float=None
+    ) -> float:
+        """
+        Calculate the cumulative hazard of the Gompertz distribution.
+        Parameters
+        ----------
+        x : float
+            The data to calculate the cumulative hazard for.
+        Returns
+        -------
+        float
+            The cumulative hazard of the Gompertz distribution.
+        """
+        if given_alpha is None:
+            alpha = self.alpha
+        else:
+            alpha = given_alpha
+
+        if given_gamma is None:
+            gamma = self.gamma
+        else:
+            gamma = given_gamma
+
+        return -np.log(1-self.cdf(x=x, alpha=alpha, gamma=gamma))
      
 class Weibull(Distribution):
     """
@@ -900,6 +1070,64 @@ class Weibull(Distribution):
         """
         return 0, np.inf
 
+    def hazard_rate(
+        self,
+        x: float,
+        given_gamma: float=None,
+        given_alpha: float=None
+    ) -> float:
+        """
+        Calculate the hazard rate of the Weibull distribution.
+        Parameters
+        ----------
+        x : float
+            The data to calculate the hazard rate for.
+        Returns
+        -------
+        float
+            The hazard rate of the Weibull distribution.
+        """
+        if given_alpha is None:
+            alpha = self.alpha
+        else:
+            alpha = given_alpha
+
+        if given_gamma is None:
+            gamma = self.gamma
+        else:
+            gamma = given_gamma
+
+        return self.pdf(x=x, alpha=alpha, gamma=gamma) / (1-self.cdf(x=x, alpha=alpha, gamma=gamma))
+
+    def cumulative_hazard(
+        self,
+        x: float,
+        given_gamma: float=None,
+        given_alpha: float=None
+    ) -> float:
+        """
+        Calculate the cumulative hazard of the Weibull distribution.
+        Parameters
+        ----------
+        x : float
+            The data to calculate the cumulative hazard for.
+        Returns
+        -------
+        float
+            The cumulative hazard of the Weibull distribution.
+        """
+        if given_alpha is None:
+            alpha = self.alpha
+        else:
+            alpha = given_alpha
+
+        if given_gamma is None:
+            gamma = self.gamma
+        else:
+            gamma = given_gamma
+
+        return -np.log(1-self.cdf(x=x, alpha=alpha, gamma=gamma))
+
 class GeneralisedPareto(Distribution):
     def __init__(
         self,
@@ -1035,9 +1263,9 @@ class GeneralisedPareto(Distribution):
 
         # special case for gamma = 0
         if gamma == 0:
-            return 1 - np.exp(-x/sigma)
-        
-        return 1 - (1 + gamma*(x-mu)/sigma)**(-1/gamma)
+            return 1 - np.exp(-(x-mu)/sigma)
+        else:
+            return 1 - (1 + gamma*(x-mu)/sigma)**(-1/gamma)
 
     def inverse_cdf(
         self,
@@ -1327,3 +1555,220 @@ class GeneralisedPareto(Distribution):
             return self.mu, self.mu - self.sigma / self.gamma
         else:
             return self.mu, np.inf
+
+    def hazard_rate(
+        self,
+        x: float,
+        gamma: float=None,
+        sigma: float=None,
+        mu: float=None
+    ) -> float:
+        """
+        Calculate the hazard rate of the Generalised Pareto distribution.
+        Parameters
+        ----------
+        x : float
+            The data to calculate the hazard rate for.
+        Returns
+        -------
+        float
+            The hazard rate of the Generalised Pareto distribution.
+        """
+        if mu is None:
+            mu = self.mu
+        
+        if gamma is None:
+            gamma = self.gamma
+        
+        if sigma is None:
+            sigma = self.sigma
+        
+        return self.pdf(x=x, gamma=gamma, sigma=sigma, mu=mu) / (1-self.cdf(x=x, gamma=gamma, sigma=sigma, mu=mu))
+
+    def cumulative_hazard(
+        self,
+        x: float,
+        gamma: float=None,
+        sigma: float=None,
+        mu: float=None
+    ) -> float:
+        """
+        Calculate the cumulative hazard of the Generalised Pareto distribution.
+        Parameters
+        ----------
+        x : float
+            The data to calculate the cumulative hazard for.
+        Returns
+        -------
+        float
+            The cumulative hazard of the Generalised Pareto distribution.
+        """
+        if mu is None:
+            mu = self.mu
+        
+        if gamma is None:
+            gamma = self.gamma
+        
+        if sigma is None:
+            sigma = self.sigma
+        
+        return -np.log(1-self.cdf(x=x, gamma=gamma, sigma=sigma, mu=mu))
+
+class ExponentiatedGeneralisedPareto(Distribution):
+    def __init__(
+        self,
+        gamma: float=None, 
+        sigma: float=None,
+        mu: float=1.0,
+    ):
+        self.gamma = gamma
+        self.sigma = sigma
+        self.mu = mu
+    
+    def pdf(
+        self,
+        x: float,
+        gamma: float=None,
+        sigma: float=None,
+        mu: float=None
+    ) -> float:
+        if mu is None:
+            mu = self.mu
+        
+        if gamma is None:
+            gamma = self.gamma
+        
+        if sigma is None:
+            sigma = self.sigma
+        
+        if gamma == 0:
+            return (1 / sigma) * np.exp(x - (np.exp(x) - mu) / sigma)
+        else:
+            return (np.exp(x) / sigma) * (1 + gamma * (np.exp(x) - mu) / sigma)**(-1 / gamma - 1)
+
+    def cdf(
+        self,
+        x: float,
+        gamma: float=None,
+        sigma: float=None,
+        mu: float=None
+    ) -> float:
+        if mu is None:
+            mu = self.mu
+        
+        if gamma is None:
+            gamma = self.gamma
+        
+        if sigma is None:
+            sigma = self.sigma
+        
+        if gamma == 0:
+            return 1 - np.exp(-(np.exp(x) - mu) / sigma)
+        else:
+            return 1 - (1 + gamma * (np.exp(x) - mu) / sigma)**(-1 / gamma)
+        
+    def likelihood(
+        self,
+        data: np.ndarray,
+        gamma: float=None,
+        sigma: float=None,
+        mu: float=None
+    ) -> float:
+        if mu is None:
+            mu = self.mu
+        
+        if gamma is None:
+            gamma = self.gamma
+        
+        if sigma is None:
+            sigma = self.sigma
+        
+        return np.prod(self.pdf(data, gamma=gamma, sigma=sigma, mu=mu))
+        
+    def fit(
+        self,
+        data: np.ndarray,
+        given_gamma: float=None,
+        given_sigma: float=None,
+        given_mu: float=1.0,
+        set_class_parameters: bool=True
+    ):  
+        exponentiated_data = np.exp(data)
+        res = GeneralisedPareto().fit(exponentiated_data, given_gamma=given_gamma, given_sigma=given_sigma, given_mu=given_mu)
+
+        if set_class_parameters:
+            self.gamma = res[0]
+            self.sigma = res[1]
+            self.mu = res[2]
+        
+        return res[0], res[1], res[2]
+
+    def inverse_cdf(
+        self,
+        p: float,
+        gamma: float=None,
+        sigma: float=None,
+        mu: float=None
+    ) -> float:
+        if mu is None:
+            mu = self.mu
+        
+        if gamma is None:
+            gamma = self.gamma
+        
+        if sigma is None:
+            sigma = self.sigma
+        
+        if gamma == 0:
+            return np.log(mu - sigma * np.log(1 - p))
+        else:
+            return np.log(mu + sigma * ((1 / (1 - p)**gamma - 1) / gamma))
+
+    def sample(
+        self,
+        n_samples: int=1000
+    ):
+        u = np.random.uniform(0, 1, n_samples)
+        return self.inverse_cdf(u, self.gamma, self.sigma, self.mu)
+
+    def mean(self):
+        pass
+
+    def support(self):
+        pass
+
+    def hazard_rate(
+        self,
+        x: float,
+        gamma: float=None,
+        sigma: float=None,
+        mu: float=None
+    ) -> float:
+        if mu is None:
+            mu = self.mu
+        
+        if gamma is None:
+            gamma = self.gamma
+        
+        if sigma is None:
+            sigma = self.sigma
+
+        return self.pdf(x=x, gamma=gamma, sigma=sigma, mu=mu) / (1-self.cdf(x=x, gamma=gamma, sigma=sigma, mu=mu))
+
+    def cumulative_hazard(
+        self,
+        x: float,
+        gamma: float=None,
+        sigma: float=None,
+        mu: float=None
+    ) -> float:
+        if mu is None:
+            mu = self.mu
+        
+        if gamma is None:
+            gamma = self.gamma
+        
+        if sigma is None:
+            sigma = self.sigma
+
+        return -np.log(1-self.cdf(x=x, gamma=gamma, sigma=sigma, mu=mu))

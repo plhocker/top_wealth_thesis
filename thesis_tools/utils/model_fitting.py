@@ -6,6 +6,7 @@ from thesis_tools.models.bayesian_univariate_time_series import Univariate_Paret
 import numpy as np
 import pandas as pd
 import dill
+import copy
 import os
 
 def train_or_retrieve_regularised_cross_sectional_model(

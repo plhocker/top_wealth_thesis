@@ -15,4 +15,5 @@ jaxlib # Support library for jax
 ipywidgets # Jupyter notebook widgets
 requests # For SSL certificates
 dill # For pickling
-networkx # TODO: check if this is indeed best for graphs
+networkx # For graph problems
+lifelines # For survival analysis
