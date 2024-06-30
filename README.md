@@ -26,4 +26,8 @@ All figures used in the final paper can be found in the `Figures` directory.
 ## Notebooks
 Any analysis for this thesis was performed in notebooks in the `Notebooks` directory.
 
-Exploratory data analysis can be found in the `data` directory. Exploratory analysis of the hazard rates can be found in `explore/hazard_functions.ipynb`. 
+Exploratory data analysis can be found in the `data` directory. Exploratory analysis of the hazard rates can be found in `explore/hazard_functions.ipynb`. The analysis of measurement errors is in the `extension` folder. 
+
+Training and evaluation of all models is in the `models` directory, with self evident notebook names. Note that should one want to use pre-trained models, and stored intermediate results, the `../Stored_Models` and `../Stored_Results` folders are required. They are not uploaded to this repository due to the filesizes (~3.5GB), but will be made available upon request. 
+
+
