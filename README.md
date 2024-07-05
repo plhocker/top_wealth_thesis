@@ -1,6 +1,6 @@
 # Bachelor Thesis 2024
 
-Welcome to the repository for my Bachelor thesis in Econometrics and Economics. This is a brief summary of what can be found where.
+Welcome to the repository for my Bachelor thesis in Econometrics and Economics. This is a brief summary of what can be found where. The methodology is in `Thesis.pdf`.
 
 ## Installation
 
